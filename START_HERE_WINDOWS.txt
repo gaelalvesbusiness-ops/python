@@ -1,0 +1,129 @@
+﻿﻿HONESTPOOL - COMECE AQUI (Windows 11)
+=====================================
+
+Pacote de teste: honestpool-windows11-test-v3 (VERSÃO DE DIAGNÓSTICO)
+
+O QUE É ESTA VERSÃO
+- É uma versão de DIAGNÓSTICO, para um teste curto e supervisionado. Ela NÃO é uma
+  solução garantida para rodar sozinha, sem ninguém acompanhando.
+- Ela registra cada etapa da resolução automática do CAPTCHA: imagem encontrada ou não,
+  envio ao 2Captcha, resposta recebida, aceitação ou recusa confirmada pelo site,
+  resultado incerto e verificação manual. No fim de cada execução aparece um resumo
+  (linha "CAPTCHA summary:"). Com esse registro vamos descobrir onde a resolução
+  automática falha no seu computador.
+- No registro da v1 que você enviou, a imagem do CAPTCHA nunca chegou a ser enviada ao
+  2Captcha: a falha aconteceu antes, ao procurar a imagem na página.
+- Uma resposta só conta como recusada quando o site mostra uma imagem de CAPTCHA nova.
+  Qualquer outro resultado fica como "incerto" e não é informado ao 2Captcha como erro.
+- Os limites de segurança continuam os mesmos: no máximo 3 tentativas automáticas por
+  CAPTCHA e no máximo 42 imagens enviadas ao 2Captcha por execução.
+- Os registros verificados continuam aparecendo na janela preta, e o arquivo
+  data\verified_records.csv continua sendo atualizado sozinho depois de cada página.
+
+Este pacote ainda não foi executado num computador com Windows. As mudanças foram
+verificadas só com testes automáticos, sem acessar o site. A resolução automática do
+CAPTCHA não é garantida.
+
+
+ANTES DE COMEÇAR
+----------------
+- Windows 11.
+- Python 3.11 ou 3.12 é OBRIGATÓRIO. O Python 3.13 ou mais novo NÃO é aceito.
+  Baixe em https://www.python.org/downloads/windows/ o "Windows installer (64-bit)" da
+  versão 3.12 e, na primeira tela do instalador, marque "Add python.exe to PATH".
+- INTERNET é OBRIGATÓRIA:
+  * durante a instalação (PASSO 2), para baixar as bibliotecas do Python e o navegador
+    Chromium;
+  * durante cada extração (PASSO 5), para acessar o site HonestPool e, se configurado,
+    o serviço 2Captcha.
+  O menu de progresso e as exportações funcionam sem internet.
+- Cerca de 1,5 GB livres no disco.
+
+
+MANTENHA A SUA INSTALAÇÃO ATUAL E O SEU BANCO DE DADOS
+------------------------------------------------------
+A sua instalação atual (C:\HonestPool para a v1, ou C:\HonestPool-v2 se você instalou a
+v2) e o banco de dados dela continuam exatamente como estão. A v3 não copia, não apaga e
+não substitui nada delas.
+A) Feche o programa antigo. Se uma extração estiver em andamento, pressione Ctrl+C UMA
+   vez na janela preta e aguarde o resumo. Depois saia do menu com a opção 6 e feche
+   todas as janelas do HonestPool (janela preta e Chromium).
+B) Faça uma cópia de segurança: copie as pastas data e config da instalação atual (por
+   exemplo C:\HonestPool\data e C:\HonestPool\config) para uma pasta nova, por exemplo
+   C:\HonestPool-backup. Essa cópia fica só no seu computador: não a envie a ninguém (a
+   pasta config contém a sua chave cifrada).
+C) NÃO extraia a v3 dentro de C:\HonestPool nem de C:\HonestPool-v2, e não apague nada
+   das pastas antigas.
+D) A v3 começa com um banco de dados vazio, e o teste de diagnóstico deve ser feito
+   assim. O progresso e os registros antigos NÃO aparecem na v3. Nada é migrado
+   automaticamente. Não copie o banco de dados antigo para a v3 durante este teste; a
+   seção 10 de INSTALACAO_WINDOWS_11.md explica a cópia manual, para depois.
+
+
+PASSO 1 - Extraia o ZIP para uma pasta NOVA: C:\HonestPool-v3
+  Clique com o botão direito no ZIP > "Extrair tudo..." > digite C:\HonestPool-v3 > Extrair.
+  Confira: o arquivo deve ficar em C:\HonestPool-v3\setup_windows.bat
+  Não execute nada de dentro do ZIP sem extrair.
+
+PASSO 2 - Dê dois cliques em setup_windows.bat
+  Aguarde de 5 a 15 minutos, até aparecer INSTALACAO CONCLUIDA COM SUCESSO.
+  Se aparecer "O Windows protegeu o computador", clique em "Mais informações" e depois
+  em "Executar assim mesmo".
+  O instalador cria as pastas data, logs e config dentro de C:\HonestPool-v3.
+
+PASSO 3 - Dê dois cliques em configurar_2captcha.bat
+  Configure a chave de novo nesta pasta nova: a chave salva na instalação anterior não
+  é copiada.
+  Cole a sua chave 2Captcha e pressione Enter. Nada aparece na tela enquanto você cola:
+  é normal. A chave fica cifrada só neste computador, para o seu usuário do Windows.
+  Ninguém precisa da sua chave, nem o desenvolvedor: nunca a envie a ninguém.
+  Sem conta 2Captcha, pule este passo: os CAPTCHAs serão resolvidos à mão no navegador
+  (o diagnóstico da resolução automática precisa da chave).
+
+PASSO 4 - Dê dois cliques em iniciar_honestpool.bat
+  O menu abre e mostra onde os arquivos são salvos (C:\HonestPool-v3\data\...) e o
+  registro (log) desta sessão (C:\HonestPool-v3\logs\...).
+  Nenhuma extração começa sem a sua confirmação.
+
+PASSO 5 - Faça um teste pequeno e supervisionado de SÓ 2 páginas
+  No menu: opção 1, página inicial 1, página final 2, 2 páginas nesta sessão, e confirme
+  com S. Não feche a janela do Chromium que abrir. Fique na frente do computador.
+  Se aparecer um CAPTCHA, NÃO mexa na janela do Chromium e aguarde (pode levar 1 a 2
+  minutos por tentativa). A janela preta mostra cada etapa em linhas que começam com
+  "CAPTCHA 1 attempt 1/3:". Anote se apareceu "Verification succeeded automatically".
+  Só resolva o CAPTCHA à mão se o programa pedir ("Please complete it manually").
+  Confira na janela preta, depois de cada página:
+  - "Page 1: ... new verified record(s) saved:" com as colunas Number, Start hex,
+    End hex e Status (ou "Page 1: no new verified records.", se a página não tiver
+    nenhum registro verificado);
+  - logo abaixo: "CSV updated: C:\HonestPool-v3\data\verified_records.csv".
+  No fim aparece a linha "CAPTCHA summary: ...", com quantos CAPTCHAs apareceram,
+  quantas imagens foram enviadas ao 2Captcha, quantas respostas o site recusou, quantos
+  resultados ficaram incertos e quantas vezes foi preciso resolver à mão.
+  Opcional: se der tempo, repita uma vez com as páginas 3 a 5 (opção 1, página inicial
+  3, página final 5, 3 páginas). Cada execução abre um navegador novo e costuma mostrar
+  um CAPTCHA: é mais uma amostra para o diagnóstico. Não faça mais do que isso.
+  O arquivo Excel (XLSX) NÃO é criado sozinho: para criá-lo, use a opção 4 do menu.
+  Para parar, pressione Ctrl+C UMA vez na janela preta e aguarde o resumo.
+  A resolução automática do CAPTCHA não é garantida, e o programa não foi feito para rodar
+  sozinho por longos períodos: alguém precisa acompanhar.
+
+PASSO 6 - Envie os resultados e o registro (log)
+  Feche o menu (opção 6). O registro do teste fica na pasta C:\HonestPool-v3\logs, no
+  arquivo honestpool_AAAAMMDD.log, em que AAAAMMDD é a data do teste (por exemplo
+  honestpool_20261015.log para 15/10/2026). Ele abre no Bloco de Notas; com Ctrl+F e o
+  texto CAPTCHA summary você encontra o resumo de cada execução.
+  O registro já sai limpo: a chave 2Captcha é trocada por [CHAVE OCULTA], as respostas do
+  CAPTCHA nunca são gravadas e os endereços do site aparecem sem dados da sessão (sem
+  cookies). Não edite o arquivo; envie-o como está.
+  Siga a lista CHECKLIST_ACEITACAO_WINDOWS_11.md e envie:
+  - o arquivo C:\HonestPool-v3\logs\honestpool_AAAAMMDD.log (com a data do teste);
+  - a lista preenchida (ou uma foto dela);
+  - fotos ou capturas das janelas em que algo foi diferente do esperado, inclusive
+    qualquer ERRO ou AVISO do setup_windows.bat;
+  - C:\HonestPool-v3\data\verified_records.csv e/ou verified_records.xlsx.
+  NUNCA envie: a chave 2Captcha, a pasta config, arquivos .env, a pasta .venv ou senhas.
+  Ninguém vai pedir a sua chave; se alguém pedir, não envie.
+
+
+Mais detalhes: INSTALACAO_WINDOWS_11.md (pode ser aberto no Bloco de Notas).

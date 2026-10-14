@@ -1,0 +1,4 @@
+# Windows batch files must keep CRLF line endings to run reliably in cmd.exe.
+*.bat text eol=crlf
+# Opened with Notepad on Windows.
+START_HERE_WINDOWS.txt text eol=crlf

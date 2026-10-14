@@ -1,0 +1,1503 @@
+<!DOCTYPE html><html data-bs-theme="light"><head><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="bitcoin, pool, puzzle, bitcoin pool, bitcoin puzzle, bitcoin puzzle pool, bitcoin 71, pool 71, puzzle pool, homlol pool, честный pool, биткоин пазл, биткоин пазл пул">
+	<meta name="author" content="REDACTED">
+	<meta name="robots" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="HONEST BITCOIN PUZZLE POOL | 71">
+	<meta property="og:title" content="HONEST BITCOIN PUZZLE POOL | 71">
+	<meta property="og:description" content="HONEST BITCOIN PUZZLE POOL | 71">
+	<meta property="og:image" content=""> <!-- image url -->
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/plugin/bootstrap-datepicker-1.9.0-dist/css/bootstrap-datepicker.min.css">
+	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+	<title>HONEST BITCOIN PUZZLE POOL | 71</title>
+	<style>
+		.bitcoin-final-false{
+			background: #6c757d;
+			border-radius: 3px;
+			padding-left: 3px;
+			padding-right: 3px;
+			margin-left: 1px;
+			margin-right: 1px;
+			color: white;
+		}
+		.bitcoin-final-true{
+			background: #28a745;
+			border-radius: 3px;
+			padding-left: 3px;
+			padding-right: 3px;
+			margin-left: 1px;
+			margin-right: 1px;
+			color: white;
+		}
+
+		.bitcoin-total-false{
+			background: #6c757d;
+			border-radius: 3px;
+			padding-left: 3px;
+			padding-right: 3px;
+			margin-left: 1px;
+			margin-right: 1px;
+			color: white;
+		}
+		.bitcoin-total-true{
+			background: #007bff;
+			border-radius: 3px;
+			padding-left: 3px;
+			padding-right: 3px;
+			margin-left: 1px;
+			margin-right: 1px;
+			color: white;
+		}
+
+		.bitcoin-exchange-false{
+			background: #6c757d;
+			border-radius: 3px;
+			padding-left: 3px;
+			padding-right: 3px;
+			margin-left: 1px;
+			margin-right: 1px;
+			color: white;
+		}
+		.bitcoin-exchange-true{
+			background: #ffc107;
+			border-radius: 3px;
+			padding-left: 3px;
+			padding-right: 3px;
+			margin-left: 1px;
+			margin-right: 1px;
+			color: white;
+		}
+		.page {
+		  overflow-wrap: break-word;  /* не поддерживает IE, Firefox; является копией word-wrap */ 
+		  word-wrap: break-word;
+		  word-break: break-all;  /* не поддерживает Opera12.14, значение keep-all не поддерживается IE, Chrome */ 
+		  line-break: auto;  /* нет поддержки для русского языка */ 
+		  hyphens: manual;  /* значение auto не поддерживается Chrome */ 
+		  width: 100%;
+		}
+		.btn{
+			padding: 0 .75rem!important;
+		}
+		body{
+			line-height: 1 !important;
+		}
+
+		.statustic-table tr td{
+			text-align: left;
+		}
+
+		.statustic-table tr th{
+			width: 1px;
+			white-space: nowrap;
+		}
+		@media(max-width: 992px){
+			.pagination{
+				flex-wrap: wrap;
+			}
+		}
+
+		[data-bs-theme="dark"]{
+			[data-toggle="tooltip"]{
+				fill: #fff;
+			}
+		}
+	</style>
+<style type="text/css" id="notify-bootstrap">.notifyjs-bootstrap-base {
+	font-weight: bold;
+	padding: 8px 15px 8px 14px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	background-color: #fcf8e3;
+	border: 1px solid #fbeed5;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	white-space: nowrap;
+	padding-left: 25px;
+	background-repeat: no-repeat;
+	background-position: 3px 7px;
+}
+.notifyjs-bootstrap-error {
+	color: #B94A48;
+	background-color: #F2DEDE;
+	border-color: #EED3D7;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAtRJREFUeNqkVc1u00AQHq+dOD+0poIQfkIjalW0SEGqRMuRnHos3DjwAH0ArlyQeANOOSMeAA5VjyBxKBQhgSpVUKKQNGloFdw4cWw2jtfMOna6JOUArDTazXi/b3dm55socPqQhFka++aHBsI8GsopRJERNFlY88FCEk9Yiwf8RhgRyaHFQpPHCDmZG5oX2ui2yilkcTT1AcDsbYC1NMAyOi7zTX2Agx7A9luAl88BauiiQ/cJaZQfIpAlngDcvZZMrl8vFPK5+XktrWlx3/ehZ5r9+t6e+WVnp1pxnNIjgBe4/6dAysQc8dsmHwPcW9C0h3fW1hans1ltwJhy0GxK7XZbUlMp5Ww2eyan6+ft/f2FAqXGK4CvQk5HueFz7D6GOZtIrK+srupdx1GRBBqNBtzc2AiMr7nPplRdKhb1q6q6zjFhrklEFOUutoQ50xcX86ZlqaZpQrfbBdu2R6/G19zX6XSgh6RX5ubyHCM8nqSID6ICrGiZjGYYxojEsiw4PDwMSL5VKsC8Yf4VRYFzMzMaxwjlJSlCyAQ9l0CW44PBADzXhe7xMdi9HtTrdYjFYkDQL0cn4Xdq2/EAE+InCnvADTf2eah4Sx9vExQjkqXT6aAERICMewd/UAp/IeYANM2joxt+q5VI+ieq2i0Wg3l6DNzHwTERPgo1ko7XBXj3vdlsT2F+UuhIhYkp7u7CarkcrFOCtR3H5JiwbAIeImjT/YQKKBtGjRFCU5IUgFRe7fF4cCNVIPMYo3VKqxwjyNAXNepuopyqnld602qVsfRpEkkz+GFL1wPj6ySXBpJtWVa5xlhpcyhBNwpZHmtX8AGgfIExo0ZpzkWVTBGiXCSEaHh62/PoR0p/vHaczxXGnj4bSo+G78lELU80h1uogBwWLf5YlsPmgDEd4M236xjm+8nm4IuE/9u+/PH2JXZfbwz4zw1WbO+SQPpXfwG/BBgAhCNZiSb/pOQAAAAASUVORK5CYII=);
+}
+.notifyjs-bootstrap-success {
+	color: #468847;
+	background-color: #DFF0D8;
+	border-color: #D6E9C6;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAutJREFUeNq0lctPE0Ecx38zu/RFS1EryqtgJFA08YCiMZIAQQ4eRG8eDGdPJiYeTIwHTfwPiAcvXIwXLwoXPaDxkWgQ6islKlJLSQWLUraPLTv7Gme32zoF9KSTfLO7v53vZ3d/M7/fIth+IO6INt2jjoA7bjHCJoAlzCRw59YwHYjBnfMPqAKWQYKjGkfCJqAF0xwZjipQtA3MxeSG87VhOOYegVrUCy7UZM9S6TLIdAamySTclZdYhFhRHloGYg7mgZv1Zzztvgud7V1tbQ2twYA34LJmF4p5dXF1KTufnE+SxeJtuCZNsLDCQU0+RyKTF27Unw101l8e6hns3u0PBalORVVVkcaEKBJDgV3+cGM4tKKmI+ohlIGnygKX00rSBfszz/n2uXv81wd6+rt1orsZCHRdr1Imk2F2Kob3hutSxW8thsd8AXNaln9D7CTfA6O+0UgkMuwVvEFFUbbAcrkcTA8+AtOk8E6KiQiDmMFSDqZItAzEVQviRkdDdaFgPp8HSZKAEAL5Qh7Sq2lIJBJwv2scUqkUnKoZgNhcDKhKg5aH+1IkcouCAdFGAQsuWZYhOjwFHQ96oagWgRoUov1T9kRBEODAwxM2QtEUl+Wp+Ln9VRo6BcMw4ErHRYjH4/B26AlQoQQTRdHWwcd9AH57+UAXddvDD37DmrBBV34WfqiXPl61g+vr6xA9zsGeM9gOdsNXkgpEtTwVvwOklXLKm6+/p5ezwk4B+j6droBs2CsGa/gNs6RIxazl4Tc25mpTgw/apPR1LYlNRFAzgsOxkyXYLIM1V8NMwyAkJSctD1eGVKiq5wWjSPdjmeTkiKvVW4f2YPHWl3GAVq6ymcyCTgovM3FzyRiDe2TaKcEKsLpJvNHjZgPNqEtyi6mZIm4SRFyLMUsONSSdkPeFtY1n0mczoY3BHTLhwPRy9/lzcziCw9ACI+yql0VLzcGAZbYSM5CCSZg1/9oc/nn7+i8N9p/8An4JMADxhH+xHfuiKwAAAABJRU5ErkJggg==);
+}
+.notifyjs-bootstrap-info {
+	color: #3A87AD;
+	background-color: #D9EDF7;
+	border-color: #BCE8F1;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYFAhkSsdes/QAAA8dJREFUOMvVlGtMW2UYx//POaWHXg6lLaW0ypAtw1UCgbniNOLcVOLmAjHZolOYlxmTGXVZdAnRfXQm+7SoU4mXaOaiZsEpC9FkiQs6Z6bdCnNYruM6KNBw6YWewzl9z+sHImEWv+vz7XmT95f/+3/+7wP814v+efDOV3/SoX3lHAA+6ODeUFfMfjOWMADgdk+eEKz0pF7aQdMAcOKLLjrcVMVX3xdWN29/GhYP7SvnP0cWfS8caSkfHZsPE9Fgnt02JNutQ0QYHB2dDz9/pKX8QjjuO9xUxd/66HdxTeCHZ3rojQObGQBcuNjfplkD3b19Y/6MrimSaKgSMmpGU5WevmE/swa6Oy73tQHA0Rdr2Mmv/6A1n9w9suQ7097Z9lM4FlTgTDrzZTu4StXVfpiI48rVcUDM5cmEksrFnHxfpTtU/3BFQzCQF/2bYVoNbH7zmItbSoMj40JSzmMyX5qDvriA7QdrIIpA+3cdsMpu0nXI8cV0MtKXCPZev+gCEM1S2NHPvWfP/hL+7FSr3+0p5RBEyhEN5JCKYr8XnASMT0xBNyzQGQeI8fjsGD39RMPk7se2bd5ZtTyoFYXftF6y37gx7NeUtJJOTFlAHDZLDuILU3j3+H5oOrD3yWbIztugaAzgnBKJuBLpGfQrS8wO4FZgV+c1IxaLgWVU0tMLEETCos4xMzEIv9cJXQcyagIwigDGwJgOAtHAwAhisQUjy0ORGERiELgG4iakkzo4MYAxcM5hAMi1WWG1yYCJIcMUaBkVRLdGeSU2995TLWzcUAzONJ7J6FBVBYIggMzmFbvdBV44Corg8vjhzC+EJEl8U1kJtgYrhCzgc/vvTwXKSib1paRFVRVORDAJAsw5FuTaJEhWM2SHB3mOAlhkNxwuLzeJsGwqWzf5TFNdKgtY5qHp6ZFf67Y/sAVadCaVY5YACDDb3Oi4NIjLnWMw2QthCBIsVhsUTU9tvXsjeq9+X1d75/KEs4LNOfcdf/+HthMnvwxOD0wmHaXr7ZItn2wuH2SnBzbZAbPJwpPx+VQuzcm7dgRCB57a1uBzUDRL4bfnI0RE0eaXd9W89mpjqHZnUI5Hh2l2dkZZUhOqpi2qSmpOmZ64Tuu9qlz/SEXo6MEHa3wOip46F1n7633eekV8ds8Wxjn37Wl63VVa+ej5oeEZ/82ZBETJjpJ1Rbij2D3Z/1trXUvLsblCK0XfOx0SX2kMsn9dX+d+7Kf6h8o4AIykuffjT8L20LU+w4AZd5VvEPY+XpWqLV327HR7DzXuDnD8r+ovkBehJ8i+y8YAAAAASUVORK5CYII=);
+}
+.notifyjs-bootstrap-warn {
+	color: #C09853;
+	background-color: #FCF8E3;
+	border-color: #FBEED5;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAABJlBMVEXr6eb/2oD/wi7/xjr/0mP/ykf/tQD/vBj/3o7/uQ//vyL/twebhgD/4pzX1K3z8e349vK6tHCilCWbiQymn0jGworr6dXQza3HxcKkn1vWvV/5uRfk4dXZ1bD18+/52YebiAmyr5S9mhCzrWq5t6ufjRH54aLs0oS+qD751XqPhAybhwXsujG3sm+Zk0PTwG6Shg+PhhObhwOPgQL4zV2nlyrf27uLfgCPhRHu7OmLgAafkyiWkD3l49ibiAfTs0C+lgCniwD4sgDJxqOilzDWowWFfAH08uebig6qpFHBvH/aw26FfQTQzsvy8OyEfz20r3jAvaKbhgG9q0nc2LbZxXanoUu/u5WSggCtp1anpJKdmFz/zlX/1nGJiYmuq5Dx7+sAAADoPUZSAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfdBgUBGhh4aah5AAAAlklEQVQY02NgoBIIE8EUcwn1FkIXM1Tj5dDUQhPU502Mi7XXQxGz5uVIjGOJUUUW81HnYEyMi2HVcUOICQZzMMYmxrEyMylJwgUt5BljWRLjmJm4pI1hYp5SQLGYxDgmLnZOVxuooClIDKgXKMbN5ggV1ACLJcaBxNgcoiGCBiZwdWxOETBDrTyEFey0jYJ4eHjMGWgEAIpRFRCUt08qAAAAAElFTkSuQmCC);
+}
+</style><style type="text/css" id="core-notify">.notifyjs-corner {
+	position: fixed;
+	margin: 5px;
+	z-index: 1050;
+}
+
+.notifyjs-corner .notifyjs-wrapper,
+.notifyjs-corner .notifyjs-container {
+	position: relative;
+	display: block;
+	height: inherit;
+	width: inherit;
+	margin: 3px;
+}
+
+.notifyjs-wrapper {
+	z-index: 1;
+	position: absolute;
+	display: inline-block;
+	height: 0;
+	width: 0;
+}
+
+.notifyjs-container {
+	display: none;
+	z-index: 1;
+	position: absolute;
+}
+
+.notifyjs-hidable {
+	cursor: pointer;
+}
+
+[data-notify-text],[data-notify-html] {
+	position: relative;
+}
+
+.notifyjs-arrow {
+	position: absolute;
+	z-index: 2;
+	width: 0;
+	height: 0;
+}</style></head>
+<body>
+	
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="https://honestpool.ru">
+      <img src="assets/images/main_honestpool_logo.png" width="30" height="30" class="d-inline-block align-top me-1 ms-1" alt="">
+      HonestPool
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="index">Главная</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="tools">Инструменты</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="puzzle_1000">Puzzle</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="withdraw">Как вывести?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/homlol/honestpool?tab=readme-ov-file#api">API</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/homlol/honestpool">GIT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://status.honestpool.ru">Status(GPU)</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="about">О проекте</a>
+        </li>
+      </ul>
+      <button class="btn btn-link p-0 border-0 bg-transparent me-3" id="themeToggle" aria-label="Переключить тему" title="Переключить тему" tabindex="0" style="cursor: pointer;">
+        <i class="fa fa-moon-o" id="themeIcon" title="Переключить на тёмную тему"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+		<div class="container mt-2">
+		<br>
+		<center><h3>Добро пожаловать в честный pool BITCOIN PUZZLE от HOMLOL</h3></center>
+				<hr>
+		<div style="overflow: auto;">
+			<table class="table table-bordered">
+				<tbody><tr>
+					<th>Адрес</th>
+					<td>1PWo3JeB9jrGwfHDNpdGK54CRas7fsVzXU</td>
+				</tr>
+				<tr>
+					<th>Область</th>
+					<td>400000000000000000:7fffffffffffffffff (2<sup>70</sup>:2<sup>71</sup>)</td>
+				</tr>
+				<tr>
+					<th>Частей</th>
+					<td>67,108,864</td>
+				</tr>
+				<tr>
+					<th>Ключей</th>
+					<td>1,180,591,620,717,411,303,424</td>
+				</tr>
+				<tr>
+					<th>Ключей(1)</th>
+					<td>17,592,186,044,416</td>
+				</tr>
+				<tr>
+					<th>Часть с адресом</th>
+					<td><b>?</b></td>
+				</tr>
+			</tbody></table>
+		</div>
+		<hr>
+		<div style="overflow: auto;">
+			<table class="table table-bordered statustic-table">
+				<tbody><tr>
+					<th><div class="d-flex justify-content-center"><h4><div class="badge bg-success">Статистика</div></h4></div></th>
+					<th>Час</th>
+					<th>День</th>
+					<th>Неделя</th>
+					<th>Месяц</th>
+					<th>Все время</th>
+				</tr>
+				<tr>
+					<th>Проверено</th>
+					<th>4</th>
+					<th>65</th>
+					<th>490</th>
+					<th>1583</th>
+					<th>23398</th>
+				</tr>
+				<tr>
+					<th>Средняя скорость</th>
+					<th>
+						19.55 Gkeys/s						<svg style="float: right;" data-toggle="tooltip" data-placement="top" fill="#000000" width="20px" height="20px" viewBox="0 0 36 36" version="1.1" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="19546873382" data-bs-original-title="19546873382">
+						    <path class="clr-i-outline clr-i-outline-path-1" d="M18,6A12,12,0,1,0,30,18,12,12,0,0,0,18,6Zm0,22A10,10,0,1,1,28,18,10,10,0,0,1,18,28Z"></path><path class="clr-i-outline clr-i-outline-path-2" d="M18,20.07a1.3,1.3,0,0,1-1.3-1.3v-6a1.3,1.3,0,1,1,2.6,0v6A1.3,1.3,0,0,1,18,20.07Z"></path><circle class="clr-i-outline clr-i-outline-path-3" cx="17.95" cy="23.02" r="1.5"></circle>
+						    <rect x="0" y="0" width="36" height="36" fill-opacity="0"></rect>
+						</svg>
+					</th>
+					<th>
+						13.23 Gkeys/s						<svg style="float: right;" data-toggle="tooltip" data-placement="top" fill="#000000" width="20px" height="20px" viewBox="0 0 36 36" version="1.1" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="13234862186" data-bs-original-title="13234862186">
+						    <path class="clr-i-outline clr-i-outline-path-1" d="M18,6A12,12,0,1,0,30,18,12,12,0,0,0,18,6Zm0,22A10,10,0,1,1,28,18,10,10,0,0,1,18,28Z"></path><path class="clr-i-outline clr-i-outline-path-2" d="M18,20.07a1.3,1.3,0,0,1-1.3-1.3v-6a1.3,1.3,0,1,1,2.6,0v6A1.3,1.3,0,0,1,18,20.07Z"></path><circle class="clr-i-outline clr-i-outline-path-3" cx="17.95" cy="23.02" r="1.5"></circle>
+						    <rect x="0" y="0" width="36" height="36" fill-opacity="0"></rect>
+						</svg>
+					</th>
+					<th>
+						14.25 Gkeys/s						<svg style="float: right;" data-toggle="tooltip" data-placement="top" fill="#000000" width="20px" height="20px" viewBox="0 0 36 36" version="1.1" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="14252928508" data-bs-original-title="14252928508">
+						    <path class="clr-i-outline clr-i-outline-path-1" d="M18,6A12,12,0,1,0,30,18,12,12,0,0,0,18,6Zm0,22A10,10,0,1,1,28,18,10,10,0,0,1,18,28Z"></path><path class="clr-i-outline clr-i-outline-path-2" d="M18,20.07a1.3,1.3,0,0,1-1.3-1.3v-6a1.3,1.3,0,1,1,2.6,0v6A1.3,1.3,0,0,1,18,20.07Z"></path><circle class="clr-i-outline clr-i-outline-path-3" cx="17.95" cy="23.02" r="1.5"></circle>
+						    <rect x="0" y="0" width="36" height="36" fill-opacity="0"></rect>
+						</svg>
+					</th>
+					<th>
+						10.74 Gkeys/s						<svg style="float: right;" data-toggle="tooltip" data-placement="top" fill="#000000" width="20px" height="20px" viewBox="0 0 36 36" version="1.1" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="10743993251" data-bs-original-title="10743993251">
+						    <path class="clr-i-outline clr-i-outline-path-1" d="M18,6A12,12,0,1,0,30,18,12,12,0,0,0,18,6Zm0,22A10,10,0,1,1,28,18,10,10,0,0,1,18,28Z"></path><path class="clr-i-outline clr-i-outline-path-2" d="M18,20.07a1.3,1.3,0,0,1-1.3-1.3v-6a1.3,1.3,0,1,1,2.6,0v6A1.3,1.3,0,0,1,18,20.07Z"></path><circle class="clr-i-outline clr-i-outline-path-3" cx="17.95" cy="23.02" r="1.5"></circle>
+						    <rect x="0" y="0" width="36" height="36" fill-opacity="0"></rect>
+						</svg>
+					</th>
+					<th>
+						14.35 Gkeys/s						<svg style="float: right;" data-toggle="tooltip" data-placement="top" fill="#000000" width="20px" height="20px" viewBox="0 0 36 36" version="1.1" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="14347550978" data-bs-original-title="14347550978">
+						    <path class="clr-i-outline clr-i-outline-path-1" d="M18,6A12,12,0,1,0,30,18,12,12,0,0,0,18,6Zm0,22A10,10,0,1,1,28,18,10,10,0,0,1,18,28Z"></path><path class="clr-i-outline clr-i-outline-path-2" d="M18,20.07a1.3,1.3,0,0,1-1.3-1.3v-6a1.3,1.3,0,1,1,2.6,0v6A1.3,1.3,0,0,1,18,20.07Z"></path><circle class="clr-i-outline clr-i-outline-path-3" cx="17.95" cy="23.02" r="1.5"></circle>
+						    <rect x="0" y="0" width="36" height="36" fill-opacity="0"></rect>
+						</svg>
+					</th>
+				</tr>
+				<!-- <tr>
+					<th>Участников</th>
+					<th>1</th>
+					<th>1</th>
+					<th>1</th>
+					<th>1</th>
+					<th>1</th>
+				</tr> -->
+			</tbody></table>
+		</div>
+		<!-- <div class="form-group mt-2">
+	        <label for="monthPicker">Выберите месяц:</label>
+	        <input type="text" id="monthPicker" class="form-control" style="max-width: 100px;" value="10.2026" readonly>
+	    </div> -->
+		<div style="overflow: auto;">
+		  <canvas style="min-height: 200px; max-height: 300px; width: 1296px; display: block; box-sizing: border-box; height: 300px;" id="myChart" width="1296" height="300"></canvas>
+		</div>
+		<!-- <div style="overflow: auto;">
+		  <canvas style="min-height: 200px; max-height: 300px; width: 100%;" id="myChartSpeed"></canvas>
+		</div> -->
+		<hr>
+		<p>Как построен pool?</p>
+		<p>Можно выбрать любую область (часть) от 1 до 67,108,864 и проверить ее при помощи <a href="https://github.com/FixedPaul/VanitySearch-Bitcrack">https://github.com/FixedPaul/VanitySearch-Bitcrack</a>, и пометить ее как "<span class="badge bg-success">Проверено</span>".</p>
+		<p><font color="red">Защита от жульничества!</font> Для того, чтобы пометить часть, как "<span class="badge bg-success">Проверено</span>", нужно указать 5 закрытых ключей для каждого из проверочных адресов (флаги), диапазона, который вы проверяете.</p>
+		<hr>
+		Проверено частей: <b>23398</b> из <b>67,108,864</b> | <a href="puzzlePoolChecked?id=71">Список</a><br>
+		Проверено ключей: <b>411,621,969,067,245,568</b> из <b>1,180,591,620,717,411,303,424</b><br>
+		<lable>Прогресс:</lable>
+		<div class="progress" style="position: relative;">
+		  <div class="progress-bar" role="progressbar" style="width: 0.034865736961364746%;"></div>
+		  <div style="position: absolute; top: 50%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%);">0.034865736961364746%</div>
+		</div>
+		<hr>
+				<form action="" method="post">
+			<div class="d-flex mb-2">
+				<input type="text" class="form-control" name="hex_or_number" placeholder="Поиск части (номер или hex)" value="">
+				<button type="submit" name="search" class="btn btn-primary ml-2">Найти</button>
+							</div>
+		</form>
+		<nav class="pagination-row"><ul class="pagination justify-content-center"><li class="page-item prev disabled"><span class="page-link">«</span></li><li class="page-item  active"><a class="page-link" href="https://honestpool.ru/puzzle?id=71">1</a></li><li class="page-item"><a class="page-link" href="https://honestpool.ru/puzzle?id=71&amp;page=2">2</a></li><li class="page-item"><a class="page-link" href="https://honestpool.ru/puzzle?id=71&amp;page=3">3</a></li><li class="page-item"><a class="page-link" href="https://honestpool.ru/puzzle?id=71&amp;page=4">4</a></li><li class="page-item"><a class="page-link" href="https://honestpool.ru/puzzle?id=71&amp;page=5">5</a></li><li class="page-item"><a class="page-link" href="https://honestpool.ru/puzzle?id=71&amp;page=6">6</a></li><li class="page-item"><a class="page-link" href="https://honestpool.ru/puzzle?id=71&amp;page=7">7</a></li><li class="page-item"><a class="page-link" href="https://honestpool.ru/puzzle?id=71&amp;page=174964">?</a></li><li class="page-item"><a class="page-link" href="https://honestpool.ru/puzzle?id=71&amp;page=671088">671088</a></li><li class="page-item"><a class="page-link" href="https://honestpool.ru/puzzle?id=71&amp;page=671089">671089</a></li><li class="page-item"><a class="page-link" href="https://honestpool.ru/puzzle?id=71&amp;page=2">»</a></li></ul></nav>		<div style="overflow-y: auto;">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Number</th>
+						<th>Start hex</th>
+						<th>End hex</th>
+						<th>Comment</th>
+						<th>Status</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+											<tr class="tr_1" id="tag_search_1">
+					      <th>1</th>
+					      <td>400000000000000000</td>
+					      <td>400000100000000000</td>
+						  					      	<td class="comment">Kingon</td>
+					      					      				      	  	<td><span class="badge bg-success">Проверено</span></td>
+				      	  	<td>30.11.2025 в 22:49</td>
+				      	  					    </tr>
+											<tr class="tr_2" id="tag_search_2">
+					      <th>2</th>
+					      <td>400000100000000000</td>
+					      <td>400000200000000000</td>
+						  					      	<td class="comment">Good luck to everyone! 
+Donation address: 1HooooooooooLprshiHCKDfH5vCDPdp8FQ</td>
+					      					      				      	  	<td><span class="badge bg-success">Проверено</span></td>
+				      	  	<td>09.12.2025 в 23:49</td>
+				      	  					    </tr>
+											<tr class="tr_3" id="tag_search_3">
+					      <th>3</th>
+					      <td>400000200000000000</td>
+					      <td>400000300000000000</td>
+						  					      	<td class="comment">Do not follow the &amp;quot;How to withdraw?&amp;quot; tutorial as written. It is misleading.
+Make sure to untick &amp;quot;Replace-by-Fee (RBF)&amp;quot; and avoid using slipstream.mara to broadcast the transaction.
+Use the latest Electrum or build it yourself or just install it in your mobile from Google Play Store
+Broadcast both BTC and BCH simultaneously.
+Good luck to everyone! 
+Donation address: 1HooooooooooLprshiHCKDfH5vCDPdp8FQ</td>
+					      					      				      	  	<td><span class="badge bg-success">Проверено</span></td>
+				      	  	<td>10.12.2025 в 01:27</td>
+				      	  					    </tr>
+											<tr class="tr_4" id="tag_search_4">
+					      <th>4</th>
+					      <td>400000300000000000</td>
+					      <td>400000400000000000</td>
+						  					      	<td class="comment">The comment in the third(3) range is incorrect and serves a selfish purpose. It attempts to confuse people in order to divert funds during a withdrawal attempt, as was the case with puzzles 66 and 69, where a transaction was intercepted using RBF in the public mempool. The fund withdrawal guide was written based on the input from experienced and knowledgeable individuals. I am attaching links from Bitcointalk: https://bitcointalk.org/index.php?topic=1306983.msg64379149#msg64379149 and https://bitcointalk.org/index.php?topic=1306983.msg65255375#msg65255375. Based on these posts, a step-by-step guide with examples and pictures was created. Good luck to everyone! And first and foremost, use your own head, not the comments of unknown people...</td>
+					      					      				      	  	<td><span class="badge bg-success">Проверено</span></td>
+				      	  	<td>10.12.2025 в 16:01</td>
+				      	  					    </tr>
+											<tr class="tr_5" id="tag_search_5">
+					      <th>5</th>
+					      <td>400000400000000000</td>
+					      <td>400000500000000000</td>
+						  					      	<td class="comment">RBF = true means the transaction is replaceable. The issue is that when the transaction is broadcast, the public key is revealed. Within a few seconds someone could derive the private key and double-spend the funds. Anyway, as said, use your own brain or ask your preferred AI. The idea behind this site is good, but not entirely honest.
+Good luck everyone! 
+Donation address: 1HooooooooooLprshiHCKDfH5vCDPdp8FQ</td>
+					      					      				      	  	<td><span class="badge bg-success">Проверено</span></td>
+				      	  	<td>10.12.2025 в 19:27</td>
+				      	  					    </tr>
+											<tr class="tr_6" id="tag_search_6">
+					      <th>6</th>
+					      <td>400000500000000000</td>
+					      <td>400000600000000000</td>
+						  					      	<td class="comment">Resolving each range costs about 0.1 dollar.
+With more than 60 million ranges, the total cost would exceed 6 million dollars to fully resolve this +7 BTC puzzle.
+At that scale, you either need exceptional luck or free electricity.
+Good luck to everyone! 
+Donation address: 1HooooooooooLprshiHCKDfH5vCDPdp8FQ</td>
+					      					      				      	  	<td><span class="badge bg-success">Проверено</span></td>
+				      	  	<td>11.12.2025 в 02:14</td>
+				      	  					    </tr>
+											<tr class="tr_7" id="tag_search_7">
+					      <th>7</th>
+					      <td>400000600000000000</td>
+					      <td>400000700000000000</td>
+						  					      	<td class="comment">Thank you for your attention and time on this project! I didn&amp;#039;t use your software; I scanned the subrange with my own, I&amp;#039;m just confirming the pass with private keys. Interesting.
+Good luck and patience to everyone in solving the puzzles, and also Happy upcoming New 2026 Year!!! ????????????
+Those who wish can buy me a beer! ????
+1ForBEERkRQVH6Lg7sSpUSNDKQVQQZmVoc</td>
+					      					      				      	  	<td><span class="badge bg-success">Проверено</span></td>
+				      	  	<td>10.12.2025 в 22:51</td>
+				      	  					    </tr>
+											<tr class="tr_8" id="tag_search_8">
+					      <th>8</th>
+					      <td>400000700000000000</td>
+					      <td>400000800000000000</td>
+						  					      	<td class="comment">bc1pnv5xygge4s4qysausxa93cf04yhzvmrrlndd6ganq8etlq80huas7ve0zn</td>
+					      					      				      	  	<td><span class="badge bg-success">Проверено</span></td>
+				      	  	<td>02.02.2026 в 14:30</td>
+				      	  					    </tr>
+											<tr class="tr_9" id="tag_search_9">
+					      <th>9</th>
+					      <td>400000800000000000</td>
+					      <td>400000900000000000</td>
+						  					      	<td class="comment">bc1pnv5xygge4s4qysausxa93cf04yhzvmrrlndd6ganq8etlq80huas7ve0zn</td>
+					      					      				      	  	<td><span class="badge bg-success">Проверено</span></td>
+				      	  	<td>06.03.2026 в 15:01</td>
+				      	  					    </tr>
+											<tr class="tr_10" id="tag_search_10">
+					      <th>10</th>
+					      <td>400000900000000000</td>
+					      <td>400000a00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 12.10.2026 в 20:44</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 10)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_11" id="tag_search_11">
+					      <th>11</th>
+					      <td>400000a00000000000</td>
+					      <td>400000b00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 12.10.2026 в 20:44</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 11)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_12" id="tag_search_12">
+					      <th>12</th>
+					      <td>400000b00000000000</td>
+					      <td>400000c00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:46</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 12)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_13" id="tag_search_13">
+					      <th>13</th>
+					      <td>400000c00000000000</td>
+					      <td>400000d00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:46</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 13)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_14" id="tag_search_14">
+					      <th>14</th>
+					      <td>400000d00000000000</td>
+					      <td>400000e00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:46</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 14)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_15" id="tag_search_15">
+					      <th>15</th>
+					      <td>400000e00000000000</td>
+					      <td>400000f00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:46</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 15)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_16" id="tag_search_16">
+					      <th>16</th>
+					      <td>400000f00000000000</td>
+					      <td>400001000000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:46</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 16)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_17" id="tag_search_17">
+					      <th>17</th>
+					      <td>400001000000000000</td>
+					      <td>400001100000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:46</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 17)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_18" id="tag_search_18">
+					      <th>18</th>
+					      <td>400001100000000000</td>
+					      <td>400001200000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:47</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 18)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_19" id="tag_search_19">
+					      <th>19</th>
+					      <td>400001200000000000</td>
+					      <td>400001300000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:47</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 19)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_20" id="tag_search_20">
+					      <th>20</th>
+					      <td>400001300000000000</td>
+					      <td>400001400000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:47</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 20)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_21" id="tag_search_21">
+					      <th>21</th>
+					      <td>400001400000000000</td>
+					      <td>400001500000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:47</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 21)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_22" id="tag_search_22">
+					      <th>22</th>
+					      <td>400001500000000000</td>
+					      <td>400001600000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:47</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 22)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_23" id="tag_search_23">
+					      <th>23</th>
+					      <td>400001600000000000</td>
+					      <td>400001700000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:47</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 23)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_24" id="tag_search_24">
+					      <th>24</th>
+					      <td>400001700000000000</td>
+					      <td>400001800000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:47</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 24)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_25" id="tag_search_25">
+					      <th>25</th>
+					      <td>400001800000000000</td>
+					      <td>400001900000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:48</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 25)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_26" id="tag_search_26">
+					      <th>26</th>
+					      <td>400001900000000000</td>
+					      <td>400001a00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:48</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 26)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_27" id="tag_search_27">
+					      <th>27</th>
+					      <td>400001a00000000000</td>
+					      <td>400001b00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:48</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 27)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_28" id="tag_search_28">
+					      <th>28</th>
+					      <td>400001b00000000000</td>
+					      <td>400001c00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:48</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 28)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_29" id="tag_search_29">
+					      <th>29</th>
+					      <td>400001c00000000000</td>
+					      <td>400001d00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:48</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 29)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_30" id="tag_search_30">
+					      <th>30</th>
+					      <td>400001d00000000000</td>
+					      <td>400001e00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:48</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 30)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_31" id="tag_search_31">
+					      <th>31</th>
+					      <td>400001e00000000000</td>
+					      <td>400001f00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:48</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 31)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_32" id="tag_search_32">
+					      <th>32</th>
+					      <td>400001f00000000000</td>
+					      <td>400002000000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:48</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 32)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_33" id="tag_search_33">
+					      <th>33</th>
+					      <td>400002000000000000</td>
+					      <td>400002100000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:49</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 33)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_34" id="tag_search_34">
+					      <th>34</th>
+					      <td>400002100000000000</td>
+					      <td>400002200000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:49</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 34)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_35" id="tag_search_35">
+					      <th>35</th>
+					      <td>400002200000000000</td>
+					      <td>400002300000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:49</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 35)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_36" id="tag_search_36">
+					      <th>36</th>
+					      <td>400002300000000000</td>
+					      <td>400002400000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:49</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 36)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_37" id="tag_search_37">
+					      <th>37</th>
+					      <td>400002400000000000</td>
+					      <td>400002500000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:49</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 37)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_38" id="tag_search_38">
+					      <th>38</th>
+					      <td>400002500000000000</td>
+					      <td>400002600000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:49</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 38)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_39" id="tag_search_39">
+					      <th>39</th>
+					      <td>400002600000000000</td>
+					      <td>400002700000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:49</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 39)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_40" id="tag_search_40">
+					      <th>40</th>
+					      <td>400002700000000000</td>
+					      <td>400002800000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:50</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 40)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_41" id="tag_search_41">
+					      <th>41</th>
+					      <td>400002800000000000</td>
+					      <td>400002900000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:50</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 41)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_42" id="tag_search_42">
+					      <th>42</th>
+					      <td>400002900000000000</td>
+					      <td>400002a00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.08.2026 в 14:50</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 42)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_43" id="tag_search_43">
+					      <th>43</th>
+					      <td>400002a00000000000</td>
+					      <td>400002b00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 04.12.2025 в 00:28</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 43)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_44" id="tag_search_44">
+					      <th>44</th>
+					      <td>400002b00000000000</td>
+					      <td>400002c00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 02.12.2025 в 14:59</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 44)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_45" id="tag_search_45">
+					      <th>45</th>
+					      <td>400002c00000000000</td>
+					      <td>400002d00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 08.12.2025 в 08:28</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 45)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_46" id="tag_search_46">
+					      <th>46</th>
+					      <td>400002d00000000000</td>
+					      <td>400002e00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 10.01.2026 в 00:41</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 46)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_47" id="tag_search_47">
+					      <th>47</th>
+					      <td>400002e00000000000</td>
+					      <td>400002f00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 12.12.2025 в 07:39</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 47)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_48" id="tag_search_48">
+					      <th>48</th>
+					      <td>400002f00000000000</td>
+					      <td>400003000000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 16.03.2026 в 19:37</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 48)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_49" id="tag_search_49">
+					      <th>49</th>
+					      <td>400003000000000000</td>
+					      <td>400003100000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 30.12.2025 в 06:53</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 49)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_50" id="tag_search_50">
+					      <th>50</th>
+					      <td>400003100000000000</td>
+					      <td>400003200000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 27.12.2025 в 01:41</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 50)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_51" id="tag_search_51">
+					      <th>51</th>
+					      <td>400003200000000000</td>
+					      <td>400003300000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 27.12.2025 в 04:11</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 51)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_52" id="tag_search_52">
+					      <th>52</th>
+					      <td>400003300000000000</td>
+					      <td>400003400000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 08.12.2025 в 19:43</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 52)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_53" id="tag_search_53">
+					      <th>53</th>
+					      <td>400003400000000000</td>
+					      <td>400003500000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 08.12.2025 в 19:43</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 53)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_54" id="tag_search_54">
+					      <th>54</th>
+					      <td>400003500000000000</td>
+					      <td>400003600000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 20.11.2025 в 22:29</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 54)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_55" id="tag_search_55">
+					      <th>55</th>
+					      <td>400003600000000000</td>
+					      <td>400003700000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 03.12.2025 в 05:18</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 55)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_56" id="tag_search_56">
+					      <th>56</th>
+					      <td>400003700000000000</td>
+					      <td>400003800000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 01.12.2025 в 16:31</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 56)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_57" id="tag_search_57">
+					      <th>57</th>
+					      <td>400003800000000000</td>
+					      <td>400003900000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 07.12.2025 в 16:53</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 57)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_58" id="tag_search_58">
+					      <th>58</th>
+					      <td>400003900000000000</td>
+					      <td>400003a00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 08.12.2025 в 18:32</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 58)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_59" id="tag_search_59">
+					      <th>59</th>
+					      <td>400003a00000000000</td>
+					      <td>400003b00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 10.12.2025 в 01:32</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 59)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_60" id="tag_search_60">
+					      <th>60</th>
+					      <td>400003b00000000000</td>
+					      <td>400003c00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 17.12.2025 в 21:59</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 60)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_61" id="tag_search_61">
+					      <th>61</th>
+					      <td>400003c00000000000</td>
+					      <td>400003d00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 02.01.2026 в 00:20</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 61)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_62" id="tag_search_62">
+					      <th>62</th>
+					      <td>400003d00000000000</td>
+					      <td>400003e00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 26.12.2025 в 16:19</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 62)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_63" id="tag_search_63">
+					      <th>63</th>
+					      <td>400003e00000000000</td>
+					      <td>400003f00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 17.12.2025 в 21:59</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 63)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_64" id="tag_search_64">
+					      <th>64</th>
+					      <td>400003f00000000000</td>
+					      <td>400004000000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 08.12.2025 в 11:26</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 64)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_65" id="tag_search_65">
+					      <th>65</th>
+					      <td>400004000000000000</td>
+					      <td>400004100000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 08.12.2025 в 22:05</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 65)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_66" id="tag_search_66">
+					      <th>66</th>
+					      <td>400004100000000000</td>
+					      <td>400004200000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 08.12.2025 в 11:26</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 66)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_67" id="tag_search_67">
+					      <th>67</th>
+					      <td>400004200000000000</td>
+					      <td>400004300000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 15.02.2026 в 19:26</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 67)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_68" id="tag_search_68">
+					      <th>68</th>
+					      <td>400004300000000000</td>
+					      <td>400004400000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 08.12.2025 в 20:11</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 68)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_69" id="tag_search_69">
+					      <th>69</th>
+					      <td>400004400000000000</td>
+					      <td>400004500000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 07.12.2025 в 03:43</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 69)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_70" id="tag_search_70">
+					      <th>70</th>
+					      <td>400004500000000000</td>
+					      <td>400004600000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 25.02.2026 в 19:45</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 70)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_71" id="tag_search_71">
+					      <th>71</th>
+					      <td>400004600000000000</td>
+					      <td>400004700000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 10.06.2026 в 20:25</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 71)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_72" id="tag_search_72">
+					      <th>72</th>
+					      <td>400004700000000000</td>
+					      <td>400004800000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 12.12.2025 в 10:38</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 72)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_73" id="tag_search_73">
+					      <th>73</th>
+					      <td>400004800000000000</td>
+					      <td>400004900000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 12.12.2025 в 10:37</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 73)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_74" id="tag_search_74">
+					      <th>74</th>
+					      <td>400004900000000000</td>
+					      <td>400004a00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.12.2025 в 05:47</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 74)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_75" id="tag_search_75">
+					      <th>75</th>
+					      <td>400004a00000000000</td>
+					      <td>400004b00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 03.06.2026 в 23:11</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 75)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_76" id="tag_search_76">
+					      <th>76</th>
+					      <td>400004b00000000000</td>
+					      <td>400004c00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 19.12.2025 в 05:48</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 76)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_77" id="tag_search_77">
+					      <th>77</th>
+					      <td>400004c00000000000</td>
+					      <td>400004d00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 08.03.2026 в 09:35</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 77)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_78" id="tag_search_78">
+					      <th>78</th>
+					      <td>400004d00000000000</td>
+					      <td>400004e00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 03.03.2026 в 17:46</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 78)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_79" id="tag_search_79">
+					      <th>79</th>
+					      <td>400004e00000000000</td>
+					      <td>400004f00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 02.03.2026 в 19:45</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 79)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_80" id="tag_search_80">
+					      <th>80</th>
+					      <td>400004f00000000000</td>
+					      <td>400005000000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 02.03.2026 в 19:16</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 80)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_81" id="tag_search_81">
+					      <th>81</th>
+					      <td>400005000000000000</td>
+					      <td>400005100000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 07.01.2026 в 08:57</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 81)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_82" id="tag_search_82">
+					      <th>82</th>
+					      <td>400005100000000000</td>
+					      <td>400005200000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 08.03.2026 в 09:35</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 82)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_83" id="tag_search_83">
+					      <th>83</th>
+					      <td>400005200000000000</td>
+					      <td>400005300000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 07.01.2026 в 08:57</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 83)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_84" id="tag_search_84">
+					      <th>84</th>
+					      <td>400005300000000000</td>
+					      <td>400005400000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 07.01.2026 в 08:57</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 84)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_85" id="tag_search_85">
+					      <th>85</th>
+					      <td>400005400000000000</td>
+					      <td>400005500000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 22.04.2026 в 20:08</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 85)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_86" id="tag_search_86">
+					      <th>86</th>
+					      <td>400005500000000000</td>
+					      <td>400005600000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 11.12.2025 в 07:59</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 86)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_87" id="tag_search_87">
+					      <th>87</th>
+					      <td>400005600000000000</td>
+					      <td>400005700000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 08.12.2025 в 22:05</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 87)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_88" id="tag_search_88">
+					      <th>88</th>
+					      <td>400005700000000000</td>
+					      <td>400005800000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 22.04.2026 в 20:03</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 88)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_89" id="tag_search_89">
+					      <th>89</th>
+					      <td>400005800000000000</td>
+					      <td>400005900000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 10.01.2026 в 15:36</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 89)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_90" id="tag_search_90">
+					      <th>90</th>
+					      <td>400005900000000000</td>
+					      <td>400005a00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 30.04.2026 в 22:42</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 90)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_91" id="tag_search_91">
+					      <th>91</th>
+					      <td>400005a00000000000</td>
+					      <td>400005b00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 07.01.2026 в 08:57</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 91)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_92" id="tag_search_92">
+					      <th>92</th>
+					      <td>400005b00000000000</td>
+					      <td>400005c00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 07.01.2026 в 08:57</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 92)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_93" id="tag_search_93">
+					      <th>93</th>
+					      <td>400005c00000000000</td>
+					      <td>400005d00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 07.01.2026 в 08:57</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 93)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_94" id="tag_search_94">
+					      <th>94</th>
+					      <td>400005d00000000000</td>
+					      <td>400005e00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 07.01.2026 в 08:57</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 94)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_95" id="tag_search_95">
+					      <th>95</th>
+					      <td>400005e00000000000</td>
+					      <td>400005f00000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 17.06.2026 в 16:15</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 95)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_96" id="tag_search_96">
+					      <th>96</th>
+					      <td>400005f00000000000</td>
+					      <td>400006000000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 07.01.2026 в 08:57</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 96)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_97" id="tag_search_97">
+					      <th>97</th>
+					      <td>400006000000000000</td>
+					      <td>400006100000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 26.02.2026 в 23:50</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 97)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_98" id="tag_search_98">
+					      <th>98</th>
+					      <td>400006100000000000</td>
+					      <td>400006200000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 07.01.2026 в 08:57</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 98)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_99" id="tag_search_99">
+					      <th>99</th>
+					      <td>400006200000000000</td>
+					      <td>400006300000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 24.05.2026 в 23:48</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 99)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+											<tr class="tr_100" id="tag_search_100">
+					      <th>100</th>
+					      <td>400006300000000000</td>
+					      <td>400006400000000000</td>
+						  					      	<td class="comment"><span class="badge bg-warning">Клик по проверке: 28.09.2026 в 18:03</span></td>
+					      					      					      	<td class="status"><span class="badge bg-secondary">Не проверено</span></td>
+					      						      		<td class="button_select_range"><button type="button" class="btn btn-warning" onclick="select_range(71, 100)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Проверить</button></td>
+					      					      	  					    </tr>
+									</tbody>
+			</table>
+		</div>
+		<nav class="pagination-row"><ul class="pagination justify-content-center"><li class="page-item prev disabled"><span class="page-link">«</span></li><li class="page-item  active"><a class="page-link" href="https://honestpool.ru/puzzle?id=71">1</a></li><li class="page-item"><a class="page-link" href="https://honestpool.ru/puzzle?id=71&amp;page=2">2</a></li><li class="page-item"><a class="page-link" href="https://honestpool.ru/puzzle?id=71&amp;page=3">3</a></li><li class="page-item"><a class="page-link" href="https://honestpool.ru/puzzle?id=71&amp;page=4">4</a></li><li class="page-item"><a class="page-link" href="https://honestpool.ru/puzzle?id=71&amp;page=5">5</a></li><li class="page-item"><a class="page-link" href="https://honestpool.ru/puzzle?id=71&amp;page=6">6</a></li><li class="page-item"><a class="page-link" href="https://honestpool.ru/puzzle?id=71&amp;page=7">7</a></li><li class="page-item"><a class="page-link" href="https://honestpool.ru/puzzle?id=71&amp;page=174964">?</a></li><li class="page-item"><a class="page-link" href="https://honestpool.ru/puzzle?id=71&amp;page=671088">671088</a></li><li class="page-item"><a class="page-link" href="https://honestpool.ru/puzzle?id=71&amp;page=671089">671089</a></li><li class="page-item"><a class="page-link" href="https://honestpool.ru/puzzle?id=71&amp;page=2">»</a></li></ul></nav>	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalCenterTitle">Проверочные адреса</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	          <span aria-hidden="true">×</span>
+	        
+	      </div>
+	      <div class="modal-body">
+	      	<div class="d-flex justify-content-center">
+		      	<div class="spinner-border text-primary result_ajax_loader" role="status">
+				  <span class="sr-only">Загрузка...</span>
+				</div>
+			</div>
+	        <div class="result_ajax" style="display: none;">
+	        </div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+	        <button type="button" class="btn btn-primary save_select_range" onclick="save_select_range()">Отправить</button>
+	      </div>
+	    </div>
+	  </div>
+	  <!-- Дополнительная подпись -->
+		<p class="text-center text-muted mt-4 small">
+		    <i class="bi bi-c-circle me-1"></i> 2025 Bitcoin Honest Pool Search. Математический проект. Не является финансовой организацией.
+		</p>
+	</div>
+	<script src="assets/jquery/jquery-3.7.1.min.js"></script>
+	<!-- <script src="assets/bootstrap/js/bootstrap.min.js"></script> -->
+	<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/plugin/bignumber.min.js"></script>
+	<script src="assets/plugin/chartjs/chart.js"></script>
+	<script src="assets/plugin/bootstrap-datepicker-1.9.0-dist/js/bootstrap-datepicker.min.js"></script>
+	<script src="assets/plugin/notify/notify.js"></script>
+	<script src="assets/plugin/sweetalert/sweetalert.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$.notify("Осталось запросов: 9 из 10. (Лимит 10 зап. за 60 сек.)", {className: "warn", position: "top right"});
+			/*swal("Осталось запросов", "9 из 60", "warning");*/
+		});
+	</script>
+	<script>
+		$(document).ready(function() {
+		    // Инициализация datepicker с выбором только месяцев
+		    $('#monthPicker').datepicker({
+		        language: "ru", // Русский язык
+		        format: "mm.yyyy", // Формат месяц/год
+		        startView: 1, // Начинать с просмотра месяцев
+		        minViewMode: 1, // Минимальный режим просмотра - месяцы
+		        maxViewMode: 2, // Максимальный режим просмотра - годы
+		        
+		        // Ограничиваем выбор только текущим и прошлыми месяцами
+		        endDate: "0m", // Текущий месяц как конечная дата
+		        
+		        // Настройки для выбора только месяцев
+		        autoclose: true,
+		        todayHighlight: true,
+		        keyboardNavigation: false,
+		        
+		        // Кастомизация для русского языка (если нужно переопределить)
+		        months: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"],
+		        monthsShort: ["Янв", "Фев", "Мар", "Апр", "Май", "Июн", "Июл", "Авг", "Сен", "Окт", "Ноя", "Дек"]
+		    }).on('show', function(e) {
+		        // Дополнительная логика при показе календаря
+		        $('.datepicker-dropdown').addClass('datepicker-month');
+		    });
+		    
+		    // Устанавливаем текущий месяц по умолчанию
+		    // var currentDate = new Date();
+		    // var currentMonth = ('0' + (currentDate.getMonth() + 1)).slice(-2);
+		    // var currentYear = currentDate.getFullYear();
+		    // $('#monthPicker').datepicker('setDate', currentMonth + '/' + currentYear);
+		});
+	</script>
+	<script>
+		let mass_chart = {"15.11.2025":4,"16.11.2025":24,"17.11.2025":24,"18.11.2025":24,"19.11.2025":24,"20.11.2025":28,"21.11.2025":32,"22.11.2025":39,"23.11.2025":31,"24.11.2025":45,"25.11.2025":48,"26.11.2025":57,"27.11.2025":56,"28.11.2025":49,"29.11.2025":67,"30.11.2025":73,"01.12.2025":69,"02.12.2025":131,"03.12.2025":82,"04.12.2025":82,"05.12.2025":97,"06.12.2025":49,"07.12.2025":64,"08.12.2025":66,"09.12.2025":79,"10.12.2025":134,"11.12.2025":72,"12.12.2025":68,"13.12.2025":72,"14.12.2025":71,"15.12.2025":84,"16.12.2025":45,"17.12.2025":59,"18.12.2025":67,"19.12.2025":75,"20.12.2025":67,"21.12.2025":62,"22.12.2025":74,"23.12.2025":70,"24.12.2025":65,"25.12.2025":66,"26.12.2025":61,"27.12.2025":66,"28.12.2025":68,"29.12.2025":66,"30.12.2025":57,"31.12.2025":63,"01.01.2026":73,"02.01.2026":76,"03.01.2026":74,"04.01.2026":57,"05.01.2026":72,"06.01.2026":62,"07.01.2026":59,"08.01.2026":58,"09.01.2026":64,"10.01.2026":62,"11.01.2026":59,"12.01.2026":47,"13.01.2026":60,"14.01.2026":63,"15.01.2026":63,"16.01.2026":64,"17.01.2026":63,"18.01.2026":54,"19.01.2026":62,"20.01.2026":60,"21.01.2026":57,"22.01.2026":73,"23.01.2026":77,"24.01.2026":84,"25.01.2026":65,"26.01.2026":61,"27.01.2026":63,"28.01.2026":74,"29.01.2026":94,"30.01.2026":88,"31.01.2026":130,"01.02.2026":101,"02.02.2026":120,"03.02.2026":137,"04.02.2026":133,"05.02.2026":134,"06.02.2026":133,"07.02.2026":127,"08.02.2026":132,"09.02.2026":123,"10.02.2026":137,"11.02.2026":113,"12.02.2026":105,"13.02.2026":121,"14.02.2026":120,"15.02.2026":117,"16.02.2026":118,"17.02.2026":112,"18.02.2026":135,"19.02.2026":129,"20.02.2026":117,"21.02.2026":120,"22.02.2026":107,"23.02.2026":109,"24.02.2026":120,"25.02.2026":124,"26.02.2026":106,"27.02.2026":105,"28.02.2026":109,"01.03.2026":106,"02.03.2026":111,"03.03.2026":117,"04.03.2026":119,"05.03.2026":114,"06.03.2026":130,"07.03.2026":108,"08.03.2026":109,"09.03.2026":115,"10.03.2026":111,"11.03.2026":108,"12.03.2026":99,"13.03.2026":106,"14.03.2026":121,"15.03.2026":104,"16.03.2026":100,"17.03.2026":123,"18.03.2026":127,"19.03.2026":95,"20.03.2026":113,"21.03.2026":108,"22.03.2026":104,"23.03.2026":101,"24.03.2026":103,"25.03.2026":95,"26.03.2026":65,"27.03.2026":103,"28.03.2026":99,"29.03.2026":97,"30.03.2026":109,"31.03.2026":113,"01.04.2026":115,"02.04.2026":116,"03.04.2026":117,"04.04.2026":103,"05.04.2026":106,"06.04.2026":85,"07.04.2026":68,"08.04.2026":70,"09.04.2026":72,"10.04.2026":72,"11.04.2026":79,"12.04.2026":90,"13.04.2026":90,"14.04.2026":81,"15.04.2026":84,"16.04.2026":66,"17.04.2026":82,"18.04.2026":72,"19.04.2026":71,"20.04.2026":74,"21.04.2026":74,"22.04.2026":76,"23.04.2026":72,"24.04.2026":67,"25.04.2026":53,"26.04.2026":50,"27.04.2026":58,"28.04.2026":56,"29.04.2026":58,"30.04.2026":63,"01.05.2026":55,"02.05.2026":59,"03.05.2026":78,"04.05.2026":70,"05.05.2026":55,"06.05.2026":51,"07.05.2026":70,"08.05.2026":65,"09.05.2026":90,"10.05.2026":83,"11.05.2026":92,"12.05.2026":82,"13.05.2026":83,"14.05.2026":82,"15.05.2026":59,"16.05.2026":79,"17.05.2026":67,"18.05.2026":89,"19.05.2026":93,"20.05.2026":69,"21.05.2026":94,"22.05.2026":78,"23.05.2026":79,"24.05.2026":86,"25.05.2026":84,"26.05.2026":68,"27.05.2026":61,"28.05.2026":46,"29.05.2026":50,"30.05.2026":35,"31.05.2026":33,"01.06.2026":22,"02.06.2026":43,"03.06.2026":69,"04.06.2026":75,"05.06.2026":80,"06.06.2026":72,"07.06.2026":57,"08.06.2026":52,"09.06.2026":59,"10.06.2026":63,"11.06.2026":58,"12.06.2026":50,"13.06.2026":51,"14.06.2026":50,"15.06.2026":82,"16.06.2026":80,"17.06.2026":85,"18.06.2026":77,"19.06.2026":60,"20.06.2026":59,"21.06.2026":55,"22.06.2026":61,"23.06.2026":59,"24.06.2026":62,"25.06.2026":47,"26.06.2026":43,"27.06.2026":37,"28.06.2026":40,"29.06.2026":41,"30.06.2026":42,"01.07.2026":36,"02.07.2026":41,"03.07.2026":41,"04.07.2026":47,"05.07.2026":47,"06.07.2026":47,"07.07.2026":43,"08.07.2026":42,"09.07.2026":42,"10.07.2026":34,"11.07.2026":45,"12.07.2026":31,"13.07.2026":37,"14.07.2026":51,"15.07.2026":50,"16.07.2026":52,"17.07.2026":52,"18.07.2026":47,"19.07.2026":47,"20.07.2026":45,"21.07.2026":49,"22.07.2026":39,"23.07.2026":49,"24.07.2026":46,"25.07.2026":48,"26.07.2026":48,"27.07.2026":41,"28.07.2026":55,"29.07.2026":50,"30.07.2026":43,"31.07.2026":38,"01.08.2026":42,"02.08.2026":46,"03.08.2026":59,"04.08.2026":48,"05.08.2026":43,"06.08.2026":57,"07.08.2026":48,"08.08.2026":45,"09.08.2026":47,"10.08.2026":47,"11.08.2026":52,"12.08.2026":61,"13.08.2026":61,"14.08.2026":53,"15.08.2026":57,"16.08.2026":64,"17.08.2026":61,"18.08.2026":62,"19.08.2026":80,"20.08.2026":82,"21.08.2026":77,"22.08.2026":78,"23.08.2026":67,"24.08.2026":66,"25.08.2026":63,"26.08.2026":65,"27.08.2026":60,"28.08.2026":59,"29.08.2026":66,"30.08.2026":71,"31.08.2026":64,"01.09.2026":59,"02.09.2026":53,"03.09.2026":62,"04.09.2026":69,"05.09.2026":61,"06.09.2026":40,"07.09.2026":33,"08.09.2026":39,"09.09.2026":41,"10.09.2026":44,"11.09.2026":44,"12.09.2026":48,"13.09.2026":48,"14.09.2026":43,"15.09.2026":47,"16.09.2026":38,"17.09.2026":33,"18.09.2026":34,"19.09.2026":30,"20.09.2026":31,"21.09.2026":23,"22.09.2026":30,"23.09.2026":39,"24.09.2026":49,"25.09.2026":42,"26.09.2026":37,"27.09.2026":36,"28.09.2026":58,"29.09.2026":74,"30.09.2026":78,"01.10.2026":74,"02.10.2026":73,"03.10.2026":70,"04.10.2026":60,"05.10.2026":50,"06.10.2026":51,"07.10.2026":67,"08.10.2026":71,"09.10.2026":73,"10.10.2026":73,"11.10.2026":74,"12.10.2026":67,"13.10.2026":51};
+		let mass_days = new Array();
+		let mass_days_data = new Array();
+		for (var key in mass_chart) {
+		    mass_days.push(key);
+		    mass_days_data.push(mass_chart[key]);
+		}
+
+		let mass_chart_users = {"15.11.2025":{"d41d8cd98f00b204e9800998ecf8427e":4},"16.11.2025":{"d41d8cd98f00b204e9800998ecf8427e":24},"17.11.2025":{"d41d8cd98f00b204e9800998ecf8427e":24},"18.11.2025":{"d41d8cd98f00b204e9800998ecf8427e":24},"19.11.2025":{"d41d8cd98f00b204e9800998ecf8427e":24},"20.11.2025":{"d41d8cd98f00b204e9800998ecf8427e":28},"21.11.2025":{"d41d8cd98f00b204e9800998ecf8427e":32},"22.11.2025":{"d41d8cd98f00b204e9800998ecf8427e":39},"23.11.2025":{"d41d8cd98f00b204e9800998ecf8427e":31},"24.11.2025":{"d41d8cd98f00b204e9800998ecf8427e":45},"25.11.2025":{"d41d8cd98f00b204e9800998ecf8427e":48},"26.11.2025":{"d41d8cd98f00b204e9800998ecf8427e":57},"27.11.2025":{"d41d8cd98f00b204e9800998ecf8427e":56},"28.11.2025":{"d41d8cd98f00b204e9800998ecf8427e":49},"29.11.2025":{"d41d8cd98f00b204e9800998ecf8427e":67},"30.11.2025":{"d41d8cd98f00b204e9800998ecf8427e":73},"01.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":69},"02.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":131},"03.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":82},"04.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":82},"05.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":97},"06.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":49},"07.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":64},"08.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":66},"09.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":79},"10.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":134},"11.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":72},"12.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":68},"13.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":72},"14.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":71},"15.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":84},"16.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":45},"17.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":59},"18.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":67},"19.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":75},"20.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":67},"21.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":62},"22.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":74},"23.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":70},"24.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":65},"25.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":66},"26.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":61},"27.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":66},"28.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":68},"29.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":66},"30.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":57},"31.12.2025":{"d41d8cd98f00b204e9800998ecf8427e":63},"01.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":73},"02.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":76},"03.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":74},"04.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":57},"05.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":72},"06.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":62},"07.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":59},"08.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":58},"09.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":64},"10.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":62},"11.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":59},"12.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":47},"13.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":60},"14.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":63},"15.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":63},"16.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":64},"17.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":63},"18.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":54},"19.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":62},"20.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":60},"21.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":57},"22.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":73},"23.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":77},"24.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":84},"25.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":65},"26.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":61},"27.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":63},"28.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":74},"29.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":94},"30.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":88},"31.01.2026":{"d41d8cd98f00b204e9800998ecf8427e":130},"01.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":101},"02.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":120},"03.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":137},"04.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":133},"05.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":134},"06.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":133},"07.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":127},"08.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":132},"09.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":123},"10.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":137},"11.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":113},"12.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":105},"13.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":121},"14.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":120},"15.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":117},"16.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":118},"17.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":112},"18.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":135},"19.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":129},"20.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":117},"21.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":120},"22.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":107},"23.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":109},"24.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":120},"25.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":124},"26.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":106},"27.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":105},"28.02.2026":{"d41d8cd98f00b204e9800998ecf8427e":109},"01.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":106},"02.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":111},"03.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":117},"04.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":119},"05.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":114},"06.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":130},"07.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":108},"08.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":109},"09.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":115},"10.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":111},"11.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":108},"12.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":99},"13.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":106},"14.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":121},"15.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":104},"16.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":100},"17.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":123},"18.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":127},"19.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":95},"20.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":113},"21.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":108},"22.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":104},"23.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":101},"24.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":103},"25.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":95},"26.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":65},"27.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":103},"28.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":99},"29.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":97},"30.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":109},"31.03.2026":{"d41d8cd98f00b204e9800998ecf8427e":113},"01.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":115},"02.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":116},"03.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":117},"04.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":103},"05.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":106},"06.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":85},"07.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":68},"08.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":70},"09.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":72},"10.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":72},"11.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":79},"12.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":90},"13.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":90},"14.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":81},"15.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":84},"16.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":66},"17.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":82},"18.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":72},"19.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":71},"20.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":74},"21.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":74},"22.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":76},"23.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":72},"24.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":67},"25.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":53},"26.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":50},"27.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":58},"28.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":56},"29.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":58},"30.04.2026":{"d41d8cd98f00b204e9800998ecf8427e":63},"01.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":55},"02.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":59},"03.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":78},"04.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":70},"05.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":55},"06.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":51},"07.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":70},"08.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":65},"09.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":90},"10.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":83},"11.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":92},"12.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":82},"13.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":83},"14.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":82},"15.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":59},"16.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":79},"17.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":67},"18.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":89},"19.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":93},"20.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":69},"21.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":94},"22.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":78},"23.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":79},"24.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":86},"25.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":84},"26.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":68},"27.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":61},"28.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":46},"29.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":50},"30.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":35},"31.05.2026":{"d41d8cd98f00b204e9800998ecf8427e":33},"01.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":22},"02.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":43},"03.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":69},"04.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":75},"05.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":80},"06.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":72},"07.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":57},"08.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":52},"09.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":59},"10.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":63},"11.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":58},"12.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":50},"13.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":51},"14.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":50},"15.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":82},"16.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":80},"17.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":85},"18.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":77},"19.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":60},"20.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":59},"21.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":55},"22.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":61},"23.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":59},"24.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":62},"25.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":47},"26.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":43},"27.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":37},"28.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":40},"29.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":41},"30.06.2026":{"d41d8cd98f00b204e9800998ecf8427e":42},"01.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":36},"02.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":41},"03.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":41},"04.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":47},"05.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":47},"06.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":47},"07.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":43},"08.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":42},"09.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":42},"10.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":34},"11.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":45},"12.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":31},"13.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":37},"14.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":51},"15.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":50},"16.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":52},"17.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":52},"18.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":47},"19.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":47},"20.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":45},"21.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":49},"22.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":39},"23.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":49},"24.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":46},"25.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":48},"26.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":48},"27.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":41},"28.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":55},"29.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":50},"30.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":43},"31.07.2026":{"d41d8cd98f00b204e9800998ecf8427e":38},"01.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":42},"02.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":46},"03.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":59},"04.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":48},"05.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":43},"06.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":57},"07.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":48},"08.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":45},"09.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":47},"10.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":47},"11.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":52},"12.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":61},"13.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":61},"14.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":53},"15.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":57},"16.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":64},"17.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":61},"18.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":62},"19.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":80},"20.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":82},"21.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":77},"22.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":78},"23.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":67},"24.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":66},"25.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":63},"26.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":65},"27.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":60},"28.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":59},"29.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":66},"30.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":71},"31.08.2026":{"d41d8cd98f00b204e9800998ecf8427e":64},"01.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":59},"02.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":53},"03.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":62},"04.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":69},"05.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":61},"06.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":40},"07.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":33},"08.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":39},"09.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":41},"10.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":44},"11.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":44},"12.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":48},"13.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":48},"14.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":43},"15.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":47},"16.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":38},"17.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":33},"18.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":34},"19.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":30},"20.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":31},"21.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":23},"22.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":30},"23.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":39},"24.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":49},"25.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":42},"26.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":37},"27.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":36},"28.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":58},"29.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":74},"30.09.2026":{"d41d8cd98f00b204e9800998ecf8427e":78},"01.10.2026":{"d41d8cd98f00b204e9800998ecf8427e":74},"02.10.2026":{"d41d8cd98f00b204e9800998ecf8427e":73},"03.10.2026":{"d41d8cd98f00b204e9800998ecf8427e":70},"04.10.2026":{"d41d8cd98f00b204e9800998ecf8427e":60},"05.10.2026":{"d41d8cd98f00b204e9800998ecf8427e":50},"06.10.2026":{"d41d8cd98f00b204e9800998ecf8427e":51},"07.10.2026":{"d41d8cd98f00b204e9800998ecf8427e":67},"08.10.2026":{"d41d8cd98f00b204e9800998ecf8427e":71},"09.10.2026":{"d41d8cd98f00b204e9800998ecf8427e":73},"10.10.2026":{"d41d8cd98f00b204e9800998ecf8427e":73},"11.10.2026":{"d41d8cd98f00b204e9800998ecf8427e":74},"12.10.2026":{"d41d8cd98f00b204e9800998ecf8427e":67},"13.10.2026":{"d41d8cd98f00b204e9800998ecf8427e":51}};
+		let mass_days_data_users = new Array();
+		for (var key in mass_chart_users) {
+		    mass_days_data_users.push(Object.keys(mass_chart_users[key]).length);
+		}
+
+		let mass_chart_speed = {"15.11.2025":{"speed":"814453057","speedKonvert":"814.45 Mkeys\/s"},"16.11.2025":{"speed":"4886718345","speedKonvert":"4.89 Gkeys\/s"},"17.11.2025":{"speed":"4886718345","speedKonvert":"4.89 Gkeys\/s"},"18.11.2025":{"speed":"4886718345","speedKonvert":"4.89 Gkeys\/s"},"19.11.2025":{"speed":"4886718345","speedKonvert":"4.89 Gkeys\/s"},"20.11.2025":{"speed":"5701171403","speedKonvert":"5.7 Gkeys\/s"},"21.11.2025":{"speed":"6515624460","speedKonvert":"6.52 Gkeys\/s"},"22.11.2025":{"speed":"7940917311","speedKonvert":"7.94 Gkeys\/s"},"23.11.2025":{"speed":"6312011196","speedKonvert":"6.31 Gkeys\/s"},"24.11.2025":{"speed":"9162596898","speedKonvert":"9.16 Gkeys\/s"},"25.11.2025":{"speed":"9773436691","speedKonvert":"9.77 Gkeys\/s"},"26.11.2025":{"speed":"11605956070","speedKonvert":"11.61 Gkeys\/s"},"27.11.2025":{"speed":"11402342806","speedKonvert":"11.4 Gkeys\/s"},"28.11.2025":{"speed":"9977049955","speedKonvert":"9.98 Gkeys\/s"},"29.11.2025":{"speed":"13642088714","speedKonvert":"13.64 Gkeys\/s"},"30.11.2025":{"speed":"14863768301","speedKonvert":"14.86 Gkeys\/s"},"01.12.2025":{"speed":"14049315243","speedKonvert":"14.05 Gkeys\/s"},"02.12.2025":{"speed":"26673337636","speedKonvert":"26.67 Gkeys\/s"},"03.12.2025":{"speed":"16696287681","speedKonvert":"16.7 Gkeys\/s"},"04.12.2025":{"speed":"16696287681","speedKonvert":"16.7 Gkeys\/s"},"05.12.2025":{"speed":"19750486647","speedKonvert":"19.75 Gkeys\/s"},"06.12.2025":{"speed":"9977049955","speedKonvert":"9.98 Gkeys\/s"},"07.12.2025":{"speed":"13031248921","speedKonvert":"13.03 Gkeys\/s"},"08.12.2025":{"speed":"13438475450","speedKonvert":"13.44 Gkeys\/s"},"09.12.2025":{"speed":"16085447887","speedKonvert":"16.09 Gkeys\/s"},"10.12.2025":{"speed":"27284177429","speedKonvert":"27.28 Gkeys\/s"},"11.12.2025":{"speed":"14660155037","speedKonvert":"14.66 Gkeys\/s"},"12.12.2025":{"speed":"13845701979","speedKonvert":"13.85 Gkeys\/s"},"13.12.2025":{"speed":"14660155037","speedKonvert":"14.66 Gkeys\/s"},"14.12.2025":{"speed":"14456541772","speedKonvert":"14.46 Gkeys\/s"},"15.12.2025":{"speed":"17103514209","speedKonvert":"17.1 Gkeys\/s"},"16.12.2025":{"speed":"9162596898","speedKonvert":"9.16 Gkeys\/s"},"17.12.2025":{"speed":"12013182599","speedKonvert":"12.01 Gkeys\/s"},"18.12.2025":{"speed":"13642088714","speedKonvert":"13.64 Gkeys\/s"},"19.12.2025":{"speed":"15270994830","speedKonvert":"15.27 Gkeys\/s"},"20.12.2025":{"speed":"13642088714","speedKonvert":"13.64 Gkeys\/s"},"21.12.2025":{"speed":"12624022392","speedKonvert":"12.62 Gkeys\/s"},"22.12.2025":{"speed":"15067381565","speedKonvert":"15.07 Gkeys\/s"},"23.12.2025":{"speed":"14252928508","speedKonvert":"14.25 Gkeys\/s"},"24.12.2025":{"speed":"13234862186","speedKonvert":"13.23 Gkeys\/s"},"25.12.2025":{"speed":"13438475450","speedKonvert":"13.44 Gkeys\/s"},"26.12.2025":{"speed":"12420409128","speedKonvert":"12.42 Gkeys\/s"},"27.12.2025":{"speed":"13438475450","speedKonvert":"13.44 Gkeys\/s"},"28.12.2025":{"speed":"13845701979","speedKonvert":"13.85 Gkeys\/s"},"29.12.2025":{"speed":"13438475450","speedKonvert":"13.44 Gkeys\/s"},"30.12.2025":{"speed":"11605956070","speedKonvert":"11.61 Gkeys\/s"},"31.12.2025":{"speed":"12827635657","speedKonvert":"12.83 Gkeys\/s"},"01.01.2026":{"speed":"14863768301","speedKonvert":"14.86 Gkeys\/s"},"02.01.2026":{"speed":"15474608094","speedKonvert":"15.47 Gkeys\/s"},"03.01.2026":{"speed":"15067381565","speedKonvert":"15.07 Gkeys\/s"},"04.01.2026":{"speed":"11605956070","speedKonvert":"11.61 Gkeys\/s"},"05.01.2026":{"speed":"14660155037","speedKonvert":"14.66 Gkeys\/s"},"06.01.2026":{"speed":"12624022392","speedKonvert":"12.62 Gkeys\/s"},"07.01.2026":{"speed":"12013182599","speedKonvert":"12.01 Gkeys\/s"},"08.01.2026":{"speed":"11809569335","speedKonvert":"11.81 Gkeys\/s"},"09.01.2026":{"speed":"13031248921","speedKonvert":"13.03 Gkeys\/s"},"10.01.2026":{"speed":"12624022392","speedKonvert":"12.62 Gkeys\/s"},"11.01.2026":{"speed":"12013182599","speedKonvert":"12.01 Gkeys\/s"},"12.01.2026":{"speed":"9569823426","speedKonvert":"9.57 Gkeys\/s"},"13.01.2026":{"speed":"12216795864","speedKonvert":"12.22 Gkeys\/s"},"14.01.2026":{"speed":"12827635657","speedKonvert":"12.83 Gkeys\/s"},"15.01.2026":{"speed":"12827635657","speedKonvert":"12.83 Gkeys\/s"},"16.01.2026":{"speed":"13031248921","speedKonvert":"13.03 Gkeys\/s"},"17.01.2026":{"speed":"12827635657","speedKonvert":"12.83 Gkeys\/s"},"18.01.2026":{"speed":"10995116277","speedKonvert":"11 Gkeys\/s"},"19.01.2026":{"speed":"12624022392","speedKonvert":"12.62 Gkeys\/s"},"20.01.2026":{"speed":"12216795864","speedKonvert":"12.22 Gkeys\/s"},"21.01.2026":{"speed":"11605956070","speedKonvert":"11.61 Gkeys\/s"},"22.01.2026":{"speed":"14863768301","speedKonvert":"14.86 Gkeys\/s"},"23.01.2026":{"speed":"15678221359","speedKonvert":"15.68 Gkeys\/s"},"24.01.2026":{"speed":"17103514209","speedKonvert":"17.1 Gkeys\/s"},"25.01.2026":{"speed":"13234862186","speedKonvert":"13.23 Gkeys\/s"},"26.01.2026":{"speed":"12420409128","speedKonvert":"12.42 Gkeys\/s"},"27.01.2026":{"speed":"12827635657","speedKonvert":"12.83 Gkeys\/s"},"28.01.2026":{"speed":"15067381565","speedKonvert":"15.07 Gkeys\/s"},"29.01.2026":{"speed":"19139646853","speedKonvert":"19.14 Gkeys\/s"},"30.01.2026":{"speed":"17917967267","speedKonvert":"17.92 Gkeys\/s"},"31.01.2026":{"speed":"26469724372","speedKonvert":"26.47 Gkeys\/s"},"01.02.2026":{"speed":"20564939704","speedKonvert":"20.56 Gkeys\/s"},"02.02.2026":{"speed":"24433591728","speedKonvert":"24.43 Gkeys\/s"},"03.02.2026":{"speed":"27895017223","speedKonvert":"27.9 Gkeys\/s"},"04.02.2026":{"speed":"27080564165","speedKonvert":"27.08 Gkeys\/s"},"05.02.2026":{"speed":"27284177429","speedKonvert":"27.28 Gkeys\/s"},"06.02.2026":{"speed":"27080564165","speedKonvert":"27.08 Gkeys\/s"},"07.02.2026":{"speed":"25858884579","speedKonvert":"25.86 Gkeys\/s"},"08.02.2026":{"speed":"26876950901","speedKonvert":"26.88 Gkeys\/s"},"09.02.2026":{"speed":"25044431521","speedKonvert":"25.04 Gkeys\/s"},"10.02.2026":{"speed":"27895017223","speedKonvert":"27.9 Gkeys\/s"},"11.02.2026":{"speed":"23008298877","speedKonvert":"23.01 Gkeys\/s"},"12.02.2026":{"speed":"21379392762","speedKonvert":"21.38 Gkeys\/s"},"13.02.2026":{"speed":"24637204992","speedKonvert":"24.64 Gkeys\/s"},"14.02.2026":{"speed":"24433591728","speedKonvert":"24.43 Gkeys\/s"},"15.02.2026":{"speed":"23822751935","speedKonvert":"23.82 Gkeys\/s"},"16.02.2026":{"speed":"24026365199","speedKonvert":"24.03 Gkeys\/s"},"17.02.2026":{"speed":"22804685613","speedKonvert":"22.8 Gkeys\/s"},"18.02.2026":{"speed":"27487790694","speedKonvert":"27.49 Gkeys\/s"},"19.02.2026":{"speed":"26266111107","speedKonvert":"26.27 Gkeys\/s"},"20.02.2026":{"speed":"23822751935","speedKonvert":"23.82 Gkeys\/s"},"21.02.2026":{"speed":"24433591728","speedKonvert":"24.43 Gkeys\/s"},"22.02.2026":{"speed":"21786619291","speedKonvert":"21.79 Gkeys\/s"},"23.02.2026":{"speed":"22193845819","speedKonvert":"22.19 Gkeys\/s"},"24.02.2026":{"speed":"24433591728","speedKonvert":"24.43 Gkeys\/s"},"25.02.2026":{"speed":"25248044785","speedKonvert":"25.25 Gkeys\/s"},"26.02.2026":{"speed":"21583006026","speedKonvert":"21.58 Gkeys\/s"},"27.02.2026":{"speed":"21379392762","speedKonvert":"21.38 Gkeys\/s"},"28.02.2026":{"speed":"22193845819","speedKonvert":"22.19 Gkeys\/s"},"01.03.2026":{"speed":"21583006026","speedKonvert":"21.58 Gkeys\/s"},"02.03.2026":{"speed":"22601072348","speedKonvert":"22.6 Gkeys\/s"},"03.03.2026":{"speed":"23822751935","speedKonvert":"23.82 Gkeys\/s"},"04.03.2026":{"speed":"24229978463","speedKonvert":"24.23 Gkeys\/s"},"05.03.2026":{"speed":"23211912141","speedKonvert":"23.21 Gkeys\/s"},"06.03.2026":{"speed":"26469724372","speedKonvert":"26.47 Gkeys\/s"},"07.03.2026":{"speed":"21990232555","speedKonvert":"21.99 Gkeys\/s"},"08.03.2026":{"speed":"22193845819","speedKonvert":"22.19 Gkeys\/s"},"09.03.2026":{"speed":"23415525406","speedKonvert":"23.42 Gkeys\/s"},"10.03.2026":{"speed":"22601072348","speedKonvert":"22.6 Gkeys\/s"},"11.03.2026":{"speed":"21990232555","speedKonvert":"21.99 Gkeys\/s"},"12.03.2026":{"speed":"20157713175","speedKonvert":"20.16 Gkeys\/s"},"13.03.2026":{"speed":"21583006026","speedKonvert":"21.58 Gkeys\/s"},"14.03.2026":{"speed":"24637204992","speedKonvert":"24.64 Gkeys\/s"},"15.03.2026":{"speed":"21175779497","speedKonvert":"21.18 Gkeys\/s"},"16.03.2026":{"speed":"20361326440","speedKonvert":"20.36 Gkeys\/s"},"17.03.2026":{"speed":"25044431521","speedKonvert":"25.04 Gkeys\/s"},"18.03.2026":{"speed":"25858884579","speedKonvert":"25.86 Gkeys\/s"},"19.03.2026":{"speed":"19343260118","speedKonvert":"19.34 Gkeys\/s"},"20.03.2026":{"speed":"23008298877","speedKonvert":"23.01 Gkeys\/s"},"21.03.2026":{"speed":"21990232555","speedKonvert":"21.99 Gkeys\/s"},"22.03.2026":{"speed":"21175779497","speedKonvert":"21.18 Gkeys\/s"},"23.03.2026":{"speed":"20564939704","speedKonvert":"20.56 Gkeys\/s"},"24.03.2026":{"speed":"20972166233","speedKonvert":"20.97 Gkeys\/s"},"25.03.2026":{"speed":"19343260118","speedKonvert":"19.34 Gkeys\/s"},"26.03.2026":{"speed":"13234862186","speedKonvert":"13.23 Gkeys\/s"},"27.03.2026":{"speed":"20972166233","speedKonvert":"20.97 Gkeys\/s"},"28.03.2026":{"speed":"20157713175","speedKonvert":"20.16 Gkeys\/s"},"29.03.2026":{"speed":"19750486647","speedKonvert":"19.75 Gkeys\/s"},"30.03.2026":{"speed":"22193845819","speedKonvert":"22.19 Gkeys\/s"},"31.03.2026":{"speed":"23008298877","speedKonvert":"23.01 Gkeys\/s"},"01.04.2026":{"speed":"23415525406","speedKonvert":"23.42 Gkeys\/s"},"02.04.2026":{"speed":"23619138670","speedKonvert":"23.62 Gkeys\/s"},"03.04.2026":{"speed":"23822751935","speedKonvert":"23.82 Gkeys\/s"},"04.04.2026":{"speed":"20972166233","speedKonvert":"20.97 Gkeys\/s"},"05.04.2026":{"speed":"21583006026","speedKonvert":"21.58 Gkeys\/s"},"06.04.2026":{"speed":"17307127474","speedKonvert":"17.31 Gkeys\/s"},"07.04.2026":{"speed":"13845701979","speedKonvert":"13.85 Gkeys\/s"},"08.04.2026":{"speed":"14252928508","speedKonvert":"14.25 Gkeys\/s"},"09.04.2026":{"speed":"14660155037","speedKonvert":"14.66 Gkeys\/s"},"10.04.2026":{"speed":"14660155037","speedKonvert":"14.66 Gkeys\/s"},"11.04.2026":{"speed":"16085447887","speedKonvert":"16.09 Gkeys\/s"},"12.04.2026":{"speed":"18325193796","speedKonvert":"18.33 Gkeys\/s"},"13.04.2026":{"speed":"18325193796","speedKonvert":"18.33 Gkeys\/s"},"14.04.2026":{"speed":"16492674416","speedKonvert":"16.49 Gkeys\/s"},"15.04.2026":{"speed":"17103514209","speedKonvert":"17.1 Gkeys\/s"},"16.04.2026":{"speed":"13438475450","speedKonvert":"13.44 Gkeys\/s"},"17.04.2026":{"speed":"16696287681","speedKonvert":"16.7 Gkeys\/s"},"18.04.2026":{"speed":"14660155037","speedKonvert":"14.66 Gkeys\/s"},"19.04.2026":{"speed":"14456541772","speedKonvert":"14.46 Gkeys\/s"},"20.04.2026":{"speed":"15067381565","speedKonvert":"15.07 Gkeys\/s"},"21.04.2026":{"speed":"15067381565","speedKonvert":"15.07 Gkeys\/s"},"22.04.2026":{"speed":"15474608094","speedKonvert":"15.47 Gkeys\/s"},"23.04.2026":{"speed":"14660155037","speedKonvert":"14.66 Gkeys\/s"},"24.04.2026":{"speed":"13642088714","speedKonvert":"13.64 Gkeys\/s"},"25.04.2026":{"speed":"10791503013","speedKonvert":"10.79 Gkeys\/s"},"26.04.2026":{"speed":"10180663220","speedKonvert":"10.18 Gkeys\/s"},"27.04.2026":{"speed":"11809569335","speedKonvert":"11.81 Gkeys\/s"},"28.04.2026":{"speed":"11402342806","speedKonvert":"11.4 Gkeys\/s"},"29.04.2026":{"speed":"11809569335","speedKonvert":"11.81 Gkeys\/s"},"30.04.2026":{"speed":"12827635657","speedKonvert":"12.83 Gkeys\/s"},"01.05.2026":{"speed":"11198729542","speedKonvert":"11.2 Gkeys\/s"},"02.05.2026":{"speed":"12013182599","speedKonvert":"12.01 Gkeys\/s"},"03.05.2026":{"speed":"15881834623","speedKonvert":"15.88 Gkeys\/s"},"04.05.2026":{"speed":"14252928508","speedKonvert":"14.25 Gkeys\/s"},"05.05.2026":{"speed":"11198729542","speedKonvert":"11.2 Gkeys\/s"},"06.05.2026":{"speed":"10384276484","speedKonvert":"10.38 Gkeys\/s"},"07.05.2026":{"speed":"14252928508","speedKonvert":"14.25 Gkeys\/s"},"08.05.2026":{"speed":"13234862186","speedKonvert":"13.23 Gkeys\/s"},"09.05.2026":{"speed":"18325193796","speedKonvert":"18.33 Gkeys\/s"},"10.05.2026":{"speed":"16899900945","speedKonvert":"16.9 Gkeys\/s"},"11.05.2026":{"speed":"18732420325","speedKonvert":"18.73 Gkeys\/s"},"12.05.2026":{"speed":"16696287681","speedKonvert":"16.7 Gkeys\/s"},"13.05.2026":{"speed":"16899900945","speedKonvert":"16.9 Gkeys\/s"},"14.05.2026":{"speed":"16696287681","speedKonvert":"16.7 Gkeys\/s"},"15.05.2026":{"speed":"12013182599","speedKonvert":"12.01 Gkeys\/s"},"16.05.2026":{"speed":"16085447887","speedKonvert":"16.09 Gkeys\/s"},"17.05.2026":{"speed":"13642088714","speedKonvert":"13.64 Gkeys\/s"},"18.05.2026":{"speed":"18121580531","speedKonvert":"18.12 Gkeys\/s"},"19.05.2026":{"speed":"18936033589","speedKonvert":"18.94 Gkeys\/s"},"20.05.2026":{"speed":"14049315243","speedKonvert":"14.05 Gkeys\/s"},"21.05.2026":{"speed":"19139646853","speedKonvert":"19.14 Gkeys\/s"},"22.05.2026":{"speed":"15881834623","speedKonvert":"15.88 Gkeys\/s"},"23.05.2026":{"speed":"16085447887","speedKonvert":"16.09 Gkeys\/s"},"24.05.2026":{"speed":"17510740738","speedKonvert":"17.51 Gkeys\/s"},"25.05.2026":{"speed":"17103514209","speedKonvert":"17.1 Gkeys\/s"},"26.05.2026":{"speed":"13845701979","speedKonvert":"13.85 Gkeys\/s"},"27.05.2026":{"speed":"12420409128","speedKonvert":"12.42 Gkeys\/s"},"28.05.2026":{"speed":"9366210162","speedKonvert":"9.37 Gkeys\/s"},"29.05.2026":{"speed":"10180663220","speedKonvert":"10.18 Gkeys\/s"},"30.05.2026":{"speed":"7126464254","speedKonvert":"7.13 Gkeys\/s"},"31.05.2026":{"speed":"6719237725","speedKonvert":"6.72 Gkeys\/s"},"01.06.2026":{"speed":"4479491816","speedKonvert":"4.48 Gkeys\/s"},"02.06.2026":{"speed":"8755370369","speedKonvert":"8.76 Gkeys\/s"},"03.06.2026":{"speed":"14049315243","speedKonvert":"14.05 Gkeys\/s"},"04.06.2026":{"speed":"15270994830","speedKonvert":"15.27 Gkeys\/s"},"05.06.2026":{"speed":"16289061152","speedKonvert":"16.29 Gkeys\/s"},"06.06.2026":{"speed":"14660155037","speedKonvert":"14.66 Gkeys\/s"},"07.06.2026":{"speed":"11605956070","speedKonvert":"11.61 Gkeys\/s"},"08.06.2026":{"speed":"10587889748","speedKonvert":"10.59 Gkeys\/s"},"09.06.2026":{"speed":"12013182599","speedKonvert":"12.01 Gkeys\/s"},"10.06.2026":{"speed":"12827635657","speedKonvert":"12.83 Gkeys\/s"},"11.06.2026":{"speed":"11809569335","speedKonvert":"11.81 Gkeys\/s"},"12.06.2026":{"speed":"10180663220","speedKonvert":"10.18 Gkeys\/s"},"13.06.2026":{"speed":"10384276484","speedKonvert":"10.38 Gkeys\/s"},"14.06.2026":{"speed":"10180663220","speedKonvert":"10.18 Gkeys\/s"},"15.06.2026":{"speed":"16696287681","speedKonvert":"16.7 Gkeys\/s"},"16.06.2026":{"speed":"16289061152","speedKonvert":"16.29 Gkeys\/s"},"17.06.2026":{"speed":"17307127474","speedKonvert":"17.31 Gkeys\/s"},"18.06.2026":{"speed":"15678221359","speedKonvert":"15.68 Gkeys\/s"},"19.06.2026":{"speed":"12216795864","speedKonvert":"12.22 Gkeys\/s"},"20.06.2026":{"speed":"12013182599","speedKonvert":"12.01 Gkeys\/s"},"21.06.2026":{"speed":"11198729542","speedKonvert":"11.2 Gkeys\/s"},"22.06.2026":{"speed":"12420409128","speedKonvert":"12.42 Gkeys\/s"},"23.06.2026":{"speed":"12013182599","speedKonvert":"12.01 Gkeys\/s"},"24.06.2026":{"speed":"12624022392","speedKonvert":"12.62 Gkeys\/s"},"25.06.2026":{"speed":"9569823426","speedKonvert":"9.57 Gkeys\/s"},"26.06.2026":{"speed":"8755370369","speedKonvert":"8.76 Gkeys\/s"},"27.06.2026":{"speed":"7533690782","speedKonvert":"7.53 Gkeys\/s"},"28.06.2026":{"speed":"8144530576","speedKonvert":"8.14 Gkeys\/s"},"29.06.2026":{"speed":"8348143840","speedKonvert":"8.35 Gkeys\/s"},"30.06.2026":{"speed":"8551757104","speedKonvert":"8.55 Gkeys\/s"},"01.07.2026":{"speed":"7330077518","speedKonvert":"7.33 Gkeys\/s"},"02.07.2026":{"speed":"8348143840","speedKonvert":"8.35 Gkeys\/s"},"03.07.2026":{"speed":"8348143840","speedKonvert":"8.35 Gkeys\/s"},"04.07.2026":{"speed":"9569823426","speedKonvert":"9.57 Gkeys\/s"},"05.07.2026":{"speed":"9569823426","speedKonvert":"9.57 Gkeys\/s"},"06.07.2026":{"speed":"9569823426","speedKonvert":"9.57 Gkeys\/s"},"07.07.2026":{"speed":"8755370369","speedKonvert":"8.76 Gkeys\/s"},"08.07.2026":{"speed":"8551757104","speedKonvert":"8.55 Gkeys\/s"},"09.07.2026":{"speed":"8551757104","speedKonvert":"8.55 Gkeys\/s"},"10.07.2026":{"speed":"6922850989","speedKonvert":"6.92 Gkeys\/s"},"11.07.2026":{"speed":"9162596898","speedKonvert":"9.16 Gkeys\/s"},"12.07.2026":{"speed":"6312011196","speedKonvert":"6.31 Gkeys\/s"},"13.07.2026":{"speed":"7533690782","speedKonvert":"7.53 Gkeys\/s"},"14.07.2026":{"speed":"10384276484","speedKonvert":"10.38 Gkeys\/s"},"15.07.2026":{"speed":"10180663220","speedKonvert":"10.18 Gkeys\/s"},"16.07.2026":{"speed":"10587889748","speedKonvert":"10.59 Gkeys\/s"},"17.07.2026":{"speed":"10587889748","speedKonvert":"10.59 Gkeys\/s"},"18.07.2026":{"speed":"9569823426","speedKonvert":"9.57 Gkeys\/s"},"19.07.2026":{"speed":"9569823426","speedKonvert":"9.57 Gkeys\/s"},"20.07.2026":{"speed":"9162596898","speedKonvert":"9.16 Gkeys\/s"},"21.07.2026":{"speed":"9977049955","speedKonvert":"9.98 Gkeys\/s"},"22.07.2026":{"speed":"7940917311","speedKonvert":"7.94 Gkeys\/s"},"23.07.2026":{"speed":"9977049955","speedKonvert":"9.98 Gkeys\/s"},"24.07.2026":{"speed":"9366210162","speedKonvert":"9.37 Gkeys\/s"},"25.07.2026":{"speed":"9773436691","speedKonvert":"9.77 Gkeys\/s"},"26.07.2026":{"speed":"9773436691","speedKonvert":"9.77 Gkeys\/s"},"27.07.2026":{"speed":"8348143840","speedKonvert":"8.35 Gkeys\/s"},"28.07.2026":{"speed":"11198729542","speedKonvert":"11.2 Gkeys\/s"},"29.07.2026":{"speed":"10180663220","speedKonvert":"10.18 Gkeys\/s"},"30.07.2026":{"speed":"8755370369","speedKonvert":"8.76 Gkeys\/s"},"31.07.2026":{"speed":"7737304047","speedKonvert":"7.74 Gkeys\/s"},"01.08.2026":{"speed":"8551757104","speedKonvert":"8.55 Gkeys\/s"},"02.08.2026":{"speed":"9366210162","speedKonvert":"9.37 Gkeys\/s"},"03.08.2026":{"speed":"12013182599","speedKonvert":"12.01 Gkeys\/s"},"04.08.2026":{"speed":"9773436691","speedKonvert":"9.77 Gkeys\/s"},"05.08.2026":{"speed":"8755370369","speedKonvert":"8.76 Gkeys\/s"},"06.08.2026":{"speed":"11605956070","speedKonvert":"11.61 Gkeys\/s"},"07.08.2026":{"speed":"9773436691","speedKonvert":"9.77 Gkeys\/s"},"08.08.2026":{"speed":"9162596898","speedKonvert":"9.16 Gkeys\/s"},"09.08.2026":{"speed":"9569823426","speedKonvert":"9.57 Gkeys\/s"},"10.08.2026":{"speed":"9569823426","speedKonvert":"9.57 Gkeys\/s"},"11.08.2026":{"speed":"10587889748","speedKonvert":"10.59 Gkeys\/s"},"12.08.2026":{"speed":"12420409128","speedKonvert":"12.42 Gkeys\/s"},"13.08.2026":{"speed":"12420409128","speedKonvert":"12.42 Gkeys\/s"},"14.08.2026":{"speed":"10791503013","speedKonvert":"10.79 Gkeys\/s"},"15.08.2026":{"speed":"11605956070","speedKonvert":"11.61 Gkeys\/s"},"16.08.2026":{"speed":"13031248921","speedKonvert":"13.03 Gkeys\/s"},"17.08.2026":{"speed":"12420409128","speedKonvert":"12.42 Gkeys\/s"},"18.08.2026":{"speed":"12624022392","speedKonvert":"12.62 Gkeys\/s"},"19.08.2026":{"speed":"16289061152","speedKonvert":"16.29 Gkeys\/s"},"20.08.2026":{"speed":"16696287681","speedKonvert":"16.7 Gkeys\/s"},"21.08.2026":{"speed":"15678221359","speedKonvert":"15.68 Gkeys\/s"},"22.08.2026":{"speed":"15881834623","speedKonvert":"15.88 Gkeys\/s"},"23.08.2026":{"speed":"13642088714","speedKonvert":"13.64 Gkeys\/s"},"24.08.2026":{"speed":"13438475450","speedKonvert":"13.44 Gkeys\/s"},"25.08.2026":{"speed":"12827635657","speedKonvert":"12.83 Gkeys\/s"},"26.08.2026":{"speed":"13234862186","speedKonvert":"13.23 Gkeys\/s"},"27.08.2026":{"speed":"12216795864","speedKonvert":"12.22 Gkeys\/s"},"28.08.2026":{"speed":"12013182599","speedKonvert":"12.01 Gkeys\/s"},"29.08.2026":{"speed":"13438475450","speedKonvert":"13.44 Gkeys\/s"},"30.08.2026":{"speed":"14456541772","speedKonvert":"14.46 Gkeys\/s"},"31.08.2026":{"speed":"13031248921","speedKonvert":"13.03 Gkeys\/s"},"01.09.2026":{"speed":"12013182599","speedKonvert":"12.01 Gkeys\/s"},"02.09.2026":{"speed":"10791503013","speedKonvert":"10.79 Gkeys\/s"},"03.09.2026":{"speed":"12624022392","speedKonvert":"12.62 Gkeys\/s"},"04.09.2026":{"speed":"14049315243","speedKonvert":"14.05 Gkeys\/s"},"05.09.2026":{"speed":"12420409128","speedKonvert":"12.42 Gkeys\/s"},"06.09.2026":{"speed":"8144530576","speedKonvert":"8.14 Gkeys\/s"},"07.09.2026":{"speed":"6719237725","speedKonvert":"6.72 Gkeys\/s"},"08.09.2026":{"speed":"7940917311","speedKonvert":"7.94 Gkeys\/s"},"09.09.2026":{"speed":"8348143840","speedKonvert":"8.35 Gkeys\/s"},"10.09.2026":{"speed":"8958983633","speedKonvert":"8.96 Gkeys\/s"},"11.09.2026":{"speed":"8958983633","speedKonvert":"8.96 Gkeys\/s"},"12.09.2026":{"speed":"9773436691","speedKonvert":"9.77 Gkeys\/s"},"13.09.2026":{"speed":"9773436691","speedKonvert":"9.77 Gkeys\/s"},"14.09.2026":{"speed":"8755370369","speedKonvert":"8.76 Gkeys\/s"},"15.09.2026":{"speed":"9569823426","speedKonvert":"9.57 Gkeys\/s"},"16.09.2026":{"speed":"7737304047","speedKonvert":"7.74 Gkeys\/s"},"17.09.2026":{"speed":"6719237725","speedKonvert":"6.72 Gkeys\/s"},"18.09.2026":{"speed":"6922850989","speedKonvert":"6.92 Gkeys\/s"},"19.09.2026":{"speed":"6108397932","speedKonvert":"6.11 Gkeys\/s"},"20.09.2026":{"speed":"6312011196","speedKonvert":"6.31 Gkeys\/s"},"21.09.2026":{"speed":"4683105081","speedKonvert":"4.68 Gkeys\/s"},"22.09.2026":{"speed":"6108397932","speedKonvert":"6.11 Gkeys\/s"},"23.09.2026":{"speed":"7940917311","speedKonvert":"7.94 Gkeys\/s"},"24.09.2026":{"speed":"9977049955","speedKonvert":"9.98 Gkeys\/s"},"25.09.2026":{"speed":"8551757104","speedKonvert":"8.55 Gkeys\/s"},"26.09.2026":{"speed":"7533690782","speedKonvert":"7.53 Gkeys\/s"},"27.09.2026":{"speed":"7330077518","speedKonvert":"7.33 Gkeys\/s"},"28.09.2026":{"speed":"11809569335","speedKonvert":"11.81 Gkeys\/s"},"29.09.2026":{"speed":"15067381565","speedKonvert":"15.07 Gkeys\/s"},"30.09.2026":{"speed":"15881834623","speedKonvert":"15.88 Gkeys\/s"},"01.10.2026":{"speed":"15067381565","speedKonvert":"15.07 Gkeys\/s"},"02.10.2026":{"speed":"14863768301","speedKonvert":"14.86 Gkeys\/s"},"03.10.2026":{"speed":"14252928508","speedKonvert":"14.25 Gkeys\/s"},"04.10.2026":{"speed":"12216795864","speedKonvert":"12.22 Gkeys\/s"},"05.10.2026":{"speed":"10180663220","speedKonvert":"10.18 Gkeys\/s"},"06.10.2026":{"speed":"10384276484","speedKonvert":"10.38 Gkeys\/s"},"07.10.2026":{"speed":"13642088714","speedKonvert":"13.64 Gkeys\/s"},"08.10.2026":{"speed":"14456541772","speedKonvert":"14.46 Gkeys\/s"},"09.10.2026":{"speed":"14863768301","speedKonvert":"14.86 Gkeys\/s"},"10.10.2026":{"speed":"14863768301","speedKonvert":"14.86 Gkeys\/s"},"11.10.2026":{"speed":"15067381565","speedKonvert":"15.07 Gkeys\/s"},"12.10.2026":{"speed":"13642088714","speedKonvert":"13.64 Gkeys\/s"},"13.10.2026":{"speed":"12847447386","speedKonvert":"12.85 Gkeys\/s"}};
+		let mass_days_data_speed = new Array();
+		let mass_days_data_speedKonvert = new Array();
+		for (var key in mass_chart_speed) {
+		    mass_days_data_speed.push(mass_chart_speed[key]['speed']);
+		    mass_days_data_speedKonvert.push(mass_chart_speed[key]['speedKonvert']);
+		}
+
+		const ctx = document.getElementById('myChart');
+		myChart = new Chart(ctx, {
+		    type: 'line',
+		    data: {
+		        labels: mass_days,
+		        datasets: [{
+		            label: 'Частей',
+		            data: mass_days_data,
+		            borderWidth: 1,
+		            // Добавляем метаданные для скорости
+		            meta: mass_days_data_speed,
+		            metaSK: mass_days_data_speedKonvert
+		        }/*,{
+		            label: 'Участников',
+		            data: mass_days_data_users,
+		            borderWidth: 1
+		        }*/]
+		    },
+		    options: {
+			    scales: {
+			        y: {
+			            beginAtZero: true
+			        }
+			    },
+			    plugins: {
+			        tooltip: {
+			            callbacks: {
+			                label: function(context) {
+			                    const datasetLabel = context.dataset.label;
+			                    const value = context.parsed.y;
+			                    
+			                    // Для датасета "Частей" добавляем скорость
+			                    if (context.datasetIndex === 0) {
+			                        const speedValue = context.dataset.meta[context.dataIndex];
+			                        const speedValueKonvert = context.dataset.metaSK[context.dataIndex];
+			                        return [`${datasetLabel}: ${value}`, `[${speedValue} Keys/s]`, `[${speedValueKonvert}]`];
+			                    }
+			                    
+			                    // Для остальных датасетов обычное отображение
+			                    return `${datasetLabel}: ${value}`;
+			                }
+			            }
+			        }
+			    }
+			}
+		});
+
+	  	/*let mass_chart_speed = {"15.11.2025":{"speed":"814453057","speedKonvert":"814.45 Mkeys\/s"},"16.11.2025":{"speed":"4886718345","speedKonvert":"4.89 Gkeys\/s"},"17.11.2025":{"speed":"4886718345","speedKonvert":"4.89 Gkeys\/s"},"18.11.2025":{"speed":"4886718345","speedKonvert":"4.89 Gkeys\/s"},"19.11.2025":{"speed":"4886718345","speedKonvert":"4.89 Gkeys\/s"},"20.11.2025":{"speed":"5701171403","speedKonvert":"5.7 Gkeys\/s"},"21.11.2025":{"speed":"6515624460","speedKonvert":"6.52 Gkeys\/s"},"22.11.2025":{"speed":"7940917311","speedKonvert":"7.94 Gkeys\/s"},"23.11.2025":{"speed":"6312011196","speedKonvert":"6.31 Gkeys\/s"},"24.11.2025":{"speed":"9162596898","speedKonvert":"9.16 Gkeys\/s"},"25.11.2025":{"speed":"9773436691","speedKonvert":"9.77 Gkeys\/s"},"26.11.2025":{"speed":"11605956070","speedKonvert":"11.61 Gkeys\/s"},"27.11.2025":{"speed":"11402342806","speedKonvert":"11.4 Gkeys\/s"},"28.11.2025":{"speed":"9977049955","speedKonvert":"9.98 Gkeys\/s"},"29.11.2025":{"speed":"13642088714","speedKonvert":"13.64 Gkeys\/s"},"30.11.2025":{"speed":"14863768301","speedKonvert":"14.86 Gkeys\/s"},"01.12.2025":{"speed":"14049315243","speedKonvert":"14.05 Gkeys\/s"},"02.12.2025":{"speed":"26673337636","speedKonvert":"26.67 Gkeys\/s"},"03.12.2025":{"speed":"16696287681","speedKonvert":"16.7 Gkeys\/s"},"04.12.2025":{"speed":"16696287681","speedKonvert":"16.7 Gkeys\/s"},"05.12.2025":{"speed":"19750486647","speedKonvert":"19.75 Gkeys\/s"},"06.12.2025":{"speed":"9977049955","speedKonvert":"9.98 Gkeys\/s"},"07.12.2025":{"speed":"13031248921","speedKonvert":"13.03 Gkeys\/s"},"08.12.2025":{"speed":"13438475450","speedKonvert":"13.44 Gkeys\/s"},"09.12.2025":{"speed":"16085447887","speedKonvert":"16.09 Gkeys\/s"},"10.12.2025":{"speed":"27284177429","speedKonvert":"27.28 Gkeys\/s"},"11.12.2025":{"speed":"14660155037","speedKonvert":"14.66 Gkeys\/s"},"12.12.2025":{"speed":"13845701979","speedKonvert":"13.85 Gkeys\/s"},"13.12.2025":{"speed":"14660155037","speedKonvert":"14.66 Gkeys\/s"},"14.12.2025":{"speed":"14456541772","speedKonvert":"14.46 Gkeys\/s"},"15.12.2025":{"speed":"17103514209","speedKonvert":"17.1 Gkeys\/s"},"16.12.2025":{"speed":"9162596898","speedKonvert":"9.16 Gkeys\/s"},"17.12.2025":{"speed":"12013182599","speedKonvert":"12.01 Gkeys\/s"},"18.12.2025":{"speed":"13642088714","speedKonvert":"13.64 Gkeys\/s"},"19.12.2025":{"speed":"15270994830","speedKonvert":"15.27 Gkeys\/s"},"20.12.2025":{"speed":"13642088714","speedKonvert":"13.64 Gkeys\/s"},"21.12.2025":{"speed":"12624022392","speedKonvert":"12.62 Gkeys\/s"},"22.12.2025":{"speed":"15067381565","speedKonvert":"15.07 Gkeys\/s"},"23.12.2025":{"speed":"14252928508","speedKonvert":"14.25 Gkeys\/s"},"24.12.2025":{"speed":"13234862186","speedKonvert":"13.23 Gkeys\/s"},"25.12.2025":{"speed":"13438475450","speedKonvert":"13.44 Gkeys\/s"},"26.12.2025":{"speed":"12420409128","speedKonvert":"12.42 Gkeys\/s"},"27.12.2025":{"speed":"13438475450","speedKonvert":"13.44 Gkeys\/s"},"28.12.2025":{"speed":"13845701979","speedKonvert":"13.85 Gkeys\/s"},"29.12.2025":{"speed":"13438475450","speedKonvert":"13.44 Gkeys\/s"},"30.12.2025":{"speed":"11605956070","speedKonvert":"11.61 Gkeys\/s"},"31.12.2025":{"speed":"12827635657","speedKonvert":"12.83 Gkeys\/s"},"01.01.2026":{"speed":"14863768301","speedKonvert":"14.86 Gkeys\/s"},"02.01.2026":{"speed":"15474608094","speedKonvert":"15.47 Gkeys\/s"},"03.01.2026":{"speed":"15067381565","speedKonvert":"15.07 Gkeys\/s"},"04.01.2026":{"speed":"11605956070","speedKonvert":"11.61 Gkeys\/s"},"05.01.2026":{"speed":"14660155037","speedKonvert":"14.66 Gkeys\/s"},"06.01.2026":{"speed":"12624022392","speedKonvert":"12.62 Gkeys\/s"},"07.01.2026":{"speed":"12013182599","speedKonvert":"12.01 Gkeys\/s"},"08.01.2026":{"speed":"11809569335","speedKonvert":"11.81 Gkeys\/s"},"09.01.2026":{"speed":"13031248921","speedKonvert":"13.03 Gkeys\/s"},"10.01.2026":{"speed":"12624022392","speedKonvert":"12.62 Gkeys\/s"},"11.01.2026":{"speed":"12013182599","speedKonvert":"12.01 Gkeys\/s"},"12.01.2026":{"speed":"9569823426","speedKonvert":"9.57 Gkeys\/s"},"13.01.2026":{"speed":"12216795864","speedKonvert":"12.22 Gkeys\/s"},"14.01.2026":{"speed":"12827635657","speedKonvert":"12.83 Gkeys\/s"},"15.01.2026":{"speed":"12827635657","speedKonvert":"12.83 Gkeys\/s"},"16.01.2026":{"speed":"13031248921","speedKonvert":"13.03 Gkeys\/s"},"17.01.2026":{"speed":"12827635657","speedKonvert":"12.83 Gkeys\/s"},"18.01.2026":{"speed":"10995116277","speedKonvert":"11 Gkeys\/s"},"19.01.2026":{"speed":"12624022392","speedKonvert":"12.62 Gkeys\/s"},"20.01.2026":{"speed":"12216795864","speedKonvert":"12.22 Gkeys\/s"},"21.01.2026":{"speed":"11605956070","speedKonvert":"11.61 Gkeys\/s"},"22.01.2026":{"speed":"14863768301","speedKonvert":"14.86 Gkeys\/s"},"23.01.2026":{"speed":"15678221359","speedKonvert":"15.68 Gkeys\/s"},"24.01.2026":{"speed":"17103514209","speedKonvert":"17.1 Gkeys\/s"},"25.01.2026":{"speed":"13234862186","speedKonvert":"13.23 Gkeys\/s"},"26.01.2026":{"speed":"12420409128","speedKonvert":"12.42 Gkeys\/s"},"27.01.2026":{"speed":"12827635657","speedKonvert":"12.83 Gkeys\/s"},"28.01.2026":{"speed":"15067381565","speedKonvert":"15.07 Gkeys\/s"},"29.01.2026":{"speed":"19139646853","speedKonvert":"19.14 Gkeys\/s"},"30.01.2026":{"speed":"17917967267","speedKonvert":"17.92 Gkeys\/s"},"31.01.2026":{"speed":"26469724372","speedKonvert":"26.47 Gkeys\/s"},"01.02.2026":{"speed":"20564939704","speedKonvert":"20.56 Gkeys\/s"},"02.02.2026":{"speed":"24433591728","speedKonvert":"24.43 Gkeys\/s"},"03.02.2026":{"speed":"27895017223","speedKonvert":"27.9 Gkeys\/s"},"04.02.2026":{"speed":"27080564165","speedKonvert":"27.08 Gkeys\/s"},"05.02.2026":{"speed":"27284177429","speedKonvert":"27.28 Gkeys\/s"},"06.02.2026":{"speed":"27080564165","speedKonvert":"27.08 Gkeys\/s"},"07.02.2026":{"speed":"25858884579","speedKonvert":"25.86 Gkeys\/s"},"08.02.2026":{"speed":"26876950901","speedKonvert":"26.88 Gkeys\/s"},"09.02.2026":{"speed":"25044431521","speedKonvert":"25.04 Gkeys\/s"},"10.02.2026":{"speed":"27895017223","speedKonvert":"27.9 Gkeys\/s"},"11.02.2026":{"speed":"23008298877","speedKonvert":"23.01 Gkeys\/s"},"12.02.2026":{"speed":"21379392762","speedKonvert":"21.38 Gkeys\/s"},"13.02.2026":{"speed":"24637204992","speedKonvert":"24.64 Gkeys\/s"},"14.02.2026":{"speed":"24433591728","speedKonvert":"24.43 Gkeys\/s"},"15.02.2026":{"speed":"23822751935","speedKonvert":"23.82 Gkeys\/s"},"16.02.2026":{"speed":"24026365199","speedKonvert":"24.03 Gkeys\/s"},"17.02.2026":{"speed":"22804685613","speedKonvert":"22.8 Gkeys\/s"},"18.02.2026":{"speed":"27487790694","speedKonvert":"27.49 Gkeys\/s"},"19.02.2026":{"speed":"26266111107","speedKonvert":"26.27 Gkeys\/s"},"20.02.2026":{"speed":"23822751935","speedKonvert":"23.82 Gkeys\/s"},"21.02.2026":{"speed":"24433591728","speedKonvert":"24.43 Gkeys\/s"},"22.02.2026":{"speed":"21786619291","speedKonvert":"21.79 Gkeys\/s"},"23.02.2026":{"speed":"22193845819","speedKonvert":"22.19 Gkeys\/s"},"24.02.2026":{"speed":"24433591728","speedKonvert":"24.43 Gkeys\/s"},"25.02.2026":{"speed":"25248044785","speedKonvert":"25.25 Gkeys\/s"},"26.02.2026":{"speed":"21583006026","speedKonvert":"21.58 Gkeys\/s"},"27.02.2026":{"speed":"21379392762","speedKonvert":"21.38 Gkeys\/s"},"28.02.2026":{"speed":"22193845819","speedKonvert":"22.19 Gkeys\/s"},"01.03.2026":{"speed":"21583006026","speedKonvert":"21.58 Gkeys\/s"},"02.03.2026":{"speed":"22601072348","speedKonvert":"22.6 Gkeys\/s"},"03.03.2026":{"speed":"23822751935","speedKonvert":"23.82 Gkeys\/s"},"04.03.2026":{"speed":"24229978463","speedKonvert":"24.23 Gkeys\/s"},"05.03.2026":{"speed":"23211912141","speedKonvert":"23.21 Gkeys\/s"},"06.03.2026":{"speed":"26469724372","speedKonvert":"26.47 Gkeys\/s"},"07.03.2026":{"speed":"21990232555","speedKonvert":"21.99 Gkeys\/s"},"08.03.2026":{"speed":"22193845819","speedKonvert":"22.19 Gkeys\/s"},"09.03.2026":{"speed":"23415525406","speedKonvert":"23.42 Gkeys\/s"},"10.03.2026":{"speed":"22601072348","speedKonvert":"22.6 Gkeys\/s"},"11.03.2026":{"speed":"21990232555","speedKonvert":"21.99 Gkeys\/s"},"12.03.2026":{"speed":"20157713175","speedKonvert":"20.16 Gkeys\/s"},"13.03.2026":{"speed":"21583006026","speedKonvert":"21.58 Gkeys\/s"},"14.03.2026":{"speed":"24637204992","speedKonvert":"24.64 Gkeys\/s"},"15.03.2026":{"speed":"21175779497","speedKonvert":"21.18 Gkeys\/s"},"16.03.2026":{"speed":"20361326440","speedKonvert":"20.36 Gkeys\/s"},"17.03.2026":{"speed":"25044431521","speedKonvert":"25.04 Gkeys\/s"},"18.03.2026":{"speed":"25858884579","speedKonvert":"25.86 Gkeys\/s"},"19.03.2026":{"speed":"19343260118","speedKonvert":"19.34 Gkeys\/s"},"20.03.2026":{"speed":"23008298877","speedKonvert":"23.01 Gkeys\/s"},"21.03.2026":{"speed":"21990232555","speedKonvert":"21.99 Gkeys\/s"},"22.03.2026":{"speed":"21175779497","speedKonvert":"21.18 Gkeys\/s"},"23.03.2026":{"speed":"20564939704","speedKonvert":"20.56 Gkeys\/s"},"24.03.2026":{"speed":"20972166233","speedKonvert":"20.97 Gkeys\/s"},"25.03.2026":{"speed":"19343260118","speedKonvert":"19.34 Gkeys\/s"},"26.03.2026":{"speed":"13234862186","speedKonvert":"13.23 Gkeys\/s"},"27.03.2026":{"speed":"20972166233","speedKonvert":"20.97 Gkeys\/s"},"28.03.2026":{"speed":"20157713175","speedKonvert":"20.16 Gkeys\/s"},"29.03.2026":{"speed":"19750486647","speedKonvert":"19.75 Gkeys\/s"},"30.03.2026":{"speed":"22193845819","speedKonvert":"22.19 Gkeys\/s"},"31.03.2026":{"speed":"23008298877","speedKonvert":"23.01 Gkeys\/s"},"01.04.2026":{"speed":"23415525406","speedKonvert":"23.42 Gkeys\/s"},"02.04.2026":{"speed":"23619138670","speedKonvert":"23.62 Gkeys\/s"},"03.04.2026":{"speed":"23822751935","speedKonvert":"23.82 Gkeys\/s"},"04.04.2026":{"speed":"20972166233","speedKonvert":"20.97 Gkeys\/s"},"05.04.2026":{"speed":"21583006026","speedKonvert":"21.58 Gkeys\/s"},"06.04.2026":{"speed":"17307127474","speedKonvert":"17.31 Gkeys\/s"},"07.04.2026":{"speed":"13845701979","speedKonvert":"13.85 Gkeys\/s"},"08.04.2026":{"speed":"14252928508","speedKonvert":"14.25 Gkeys\/s"},"09.04.2026":{"speed":"14660155037","speedKonvert":"14.66 Gkeys\/s"},"10.04.2026":{"speed":"14660155037","speedKonvert":"14.66 Gkeys\/s"},"11.04.2026":{"speed":"16085447887","speedKonvert":"16.09 Gkeys\/s"},"12.04.2026":{"speed":"18325193796","speedKonvert":"18.33 Gkeys\/s"},"13.04.2026":{"speed":"18325193796","speedKonvert":"18.33 Gkeys\/s"},"14.04.2026":{"speed":"16492674416","speedKonvert":"16.49 Gkeys\/s"},"15.04.2026":{"speed":"17103514209","speedKonvert":"17.1 Gkeys\/s"},"16.04.2026":{"speed":"13438475450","speedKonvert":"13.44 Gkeys\/s"},"17.04.2026":{"speed":"16696287681","speedKonvert":"16.7 Gkeys\/s"},"18.04.2026":{"speed":"14660155037","speedKonvert":"14.66 Gkeys\/s"},"19.04.2026":{"speed":"14456541772","speedKonvert":"14.46 Gkeys\/s"},"20.04.2026":{"speed":"15067381565","speedKonvert":"15.07 Gkeys\/s"},"21.04.2026":{"speed":"15067381565","speedKonvert":"15.07 Gkeys\/s"},"22.04.2026":{"speed":"15474608094","speedKonvert":"15.47 Gkeys\/s"},"23.04.2026":{"speed":"14660155037","speedKonvert":"14.66 Gkeys\/s"},"24.04.2026":{"speed":"13642088714","speedKonvert":"13.64 Gkeys\/s"},"25.04.2026":{"speed":"10791503013","speedKonvert":"10.79 Gkeys\/s"},"26.04.2026":{"speed":"10180663220","speedKonvert":"10.18 Gkeys\/s"},"27.04.2026":{"speed":"11809569335","speedKonvert":"11.81 Gkeys\/s"},"28.04.2026":{"speed":"11402342806","speedKonvert":"11.4 Gkeys\/s"},"29.04.2026":{"speed":"11809569335","speedKonvert":"11.81 Gkeys\/s"},"30.04.2026":{"speed":"12827635657","speedKonvert":"12.83 Gkeys\/s"},"01.05.2026":{"speed":"11198729542","speedKonvert":"11.2 Gkeys\/s"},"02.05.2026":{"speed":"12013182599","speedKonvert":"12.01 Gkeys\/s"},"03.05.2026":{"speed":"15881834623","speedKonvert":"15.88 Gkeys\/s"},"04.05.2026":{"speed":"14252928508","speedKonvert":"14.25 Gkeys\/s"},"05.05.2026":{"speed":"11198729542","speedKonvert":"11.2 Gkeys\/s"},"06.05.2026":{"speed":"10384276484","speedKonvert":"10.38 Gkeys\/s"},"07.05.2026":{"speed":"14252928508","speedKonvert":"14.25 Gkeys\/s"},"08.05.2026":{"speed":"13234862186","speedKonvert":"13.23 Gkeys\/s"},"09.05.2026":{"speed":"18325193796","speedKonvert":"18.33 Gkeys\/s"},"10.05.2026":{"speed":"16899900945","speedKonvert":"16.9 Gkeys\/s"},"11.05.2026":{"speed":"18732420325","speedKonvert":"18.73 Gkeys\/s"},"12.05.2026":{"speed":"16696287681","speedKonvert":"16.7 Gkeys\/s"},"13.05.2026":{"speed":"16899900945","speedKonvert":"16.9 Gkeys\/s"},"14.05.2026":{"speed":"16696287681","speedKonvert":"16.7 Gkeys\/s"},"15.05.2026":{"speed":"12013182599","speedKonvert":"12.01 Gkeys\/s"},"16.05.2026":{"speed":"16085447887","speedKonvert":"16.09 Gkeys\/s"},"17.05.2026":{"speed":"13642088714","speedKonvert":"13.64 Gkeys\/s"},"18.05.2026":{"speed":"18121580531","speedKonvert":"18.12 Gkeys\/s"},"19.05.2026":{"speed":"18936033589","speedKonvert":"18.94 Gkeys\/s"},"20.05.2026":{"speed":"14049315243","speedKonvert":"14.05 Gkeys\/s"},"21.05.2026":{"speed":"19139646853","speedKonvert":"19.14 Gkeys\/s"},"22.05.2026":{"speed":"15881834623","speedKonvert":"15.88 Gkeys\/s"},"23.05.2026":{"speed":"16085447887","speedKonvert":"16.09 Gkeys\/s"},"24.05.2026":{"speed":"17510740738","speedKonvert":"17.51 Gkeys\/s"},"25.05.2026":{"speed":"17103514209","speedKonvert":"17.1 Gkeys\/s"},"26.05.2026":{"speed":"13845701979","speedKonvert":"13.85 Gkeys\/s"},"27.05.2026":{"speed":"12420409128","speedKonvert":"12.42 Gkeys\/s"},"28.05.2026":{"speed":"9366210162","speedKonvert":"9.37 Gkeys\/s"},"29.05.2026":{"speed":"10180663220","speedKonvert":"10.18 Gkeys\/s"},"30.05.2026":{"speed":"7126464254","speedKonvert":"7.13 Gkeys\/s"},"31.05.2026":{"speed":"6719237725","speedKonvert":"6.72 Gkeys\/s"},"01.06.2026":{"speed":"4479491816","speedKonvert":"4.48 Gkeys\/s"},"02.06.2026":{"speed":"8755370369","speedKonvert":"8.76 Gkeys\/s"},"03.06.2026":{"speed":"14049315243","speedKonvert":"14.05 Gkeys\/s"},"04.06.2026":{"speed":"15270994830","speedKonvert":"15.27 Gkeys\/s"},"05.06.2026":{"speed":"16289061152","speedKonvert":"16.29 Gkeys\/s"},"06.06.2026":{"speed":"14660155037","speedKonvert":"14.66 Gkeys\/s"},"07.06.2026":{"speed":"11605956070","speedKonvert":"11.61 Gkeys\/s"},"08.06.2026":{"speed":"10587889748","speedKonvert":"10.59 Gkeys\/s"},"09.06.2026":{"speed":"12013182599","speedKonvert":"12.01 Gkeys\/s"},"10.06.2026":{"speed":"12827635657","speedKonvert":"12.83 Gkeys\/s"},"11.06.2026":{"speed":"11809569335","speedKonvert":"11.81 Gkeys\/s"},"12.06.2026":{"speed":"10180663220","speedKonvert":"10.18 Gkeys\/s"},"13.06.2026":{"speed":"10384276484","speedKonvert":"10.38 Gkeys\/s"},"14.06.2026":{"speed":"10180663220","speedKonvert":"10.18 Gkeys\/s"},"15.06.2026":{"speed":"16696287681","speedKonvert":"16.7 Gkeys\/s"},"16.06.2026":{"speed":"16289061152","speedKonvert":"16.29 Gkeys\/s"},"17.06.2026":{"speed":"17307127474","speedKonvert":"17.31 Gkeys\/s"},"18.06.2026":{"speed":"15678221359","speedKonvert":"15.68 Gkeys\/s"},"19.06.2026":{"speed":"12216795864","speedKonvert":"12.22 Gkeys\/s"},"20.06.2026":{"speed":"12013182599","speedKonvert":"12.01 Gkeys\/s"},"21.06.2026":{"speed":"11198729542","speedKonvert":"11.2 Gkeys\/s"},"22.06.2026":{"speed":"12420409128","speedKonvert":"12.42 Gkeys\/s"},"23.06.2026":{"speed":"12013182599","speedKonvert":"12.01 Gkeys\/s"},"24.06.2026":{"speed":"12624022392","speedKonvert":"12.62 Gkeys\/s"},"25.06.2026":{"speed":"9569823426","speedKonvert":"9.57 Gkeys\/s"},"26.06.2026":{"speed":"8755370369","speedKonvert":"8.76 Gkeys\/s"},"27.06.2026":{"speed":"7533690782","speedKonvert":"7.53 Gkeys\/s"},"28.06.2026":{"speed":"8144530576","speedKonvert":"8.14 Gkeys\/s"},"29.06.2026":{"speed":"8348143840","speedKonvert":"8.35 Gkeys\/s"},"30.06.2026":{"speed":"8551757104","speedKonvert":"8.55 Gkeys\/s"},"01.07.2026":{"speed":"7330077518","speedKonvert":"7.33 Gkeys\/s"},"02.07.2026":{"speed":"8348143840","speedKonvert":"8.35 Gkeys\/s"},"03.07.2026":{"speed":"8348143840","speedKonvert":"8.35 Gkeys\/s"},"04.07.2026":{"speed":"9569823426","speedKonvert":"9.57 Gkeys\/s"},"05.07.2026":{"speed":"9569823426","speedKonvert":"9.57 Gkeys\/s"},"06.07.2026":{"speed":"9569823426","speedKonvert":"9.57 Gkeys\/s"},"07.07.2026":{"speed":"8755370369","speedKonvert":"8.76 Gkeys\/s"},"08.07.2026":{"speed":"8551757104","speedKonvert":"8.55 Gkeys\/s"},"09.07.2026":{"speed":"8551757104","speedKonvert":"8.55 Gkeys\/s"},"10.07.2026":{"speed":"6922850989","speedKonvert":"6.92 Gkeys\/s"},"11.07.2026":{"speed":"9162596898","speedKonvert":"9.16 Gkeys\/s"},"12.07.2026":{"speed":"6312011196","speedKonvert":"6.31 Gkeys\/s"},"13.07.2026":{"speed":"7533690782","speedKonvert":"7.53 Gkeys\/s"},"14.07.2026":{"speed":"10384276484","speedKonvert":"10.38 Gkeys\/s"},"15.07.2026":{"speed":"10180663220","speedKonvert":"10.18 Gkeys\/s"},"16.07.2026":{"speed":"10587889748","speedKonvert":"10.59 Gkeys\/s"},"17.07.2026":{"speed":"10587889748","speedKonvert":"10.59 Gkeys\/s"},"18.07.2026":{"speed":"9569823426","speedKonvert":"9.57 Gkeys\/s"},"19.07.2026":{"speed":"9569823426","speedKonvert":"9.57 Gkeys\/s"},"20.07.2026":{"speed":"9162596898","speedKonvert":"9.16 Gkeys\/s"},"21.07.2026":{"speed":"9977049955","speedKonvert":"9.98 Gkeys\/s"},"22.07.2026":{"speed":"7940917311","speedKonvert":"7.94 Gkeys\/s"},"23.07.2026":{"speed":"9977049955","speedKonvert":"9.98 Gkeys\/s"},"24.07.2026":{"speed":"9366210162","speedKonvert":"9.37 Gkeys\/s"},"25.07.2026":{"speed":"9773436691","speedKonvert":"9.77 Gkeys\/s"},"26.07.2026":{"speed":"9773436691","speedKonvert":"9.77 Gkeys\/s"},"27.07.2026":{"speed":"8348143840","speedKonvert":"8.35 Gkeys\/s"},"28.07.2026":{"speed":"11198729542","speedKonvert":"11.2 Gkeys\/s"},"29.07.2026":{"speed":"10180663220","speedKonvert":"10.18 Gkeys\/s"},"30.07.2026":{"speed":"8755370369","speedKonvert":"8.76 Gkeys\/s"},"31.07.2026":{"speed":"7737304047","speedKonvert":"7.74 Gkeys\/s"},"01.08.2026":{"speed":"8551757104","speedKonvert":"8.55 Gkeys\/s"},"02.08.2026":{"speed":"9366210162","speedKonvert":"9.37 Gkeys\/s"},"03.08.2026":{"speed":"12013182599","speedKonvert":"12.01 Gkeys\/s"},"04.08.2026":{"speed":"9773436691","speedKonvert":"9.77 Gkeys\/s"},"05.08.2026":{"speed":"8755370369","speedKonvert":"8.76 Gkeys\/s"},"06.08.2026":{"speed":"11605956070","speedKonvert":"11.61 Gkeys\/s"},"07.08.2026":{"speed":"9773436691","speedKonvert":"9.77 Gkeys\/s"},"08.08.2026":{"speed":"9162596898","speedKonvert":"9.16 Gkeys\/s"},"09.08.2026":{"speed":"9569823426","speedKonvert":"9.57 Gkeys\/s"},"10.08.2026":{"speed":"9569823426","speedKonvert":"9.57 Gkeys\/s"},"11.08.2026":{"speed":"10587889748","speedKonvert":"10.59 Gkeys\/s"},"12.08.2026":{"speed":"12420409128","speedKonvert":"12.42 Gkeys\/s"},"13.08.2026":{"speed":"12420409128","speedKonvert":"12.42 Gkeys\/s"},"14.08.2026":{"speed":"10791503013","speedKonvert":"10.79 Gkeys\/s"},"15.08.2026":{"speed":"11605956070","speedKonvert":"11.61 Gkeys\/s"},"16.08.2026":{"speed":"13031248921","speedKonvert":"13.03 Gkeys\/s"},"17.08.2026":{"speed":"12420409128","speedKonvert":"12.42 Gkeys\/s"},"18.08.2026":{"speed":"12624022392","speedKonvert":"12.62 Gkeys\/s"},"19.08.2026":{"speed":"16289061152","speedKonvert":"16.29 Gkeys\/s"},"20.08.2026":{"speed":"16696287681","speedKonvert":"16.7 Gkeys\/s"},"21.08.2026":{"speed":"15678221359","speedKonvert":"15.68 Gkeys\/s"},"22.08.2026":{"speed":"15881834623","speedKonvert":"15.88 Gkeys\/s"},"23.08.2026":{"speed":"13642088714","speedKonvert":"13.64 Gkeys\/s"},"24.08.2026":{"speed":"13438475450","speedKonvert":"13.44 Gkeys\/s"},"25.08.2026":{"speed":"12827635657","speedKonvert":"12.83 Gkeys\/s"},"26.08.2026":{"speed":"13234862186","speedKonvert":"13.23 Gkeys\/s"},"27.08.2026":{"speed":"12216795864","speedKonvert":"12.22 Gkeys\/s"},"28.08.2026":{"speed":"12013182599","speedKonvert":"12.01 Gkeys\/s"},"29.08.2026":{"speed":"13438475450","speedKonvert":"13.44 Gkeys\/s"},"30.08.2026":{"speed":"14456541772","speedKonvert":"14.46 Gkeys\/s"},"31.08.2026":{"speed":"13031248921","speedKonvert":"13.03 Gkeys\/s"},"01.09.2026":{"speed":"12013182599","speedKonvert":"12.01 Gkeys\/s"},"02.09.2026":{"speed":"10791503013","speedKonvert":"10.79 Gkeys\/s"},"03.09.2026":{"speed":"12624022392","speedKonvert":"12.62 Gkeys\/s"},"04.09.2026":{"speed":"14049315243","speedKonvert":"14.05 Gkeys\/s"},"05.09.2026":{"speed":"12420409128","speedKonvert":"12.42 Gkeys\/s"},"06.09.2026":{"speed":"8144530576","speedKonvert":"8.14 Gkeys\/s"},"07.09.2026":{"speed":"6719237725","speedKonvert":"6.72 Gkeys\/s"},"08.09.2026":{"speed":"7940917311","speedKonvert":"7.94 Gkeys\/s"},"09.09.2026":{"speed":"8348143840","speedKonvert":"8.35 Gkeys\/s"},"10.09.2026":{"speed":"8958983633","speedKonvert":"8.96 Gkeys\/s"},"11.09.2026":{"speed":"8958983633","speedKonvert":"8.96 Gkeys\/s"},"12.09.2026":{"speed":"9773436691","speedKonvert":"9.77 Gkeys\/s"},"13.09.2026":{"speed":"9773436691","speedKonvert":"9.77 Gkeys\/s"},"14.09.2026":{"speed":"8755370369","speedKonvert":"8.76 Gkeys\/s"},"15.09.2026":{"speed":"9569823426","speedKonvert":"9.57 Gkeys\/s"},"16.09.2026":{"speed":"7737304047","speedKonvert":"7.74 Gkeys\/s"},"17.09.2026":{"speed":"6719237725","speedKonvert":"6.72 Gkeys\/s"},"18.09.2026":{"speed":"6922850989","speedKonvert":"6.92 Gkeys\/s"},"19.09.2026":{"speed":"6108397932","speedKonvert":"6.11 Gkeys\/s"},"20.09.2026":{"speed":"6312011196","speedKonvert":"6.31 Gkeys\/s"},"21.09.2026":{"speed":"4683105081","speedKonvert":"4.68 Gkeys\/s"},"22.09.2026":{"speed":"6108397932","speedKonvert":"6.11 Gkeys\/s"},"23.09.2026":{"speed":"7940917311","speedKonvert":"7.94 Gkeys\/s"},"24.09.2026":{"speed":"9977049955","speedKonvert":"9.98 Gkeys\/s"},"25.09.2026":{"speed":"8551757104","speedKonvert":"8.55 Gkeys\/s"},"26.09.2026":{"speed":"7533690782","speedKonvert":"7.53 Gkeys\/s"},"27.09.2026":{"speed":"7330077518","speedKonvert":"7.33 Gkeys\/s"},"28.09.2026":{"speed":"11809569335","speedKonvert":"11.81 Gkeys\/s"},"29.09.2026":{"speed":"15067381565","speedKonvert":"15.07 Gkeys\/s"},"30.09.2026":{"speed":"15881834623","speedKonvert":"15.88 Gkeys\/s"},"01.10.2026":{"speed":"15067381565","speedKonvert":"15.07 Gkeys\/s"},"02.10.2026":{"speed":"14863768301","speedKonvert":"14.86 Gkeys\/s"},"03.10.2026":{"speed":"14252928508","speedKonvert":"14.25 Gkeys\/s"},"04.10.2026":{"speed":"12216795864","speedKonvert":"12.22 Gkeys\/s"},"05.10.2026":{"speed":"10180663220","speedKonvert":"10.18 Gkeys\/s"},"06.10.2026":{"speed":"10384276484","speedKonvert":"10.38 Gkeys\/s"},"07.10.2026":{"speed":"13642088714","speedKonvert":"13.64 Gkeys\/s"},"08.10.2026":{"speed":"14456541772","speedKonvert":"14.46 Gkeys\/s"},"09.10.2026":{"speed":"14863768301","speedKonvert":"14.86 Gkeys\/s"},"10.10.2026":{"speed":"14863768301","speedKonvert":"14.86 Gkeys\/s"},"11.10.2026":{"speed":"15067381565","speedKonvert":"15.07 Gkeys\/s"},"12.10.2026":{"speed":"13642088714","speedKonvert":"13.64 Gkeys\/s"},"13.10.2026":{"speed":"12847447386","speedKonvert":"12.85 Gkeys\/s"}};
+		let mass_days_data_speed = new Array();
+		let mass_days_data_speedKonvert = new Array();
+		for (var key in mass_chart_speed) {
+			mass_days_data_speed.push(mass_chart_speed[key]['speed']);
+			mass_days_data_speedKonvert.push(mass_chart_speed[key]['speedKonvert']);
+		}
+		const ctxSpeed = document.getElementById('myChartSpeed');
+	  myChartSpeed = new Chart(ctxSpeed, {
+	    type: 'line',
+	    data: {
+	      labels: mass_days,
+	      datasets: [{
+	      	backgroundColor: 'rgba(0, 255, 0)',
+	      	borderColor: 'rgba(0, 255, 0)',
+	        label: 'Скорость (Keys/s)',
+	        data: mass_days_data_speed,
+	        borderWidth: 1
+	      }]
+	    },
+	    options: {
+	      scales: {
+	        y: {
+	          beginAtZero: true
+	        }
+	      },
+	      plugins: {
+	            tooltip: {
+	                callbacks: {
+	                    // Кастомизация всплывающей подсказки
+	                    afterLabel: function(context) {
+	                        // Получаем индекс текущей точки
+	                        const index = context.dataIndex;
+	                        // Возвращаем конвертированное значение в квадратных скобках
+	                        return `[${mass_days_data_speedKonvert[index]}]`;
+	                    }
+	                }
+	            }
+	        }
+	    }
+	  });*/
+	</script>
+	<script>
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		})
+		
+		function select_range(idPuzzle, numberRange) {
+			$('.result_ajax').fadeOut(0);
+			$('.result_ajax_loader').fadeIn(0);
+			$('.result_ajax').html('');
+			$('#exampleModalCenter .save_select_range').attr('onclick', `save_select_range(${idPuzzle}, ${numberRange})`);
+			$.ajax({
+				url: `/api/v1/getRange?idPuzzle=${idPuzzle}&numberRange=${numberRange}`,
+				method: 'get',
+				dataType: 'json',
+				success: function(data){
+					if(data.ok == true){
+
+						//var timestamp = 1293683278;
+						var date = new Date();
+						var year = date.getFullYear();
+						var month = date.getMonth() + 1;
+						var day = date.getDate();
+						var hours = date.getHours();
+						var minutes = date.getMinutes();
+						var seconds = date.getSeconds();
+
+						$(`.tr_${numberRange}`).find('.comment').html(`<span class="badge bg-warning">Клик по проверке: ${day}.${month}.${year} в ${hours}:${minutes}</span>`);
+						$(`.tr_${numberRange}`).find('.button_select_range button').removeClass('btn-success');
+						$(`.tr_${numberRange}`).find('.button_select_range button').removeClass('btn-warning');
+						$(`.tr_${numberRange}`).find('.button_select_range button').addClass('btn-warning');
+						$('.result_ajax_loader').fadeOut(0);
+						$('.result_ajax').fadeIn(0);
+						$('.result_ajax').append(`Формат ключей: da7f13059641aefe4 или DA7F13059641AEFE4<br><br>`);
+						for(i = 0; i < data.proofAddresses.length; i++){
+							$('.result_ajax').append(`<div class="mt-2 mb-2 proof_address" data-address="${data.proofAddresses[i]}"><lable>${data.proofAddresses[i]} <span class="badge bg-secondary">Compressed</span></lable><input type="text" class="form-control" placeholder="Закрытый ключ"></div>`);
+						}
+						$('.result_ajax').append(`<div class="container-textarea">
+													  <textarea maxlength="1000" class="form-control mt-2 comment-textarea" placeholder="Комментарий. * - его никто не сможет изменить."></textarea>
+													  <div class="counter-textarea">
+													    <span class="current">0</span>&nbsp;/
+													    <span class="total">1000</span>
+													  </div>
+													</div>`);
+						const textarea = document.querySelector('textarea');
+						const counter = document.querySelector('.current');
+						const maxlength = 1000;
+
+						textarea.addEventListener('input', onInput)
+
+						function onInput(event) {
+							event.target.value = event.target.value.substr(0, maxlength);
+						  const length = event.target.value.length;
+						  counter.textContent = length;
+						}
+					} else {
+						$('.result_ajax_loader').fadeOut(0);
+						$('.result_ajax').fadeIn(0);
+						$('.result_ajax').append(`<font color="red">Error</font>: ${data.text}`);
+					}
+				}
+			});
+		}
+
+		function save_select_range(idPuzzle, numberRange){
+			if(numberRange){
+				let mass = {};
+				check_false = 0;
+				$.each($('.proof_address'), function(i, obj){
+					if($(obj).find('input').val()){
+						check_false++;
+						mass[$(obj).attr('data-address')] = $(obj).find('input').val();
+					}
+				});
+				if(check_false == 5){
+					$('.result_ajax_loader').fadeIn(0);
+					$('.result_ajax').fadeOut(0);
+					$.ajax({
+						url: '/api/v1/setRange',
+						method: 'post',
+						dataType: 'json',
+						data: {idPuzzle: idPuzzle, numberRange: numberRange, checkProofAddresses: JSON.stringify(mass), comment: $('.comment-textarea').val()},
+						success: function(data){
+							if(data.ok == true){
+								$('.result_ajax_loader').fadeOut(0);
+								$('.result_ajax').fadeIn(0);
+								$('.result_ajax').html('Статус изменен на <span class="badge bg-success">Проверено</span>');
+								window.location.replace(window.location.href);
+							} else {
+								$('.result_ajax_loader').fadeOut(0);
+								$('.result_ajax').fadeIn(0);
+								alert(data.text);
+							}
+						},
+						error: function (jqXHR, exception) {
+							$('.result_ajax_loader').fadeOut(0);
+							$('.result_ajax').fadeIn(0);
+							if (jqXHR.status === 0) {
+								alert('Not connect. Verify Network.');
+							} else if (jqXHR.status == 404) {
+								alert('Requested page not found (404).');
+							} else if (jqXHR.status == 500) {
+								alert('Internal Server Error (500).');
+							} else if (exception === 'parsererror') {
+								alert('Requested JSON parse failed.');
+							} else if (exception === 'timeout') {
+								alert('Time out error.');
+							} else if (exception === 'abort') {
+								alert('Ajax request aborted.');
+							} else {
+								alert('Uncaught Error. ' + jqXHR.responseText);
+							}
+						}
+					});
+				} else {
+					alert('Заполните все закрытые ключи!')
+				}
+			} else {
+				alert('Что-то пошло не так...')
+			}
+		}
+	</script>
+
+
+<div class="notifyjs-corner" style="top: 0px; right: 0px;"></div></body></html>

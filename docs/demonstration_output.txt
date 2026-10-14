@@ -1,0 +1,459 @@
+
+====================================================================================================
+1. TEMPORARY DEMONSTRATION DATABASE: /tmp/honestpool-demo-f7svww0n/demo.db
+====================================================================================================
+  The real database is not used. Pages come from a mocked browser serving synthetic HTML.
+  Synthetic verified segments: {1000: [99901, 99950], 1001: [], 1002: [100150], 1003: [100201, 100300], 1004: [], 1005: [100401], 2000: [199999], 2001: [200050], 2002: [], 2003: [200201]}
+  >>> [PASS] Temporary database: new empty location under /tmp
+
+====================================================================================================
+2-3. START AT PAGE 1000, END AT 1005; PROGRESS SAVED AFTER EACH PAGE
+====================================================================================================
+
+$ python main.py --db /tmp/honestpool-demo-f7svww0n/demo.db --start-page 1000 --end-page 1005
+Run range: pages 1,000..1,005 (6 pages)
+Recovered interrupted pages: 0
+Progress in range: {'pending': 6, 'processing': 0, 'completed': 0, 'failed': 0}
+Pages to process: 6 (next: [1000, 1001, 1002, 1003, 1004, 1005])
+Verified records stored: 0
+Planning only: add --live to fetch pages; no pages were fetched.
+(exit code 0)
+  [database status] 1000:pending(0x,- rec)  1001:pending(0x,- rec)  1002:pending(0x,- rec)  1003:pending(0x,- rec)  1004:pending(0x,- rec)  1005:pending(0x,- rec) | verified records: 0
+  >>> [PASS] Range selection (planning only): pages 1000-1005 registered as pending, nothing fetched
+
+$ python main.py --db /tmp/honestpool-demo-f7svww0n/demo.db --start-page 1000 --end-page 1005 --live --max-pages 6 --delay 5 --jitter 0
+Run range: pages 1,000..1,005 (6 pages)
+Recovered interrupted pages: 0
+Progress in range: {'pending': 6, 'processing': 0, 'completed': 0, 'failed': 0}
+Pages to process: 6 (next: [1000, 1001, 1002, 1003, 1004, 1005])
+Verified records stored: 0
+14:16:28 INFO scraper.browser: PLAYWRIGHT_BROWSERS_PATH has no Chromium; using /home/admini/.cache/ms-playwright
+Progress | current page: 1,000 | range 1,000..1,005 (6 pages)
+  pages: 0 completed, 6 pending, 0 failed | verified records stored: 0 | last successful page: none yet
+  session runtime: 0:00:00 | average per completed page: no completed page measured yet
+  estimated remaining (approximate, excludes CAPTCHA waits and server slowdowns): unknown until a page has been completed in this session
+14:16:28 INFO scraper.runner: page 1000: attempt 1
+14:16:28 INFO scraper.browser: page 1000: navigation 1 started (timeout 30s)
+14:16:28 INFO scraper.browser: page 1000: HTTP 200 in 0.0s at https://honestpool.ru/puzzle?id=71&page=1000; main document: 200 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+14:16:28 INFO scraper.runner: page 1000: completed, 2 verified, 2 new
+  [saved after page 1000] 1000:completed(1x,2 rec)  1001:pending(0x,- rec)  1002:pending(0x,- rec)  1003:pending(0x,- rec)  1004:pending(0x,- rec)  1005:pending(0x,- rec) | verified records: 2
+Progress | current page: 1,001 | range 1,000..1,005 (6 pages)
+  pages: 1 completed, 5 pending, 0 failed | verified records stored: 2 | last successful page: 1,000
+  session runtime: 0:00:00 | average per completed page: 0.0 s (1 measured, CAPTCHA waits excluded)
+  estimated remaining (approximate, excludes CAPTCHA waits and server slowdowns): this run 0:00:00 for 5 page(s); whole range 0:00:00 for 5 page(s)
+14:16:28 INFO scraper.runner: page 1001: attempt 1
+14:16:33 INFO scraper.browser: page 1001: navigation 2 started (timeout 30s)
+14:16:33 INFO scraper.browser: page 1001: HTTP 200 in 0.0s at https://honestpool.ru/puzzle?id=71&page=1001; main document: 200 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+14:16:34 INFO scraper.runner: page 1001: completed, 0 verified, 0 new
+  [saved after page 1001] 1000:completed(1x,2 rec)  1001:completed(1x,0 rec)  1002:pending(0x,- rec)  1003:pending(0x,- rec)  1004:pending(0x,- rec)  1005:pending(0x,- rec) | verified records: 2
+Progress | current page: 1,002 | range 1,000..1,005 (6 pages)
+  pages: 2 completed, 4 pending, 0 failed | verified records stored: 2 | last successful page: 1,001
+  session runtime: 0:00:05 | average per completed page: 2.5 s (2 measured, CAPTCHA waits excluded)
+  estimated remaining (approximate, excludes CAPTCHA waits and server slowdowns): this run 0:00:10 for 4 page(s); whole range 0:00:10 for 4 page(s)
+14:16:34 INFO scraper.runner: page 1002: attempt 1
+14:16:38 INFO scraper.browser: page 1002: navigation 3 started (timeout 30s)
+14:16:38 INFO scraper.browser: page 1002: HTTP 200 in 0.0s at https://honestpool.ru/puzzle?id=71&page=1002; main document: 200 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+14:16:38 INFO scraper.runner: page 1002: completed, 1 verified, 1 new
+  [saved after page 1002] 1000:completed(1x,2 rec)  1001:completed(1x,0 rec)  1002:completed(1x,1 rec)  1003:pending(0x,- rec)  1004:pending(0x,- rec)  1005:pending(0x,- rec) | verified records: 3
+Progress | current page: 1,003 | range 1,000..1,005 (6 pages)
+  pages: 3 completed, 3 pending, 0 failed | verified records stored: 3 | last successful page: 1,002
+  session runtime: 0:00:10 | average per completed page: 3.4 s (3 measured, CAPTCHA waits excluded)
+  estimated remaining (approximate, excludes CAPTCHA waits and server slowdowns): this run 0:00:10 for 3 page(s); whole range 0:00:10 for 3 page(s)
+14:16:38 INFO scraper.runner: page 1003: attempt 1
+14:16:43 INFO scraper.browser: page 1003: navigation 4 started (timeout 30s)
+Progress | current page: none | range 1,000..1,005 (6 pages)
+  pages: 3 completed, 3 pending, 0 failed | verified records stored: 3 | last successful page: 1,002
+  session runtime: 0:00:15 | average per completed page: 3.4 s (3 measured, CAPTCHA waits excluded)
+  estimated remaining (approximate, excludes CAPTCHA waits and server slowdowns): this run 0:00:10 for 3 page(s); whole range 0:00:10 for 3 page(s)
+Interrupted: the current page was returned to pending and saved records are kept. Continue with --resume --live.
+(exit code 130)
+
+====================================================================================================
+4. INTERRUPTION AND RECOVERY
+====================================================================================================
+  The run above was interrupted (Ctrl+C) while page 1003 was loading.
+  [after interruption] 1000:completed(1x,2 rec)  1001:completed(1x,0 rec)  1002:completed(1x,1 rec)  1003:pending(0x,- rec)  1004:pending(0x,- rec)  1005:pending(0x,- rec) | verified records: 3
+  >>> [PASS] Progress saved after each page: pages 1000-1002 committed one by one before the interruption
+  >>> [PASS] Interruption is safe: exit 130, page 1003 back to pending with no attempt counted
+
+$ python main.py --db /tmp/honestpool-demo-f7svww0n/demo.db --resume --live --max-pages 6 --delay 5 --jitter 0
+Run range: pages 1,000..1,005 (6 pages)
+Recovered interrupted pages: 0
+Progress in range: {'pending': 3, 'processing': 0, 'completed': 3, 'failed': 0}
+Pages to process: 3 (next: [1003, 1004, 1005])
+Verified records stored: 3
+Progress | current page: 1,003 | range 1,000..1,005 (6 pages)
+  pages: 3 completed, 3 pending, 0 failed | verified records stored: 3 | last successful page: 1,002
+  session runtime: 0:00:00 | average per completed page: no completed page measured yet
+  estimated remaining (approximate, excludes CAPTCHA waits and server slowdowns): unknown until a page has been completed in this session
+14:16:43 INFO scraper.runner: page 1003: attempt 1
+14:16:43 INFO scraper.browser: page 1003: navigation 1 started (timeout 30s)
+14:16:43 INFO scraper.browser: page 1003: HTTP 200 in 0.0s at https://honestpool.ru/puzzle?id=71&page=1003; main document: 200 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+14:16:44 INFO scraper.runner: page 1003: completed, 2 verified, 2 new
+  [saved after page 1003] 1000:completed(1x,2 rec)  1001:completed(1x,0 rec)  1002:completed(1x,1 rec)  1003:completed(1x,2 rec)  1004:pending(0x,- rec)  1005:pending(0x,- rec) | verified records: 5
+Progress | current page: 1,004 | range 1,000..1,005 (6 pages)
+  pages: 4 completed, 2 pending, 0 failed | verified records stored: 5 | last successful page: 1,003
+  session runtime: 0:00:00 | average per completed page: 0.0 s (1 measured, CAPTCHA waits excluded)
+  estimated remaining (approximate, excludes CAPTCHA waits and server slowdowns): this run 0:00:00 for 2 page(s); whole range 0:00:00 for 2 page(s)
+14:16:44 INFO scraper.runner: page 1004: attempt 1
+14:16:48 INFO scraper.browser: page 1004: navigation 2 started (timeout 30s)
+14:16:48 INFO scraper.browser: page 1004: HTTP 200 in 0.0s at https://honestpool.ru/puzzle?id=71&page=1004; main document: 200 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+14:16:49 INFO scraper.runner: page 1004: completed, 0 verified, 0 new
+  [saved after page 1004] 1000:completed(1x,2 rec)  1001:completed(1x,0 rec)  1002:completed(1x,1 rec)  1003:completed(1x,2 rec)  1004:completed(1x,0 rec)  1005:pending(0x,- rec) | verified records: 5
+Progress | current page: 1,005 | range 1,000..1,005 (6 pages)
+  pages: 5 completed, 1 pending, 0 failed | verified records stored: 5 | last successful page: 1,004
+  session runtime: 0:00:05 | average per completed page: 2.5 s (2 measured, CAPTCHA waits excluded)
+  estimated remaining (approximate, excludes CAPTCHA waits and server slowdowns): this run 0:00:03 for 1 page(s); whole range 0:00:03 for 1 page(s)
+14:16:49 INFO scraper.runner: page 1005: attempt 1
+14:16:53 INFO scraper.browser: page 1005: navigation 3 started (timeout 30s)
+14:16:53 INFO scraper.browser: page 1005: HTTP 200 in 0.0s at https://honestpool.ru/puzzle?id=71&page=1005; main document: 200 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+14:16:54 INFO scraper.runner: page 1005: completed, 1 verified, 1 new
+  [saved after page 1005] 1000:completed(1x,2 rec)  1001:completed(1x,0 rec)  1002:completed(1x,1 rec)  1003:completed(1x,2 rec)  1004:completed(1x,0 rec)  1005:completed(1x,1 rec) | verified records: 6
+Progress | current page: none | range 1,000..1,005 (6 pages)
+  pages: 6 completed, 0 pending, 0 failed | verified records stored: 6 | last successful page: 1,005
+  session runtime: 0:00:10 | average per completed page: 3.3 s (3 measured, CAPTCHA waits excluded)
+  estimated remaining (approximate, excludes CAPTCHA waits and server slowdowns): this run 0:00:00 for 0 page(s); whole range 0:00:00 for 0 page(s)
+Live run: 3 completed, 0 failed, 3 new verified records (attempted 3 of 3 unfinished pages)
+Verified records stored: 6
+(exit code 0)
+  [after resume] 1000:completed(1x,2 rec)  1001:completed(1x,0 rec)  1002:completed(1x,1 rec)  1003:completed(1x,2 rec)  1004:completed(1x,0 rec)  1005:completed(1x,1 rec) | verified records: 6
+  >>> [PASS] Resume skips completed pages: resume requested only [1003, 1004, 1005]
+  >>> [PASS] No duplicates or lost records: 6 unique records [99901, 99950, 100150, 100201, 100300, 100401]
+  >>> [PASS] Only pages inside 1000-1005 processed: pages requested: [1000, 1001, 1002, 1003] then [1003, 1004, 1005]
+
+====================================================================================================
+5. CHANGING THE STARTING PAGE: RANGE 2000-2003 (page 2001 first returns an incomplete listing)
+====================================================================================================
+
+$ python main.py --db /tmp/honestpool-demo-f7svww0n/demo.db --start-page 2000 --end-page 2003 --live --max-pages 4 --delay 5 --jitter 0
+Run range: pages 2,000..2,003 (4 pages)
+Recovered interrupted pages: 0
+Progress in range: {'pending': 4, 'processing': 0, 'completed': 0, 'failed': 0}
+Pages to process: 4 (next: [2000, 2001, 2002, 2003])
+Verified records stored: 6
+Progress | current page: 2,000 | range 2,000..2,003 (4 pages)
+  pages: 0 completed, 4 pending, 0 failed | verified records stored: 6 | last successful page: none yet
+  session runtime: 0:00:00 | average per completed page: no completed page measured yet
+  estimated remaining (approximate, excludes CAPTCHA waits and server slowdowns): unknown until a page has been completed in this session
+14:16:54 INFO scraper.runner: page 2000: attempt 1
+14:16:54 INFO scraper.browser: page 2000: navigation 1 started (timeout 30s)
+14:16:54 INFO scraper.browser: page 2000: HTTP 200 in 0.0s at https://honestpool.ru/puzzle?id=71&page=2000; main document: 200 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+14:16:54 INFO scraper.runner: page 2000: completed, 1 verified, 1 new
+  [saved after page 2000] 2000:completed(1x,1 rec)  2001:pending(0x,- rec)  2002:pending(0x,- rec)  2003:pending(0x,- rec) | verified records: 7
+Progress | current page: 2,001 | range 2,000..2,003 (4 pages)
+  pages: 1 completed, 3 pending, 0 failed | verified records stored: 7 | last successful page: 2,000
+  session runtime: 0:00:00 | average per completed page: 0.0 s (1 measured, CAPTCHA waits excluded)
+  estimated remaining (approximate, excludes CAPTCHA waits and server slowdowns): this run 0:00:00 for 3 page(s); whole range 0:00:00 for 3 page(s)
+14:16:54 INFO scraper.runner: page 2001: attempt 1
+14:16:59 INFO scraper.browser: page 2001: navigation 2 started (timeout 30s)
+14:16:59 INFO scraper.browser: page 2001: HTTP 200 in 0.0s at https://honestpool.ru/puzzle?id=71&page=2001; main document: 200 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: partial (40 of 100 rows); outstanding requests: 0; failed requests: none
+  [saved after page 2001] 2000:completed(1x,1 rec)  2001:failed(1x,- rec)  2002:pending(0x,- rec)  2003:pending(0x,- rec) | verified records: 7
+14:16:59 WARNING scraper.runner: page 2001 failed: page 2001: incomplete or invalid listing: 40 listing rows, expected 100
+Progress | current page: 2,002 | range 2,000..2,003 (4 pages)
+  pages: 1 completed, 2 pending, 1 failed | verified records stored: 7 | last successful page: 2,000
+  session runtime: 0:00:05 | average per completed page: 0.0 s (1 measured, CAPTCHA waits excluded)
+  estimated remaining (approximate, excludes CAPTCHA waits and server slowdowns): this run 0:00:00 for 2 page(s); whole range 0:00:00 for 3 page(s)
+14:16:59 INFO scraper.runner: page 2002: attempt 1
+14:17:04 INFO scraper.browser: page 2002: navigation 3 started (timeout 30s)
+14:17:04 INFO scraper.browser: page 2002: HTTP 200 in 0.0s at https://honestpool.ru/puzzle?id=71&page=2002; main document: 200 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+14:17:04 INFO scraper.runner: page 2002: completed, 0 verified, 0 new
+  [saved after page 2002] 2000:completed(1x,1 rec)  2001:failed(1x,- rec)  2002:completed(1x,0 rec)  2003:pending(0x,- rec) | verified records: 7
+Progress | current page: 2,003 | range 2,000..2,003 (4 pages)
+  pages: 2 completed, 1 pending, 1 failed | verified records stored: 7 | last successful page: 2,002
+  session runtime: 0:00:10 | average per completed page: 2.5 s (2 measured, CAPTCHA waits excluded)
+  estimated remaining (approximate, excludes CAPTCHA waits and server slowdowns): this run 0:00:03 for 1 page(s); whole range 0:00:05 for 2 page(s)
+14:17:04 INFO scraper.runner: page 2003: attempt 1
+14:17:09 INFO scraper.browser: page 2003: navigation 4 started (timeout 30s)
+14:17:09 INFO scraper.browser: page 2003: HTTP 200 in 0.0s at https://honestpool.ru/puzzle?id=71&page=2003; main document: 200 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+14:17:09 INFO scraper.runner: page 2003: completed, 1 verified, 1 new
+  [saved after page 2003] 2000:completed(1x,1 rec)  2001:failed(1x,- rec)  2002:completed(1x,0 rec)  2003:completed(1x,1 rec) | verified records: 8
+Progress | current page: none | range 2,000..2,003 (4 pages)
+  pages: 3 completed, 0 pending, 1 failed | verified records stored: 8 | last successful page: 2,003
+  session runtime: 0:00:15 | average per completed page: 3.4 s (3 measured, CAPTCHA waits excluded)
+  estimated remaining (approximate, excludes CAPTCHA waits and server slowdowns): this run 0:00:00 for 0 page(s); whole range 0:00:03 for 1 page(s)
+Live run: 3 completed, 1 failed, 2 new verified records (attempted 4 of 4 unfinished pages)
+Verified records stored: 8
+(exit code 0)
+  [range 1000-1005] 1000:completed(1x,2 rec)  1001:completed(1x,0 rec)  1002:completed(1x,1 rec)  1003:completed(1x,2 rec)  1004:completed(1x,0 rec)  1005:completed(1x,1 rec) | verified records: 8
+  [range 2000-2003] 2000:completed(1x,1 rec)  2001:failed(1x,- rec)  2002:completed(1x,0 rec)  2003:completed(1x,1 rec) | verified records: 8
+  >>> [PASS] New range processed: pages 2000-2003 requested; page 2001 failed validation and saved nothing
+  >>> [PASS] Earlier data intact: range 1000-1005 still completed with its 6 records
+  >>> [PASS] Invalid listing marked failed: page 2001 failed (1 attempt)
+
+====================================================================================================
+7. PROGRESS REPORTING
+====================================================================================================
+  a) Resume range 2000-2003: the report before the page shows 1 failed page.
+
+$ python main.py --db /tmp/honestpool-demo-f7svww0n/demo.db --resume --live --max-pages 1 --delay 5 --jitter 0
+Run range: pages 2,000..2,003 (4 pages)
+Recovered interrupted pages: 0
+Progress in range: {'pending': 0, 'processing': 0, 'completed': 3, 'failed': 1}
+Pages to process: 1 (next: [2001])
+Verified records stored: 8
+Progress | current page: 2,001 | range 2,000..2,003 (4 pages)
+  pages: 3 completed, 0 pending, 1 failed | verified records stored: 8 | last successful page: 2,003
+  session runtime: 0:00:00 | average per completed page: no completed page measured yet
+  estimated remaining (approximate, excludes CAPTCHA waits and server slowdowns): unknown until a page has been completed in this session
+14:17:09 INFO scraper.runner: page 2001: attempt 2
+14:17:09 INFO scraper.browser: page 2001: navigation 1 started (timeout 30s)
+14:17:09 INFO scraper.browser: page 2001: HTTP 200 in 0.0s at https://honestpool.ru/puzzle?id=71&page=2001; main document: 200 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+14:17:09 INFO scraper.runner: page 2001: completed, 1 verified, 1 new
+Progress | current page: none | range 2,000..2,003 (4 pages)
+  pages: 4 completed, 0 pending, 0 failed | verified records stored: 9 | last successful page: 2,001
+  session runtime: 0:00:00 | average per completed page: 0.0 s (1 measured, CAPTCHA waits excluded)
+  estimated remaining (approximate, excludes CAPTCHA waits and server slowdowns): this run 0:00:00 for 0 page(s); whole range 0:00:00 for 0 page(s)
+Live run: 1 completed, 0 failed, 1 new verified records (attempted 1 of 1 unfinished pages)
+Verified records stored: 9
+(exit code 0)
+  [range 2000-2003] 2000:completed(1x,1 rec)  2001:completed(2x,1 rec)  2002:completed(1x,0 rec)  2003:completed(1x,1 rec) | verified records: 9
+  >>> [PASS] Failed page retried on resume: page 2001 retried first and completed
+
+  b) Extend the range to 1000-1100 and fetch 3 pages: the estimate uses the measured pace.
+
+$ python main.py --db /tmp/honestpool-demo-f7svww0n/demo.db --start-page 1000 --end-page 1100 --live --max-pages 3 --delay 5 --jitter 0
+Run range: pages 1,000..1,100 (101 pages)
+Recovered interrupted pages: 0
+Progress in range: {'pending': 95, 'processing': 0, 'completed': 6, 'failed': 0}
+Pages to process: 95 (next: [1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015])
+Verified records stored: 9
+Progress | current page: 1,006 | range 1,000..1,100 (101 pages)
+  pages: 6 completed, 95 pending, 0 failed | verified records stored: 9 | last successful page: 1,005
+  session runtime: 0:00:00 | average per completed page: no completed page measured yet
+  estimated remaining (approximate, excludes CAPTCHA waits and server slowdowns): unknown until a page has been completed in this session
+14:17:09 INFO scraper.runner: page 1006: attempt 1
+14:17:09 INFO scraper.browser: page 1006: navigation 1 started (timeout 30s)
+14:17:09 INFO scraper.browser: page 1006: HTTP 200 in 0.0s at https://honestpool.ru/puzzle?id=71&page=1006; main document: 200 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+14:17:09 INFO scraper.runner: page 1006: completed, 0 verified, 0 new
+Progress | current page: 1,007 | range 1,000..1,100 (101 pages)
+  pages: 7 completed, 94 pending, 0 failed | verified records stored: 9 | last successful page: 1,006
+  session runtime: 0:00:00 | average per completed page: 0.0 s (1 measured, CAPTCHA waits excluded)
+  estimated remaining (approximate, excludes CAPTCHA waits and server slowdowns): this run 0:00:00 for 2 page(s); whole range 0:00:03 for 94 page(s)
+14:17:09 INFO scraper.runner: page 1007: attempt 1
+14:17:14 INFO scraper.browser: page 1007: navigation 2 started (timeout 30s)
+14:17:14 INFO scraper.browser: page 1007: HTTP 200 in 0.0s at https://honestpool.ru/puzzle?id=71&page=1007; main document: 200 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+14:17:14 INFO scraper.runner: page 1007: completed, 0 verified, 0 new
+Progress | current page: 1,008 | range 1,000..1,100 (101 pages)
+  pages: 8 completed, 93 pending, 0 failed | verified records stored: 9 | last successful page: 1,007
+  session runtime: 0:00:05 | average per completed page: 2.5 s (2 measured, CAPTCHA waits excluded)
+  estimated remaining (approximate, excludes CAPTCHA waits and server slowdowns): this run 0:00:03 for 1 page(s); whole range 0:03:55 for 93 page(s)
+14:17:14 INFO scraper.runner: page 1008: attempt 1
+14:17:19 INFO scraper.browser: page 1008: navigation 3 started (timeout 30s)
+14:17:19 INFO scraper.browser: page 1008: HTTP 200 in 0.0s at https://honestpool.ru/puzzle?id=71&page=1008; main document: 200 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+14:17:19 INFO scraper.runner: page 1008: completed, 0 verified, 0 new
+Progress | current page: none | range 1,000..1,100 (101 pages)
+  pages: 9 completed, 92 pending, 0 failed | verified records stored: 9 | last successful page: 1,008
+  session runtime: 0:00:10 | average per completed page: 3.3 s (3 measured, CAPTCHA waits excluded)
+  estimated remaining (approximate, excludes CAPTCHA waits and server slowdowns): this run 0:00:00 for 0 page(s); whole range 0:05:08 for 92 page(s)
+Live run: 3 completed, 0 failed, 0 new verified records (attempted 3 of 95 unfinished pages)
+Verified records stored: 9
+(exit code 0)
+  >>> [PASS] Progress reporting: current page, completed/pending/failed, verified records and approximate remaining time shown
+
+====================================================================================================
+6. CSV AND XLSX EXPORT OF THE TEMPORARY DATABASE
+====================================================================================================
+
+$ python main.py --db /tmp/honestpool-demo-f7svww0n/demo.db --export csv --output /tmp/honestpool-demo-f7svww0n/verified_records.csv
+Exported 9 verified records to /tmp/honestpool-demo-f7svww0n/verified_records.csv
+(exit code 0)
+
+$ python main.py --db /tmp/honestpool-demo-f7svww0n/demo.db --export xlsx --output /tmp/honestpool-demo-f7svww0n/verified_records.xlsx
+Exported 9 verified records to /tmp/honestpool-demo-f7svww0n/verified_records.xlsx
+(exit code 0)
+
+  verified_records.csv:
+    Number,Start hex,End hex,Status
+    99901,401863c00000000000,401863d00000000000,Проверено
+    99950,401866d00000000000,401866e00000000000,Проверено
+    100150,401873500000000000,401873600000000000,Проверено
+    100201,401876800000000000,401876900000000000,Проверено
+    100300,40187cb00000000000,40187cc00000000000,Проверено
+    100401,401883000000000000,401883100000000000,Проверено
+    199999,4030d3e00000000000,4030d3f00000000000,Проверено
+    200050,4030d7100000000000,4030d7200000000000,Проверено
+    200201,4030e0800000000000,4030e0900000000000,Проверено
+
+  verified_records.xlsx: 9 rows; hex cell types ['s'], number formats ['@'], inline-string cells in the sheet XML: 31
+    Number | Start hex | End hex | Status
+    99901 | 401863c00000000000 | 401863d00000000000 | Проверено
+    99950 | 401866d00000000000 | 401866e00000000000 | Проверено
+    100150 | 401873500000000000 | 401873600000000000 | Проверено
+    100201 | 401876800000000000 | 401876900000000000 | Проверено
+    100300 | 40187cb00000000000 | 40187cc00000000000 | Проверено
+    100401 | 401883000000000000 | 401883100000000000 | Проверено
+    199999 | 4030d3e00000000000 | 4030d3f00000000000 | Проверено
+    200050 | 4030d7100000000000 | 4030d7200000000000 | Проверено
+    200201 | 4030e0800000000000 | 4030e0900000000000 | Проверено
+  >>> [PASS] Four required columns: Number, Start hex, End hex, Status
+  >>> [PASS] Hex values complete: 9 rows, 18-digit values matching the formula
+  >>> [PASS] XLSX stores hex as text: string cells with Text format '@'
+
+====================================================================================================
+8. CAPTCHA AND ERROR HANDLING (mocked browser responses only)
+====================================================================================================
+
+-- 8a. CAPTCHA detection in --headless mode: the run stops at once, nothing is answered
+14:17:19 INFO scraper.browser: page 1: navigation 1 started (timeout 30s)
+14:17:19 INFO scraper.browser: page 1: HTTP 200 in 0.0s at https://honestpool.ru/captcha; main document: 200 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: absent; outstanding requests: 0; failed requests: none
+  CaptchaRequiredError: CAPTCHA shown in headless mode; manual verification is impossible
+  >>> [PASS] CAPTCHA detection: detected on the first navigation, run stops
+
+-- 8b. Visible browser: a (simulated) person answers wrongly twice, then correctly
+14:17:19 INFO scraper.browser: page 2: navigation 1 started (timeout 30s)
+14:17:19 INFO scraper.browser: page 2: HTTP 200 in 0.0s at https://honestpool.ru/captcha?page=2; main document: 200 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: absent; outstanding requests: 0; failed requests: none
+  [scraper] CAPTCHA shown. Please complete it manually in the browser window (waiting up to 600s). It is never solved automatically.
+  [scraper] CAPTCHA shown again (the answer may have been rejected); still waiting for manual verification (598s left).
+  [scraper] CAPTCHA shown again (the answer may have been rejected); still waiting for manual verification (596s left).
+14:17:19 INFO scraper.browser: manual verification confirmed at https://honestpool.ru/puzzle?id=71
+  [scraper] Verification detected: the browser reached the listing at https://honestpool.ru/puzzle?id=71; continuing with the same browser session.
+14:17:19 INFO scraper.browser: page 2: navigation 2 started (timeout 30s)
+14:17:19 INFO scraper.browser: page 2: HTTP 200 in 0.0s at https://honestpool.ru/puzzle?id=71&page=2; main document: 200 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+  >>> [PASS] Incorrect CAPTCHA answers keep waiting: 2 rejected answers reported, kept waiting
+  >>> [PASS] Valid listing detected after manual verification: complete listing confirmed, page 2 then loaded in the same session
+
+-- 8c. A second CAPTCHA in the same session stops the run safely (temporary database)
+14:17:19 INFO scraper.runner: page 2: attempt 1
+14:17:19 INFO scraper.browser: page 2: navigation 1 started (timeout 30s)
+14:17:19 INFO scraper.browser: page 2: HTTP 200 in 0.0s at https://honestpool.ru/captcha; main document: 200 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: absent; outstanding requests: 0; failed requests: none
+  [scraper] CAPTCHA shown. Please complete it manually in the browser window (waiting up to 600s). It is never solved automatically.
+14:17:19 INFO scraper.browser: manual verification confirmed at https://honestpool.ru/puzzle?id=71
+  [scraper] Verification detected: the browser reached the listing at https://honestpool.ru/puzzle?id=71; continuing with the same browser session.
+14:17:19 INFO scraper.browser: page 2: navigation 2 started (timeout 30s)
+14:17:19 INFO scraper.browser: page 2: HTTP 200 in 0.0s at https://honestpool.ru/puzzle?id=71&page=2; main document: 200 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+14:17:19 INFO scraper.runner: page 2: completed, 1 verified, 1 new
+14:17:19 INFO scraper.runner: page 3: attempt 1
+14:17:19 INFO scraper.browser: page 3: navigation 3 started (timeout 30s)
+14:17:19 INFO scraper.browser: page 3: HTTP 200 in 0.0s at https://honestpool.ru/captcha; main document: 200 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: absent; outstanding requests: 0; failed requests: none
+14:17:19 WARNING scraper.runner: run stopped at page 3: CAPTCHA shown again; manual verifications for this session are used up
+  run stopped: page 3: CAPTCHA shown again; manual verifications for this session are used up
+  [database status] 2:completed(1x,1 rec)  3:pending(0x,- rec)  4:pending(0x,- rec) | verified records: 1
+  >>> [PASS] Second CAPTCHA causes a safe stop: page 2 kept, pages 3-4 pending with no attempt counted
+
+-- 8d. HTTP 403 during a CLI run (full pipeline, mocked browser)
+
+$ python main.py --db /tmp/honestpool-demo-f7svww0n/errors.db --start-page 3000 --end-page 3002 --live --max-pages 3 --delay 5 --jitter 0
+Run range: pages 3,000..3,002 (3 pages)
+Recovered interrupted pages: 0
+Progress in range: {'pending': 3, 'processing': 0, 'completed': 0, 'failed': 0}
+Pages to process: 3 (next: [3000, 3001, 3002])
+Verified records stored: 1
+Progress | current page: 3,000 | range 3,000..3,002 (3 pages)
+  pages: 0 completed, 3 pending, 0 failed | verified records stored: 1 | last successful page: none yet
+  session runtime: 0:00:00 | average per completed page: no completed page measured yet
+  estimated remaining (approximate, excludes CAPTCHA waits and server slowdowns): unknown until a page has been completed in this session
+14:17:19 INFO scraper.runner: page 3000: attempt 1
+14:17:19 INFO scraper.browser: page 3000: navigation 1 started (timeout 30s)
+14:17:19 INFO scraper.browser: page 3000: HTTP 200 in 0.0s at https://honestpool.ru/puzzle?id=71&page=3000; main document: 200 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+14:17:19 INFO scraper.runner: page 3000: completed, 0 verified, 0 new
+Progress | current page: 3,001 | range 3,000..3,002 (3 pages)
+  pages: 1 completed, 2 pending, 0 failed | verified records stored: 1 | last successful page: 3,000
+  session runtime: 0:00:00 | average per completed page: 0.0 s (1 measured, CAPTCHA waits excluded)
+  estimated remaining (approximate, excludes CAPTCHA waits and server slowdowns): this run 0:00:00 for 2 page(s); whole range 0:00:00 for 2 page(s)
+14:17:19 INFO scraper.runner: page 3001: attempt 1
+14:17:24 INFO scraper.browser: page 3001: navigation 2 started (timeout 30s)
+14:17:24 INFO scraper.browser: page 3001: HTTP 403 in 0.0s at https://honestpool.ru/puzzle?id=71&page=3001; main document: 403 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: absent; outstanding requests: 0; failed requests: none
+14:17:24 WARNING scraper.runner: run stopped at page 3001: HTTP 403 for https://honestpool.ru/puzzle?id=71&page=3001; access is restricted
+Progress | current page: none | range 3,000..3,002 (3 pages)
+  pages: 1 completed, 2 pending, 0 failed | verified records stored: 1 | last successful page: 3,000
+  session runtime: 0:00:05 | average per completed page: 0.0 s (1 measured, CAPTCHA waits excluded)
+  estimated remaining (approximate, excludes CAPTCHA waits and server slowdowns): this run 0:00:00 for 2 page(s); whole range 0:00:00 for 2 page(s)
+Live run: 1 completed, 0 failed, 0 new verified records (attempted 3 of 3 unfinished pages)
+Verified records stored: 1
+Run stopped: page 3001: HTTP 403 for https://honestpool.ru/puzzle?id=71&page=3001; access is restricted
+(exit code 3)
+  [database status] 3000:completed(1x,0 rec)  3001:pending(0x,- rec)  3002:pending(0x,- rec) | verified records: 1
+  >>> [PASS] HTTP 403 stops safely: exit 3 after page 3001, no retry, page 3002 never requested
+  >>> [PASS] No proxy rotation or relaunch on denial: 1 browser launch [{'headless': False}], context options ['locale', 'viewport'] only
+
+-- 8e. HTTP 401
+14:17:24 INFO scraper.browser: page 1: navigation 1 started (timeout 30s)
+14:17:24 INFO scraper.browser: page 1: HTTP 401 in 0.0s at https://honestpool.ru/puzzle?id=71; main document: 401 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+  AccessRestrictedError: HTTP 401 for https://honestpool.ru/puzzle?id=71; access is restricted
+  >>> [PASS] HTTP 401 stops safely: stopped after 1 navigation, no retry
+
+-- 8f. HTTP 429 with Retry-After: 45, then success; persistent 429; Retry-After above the cap
+14:17:24 INFO scraper.browser: page 1: navigation 1 started (timeout 30s)
+14:17:24 INFO scraper.browser: page 1: HTTP 429 in 0.0s at https://honestpool.ru/puzzle?id=71; main document: 429 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+14:17:24 WARNING scraper.browser: page 1: HTTP 429 rate limited; retry 1/2 in 45s
+14:17:24 INFO scraper.browser: page 1: navigation 2 started (timeout 30s)
+14:17:24 INFO scraper.browser: page 1: HTTP 200 in 0.0s at https://honestpool.ru/puzzle?id=71; main document: 200 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+  waits: [45.0] s
+14:17:24 INFO scraper.browser: page 1: navigation 1 started (timeout 30s)
+14:17:24 INFO scraper.browser: page 1: HTTP 429 in 0.0s at https://honestpool.ru/puzzle?id=71; main document: 429 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+14:17:24 WARNING scraper.browser: page 1: HTTP 429 rate limited; retry 1/2 in 18s
+14:17:24 INFO scraper.browser: page 1: navigation 2 started (timeout 30s)
+14:17:24 INFO scraper.browser: page 1: HTTP 429 in 0.0s at https://honestpool.ru/puzzle?id=71; main document: 429 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+14:17:24 WARNING scraper.browser: page 1: HTTP 429 rate limited; retry 2/2 in 24s
+14:17:24 INFO scraper.browser: page 1: navigation 3 started (timeout 30s)
+14:17:24 INFO scraper.browser: page 1: HTTP 429 in 0.0s at https://honestpool.ru/puzzle?id=71; main document: 429 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+  RateLimitedError: HTTP 429 persisted after 2 retries for https://honestpool.ru/puzzle?id=71
+14:17:24 INFO scraper.browser: page 1: navigation 1 started (timeout 30s)
+14:17:24 INFO scraper.browser: page 1: HTTP 429 in 0.0s at https://honestpool.ru/puzzle?id=71; main document: 429 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+  RateLimitedError: HTTP 429 rate limited: server asked to wait 3600s for https://honestpool.ru/puzzle?id=71
+  >>> [PASS] HTTP 429 and Retry-After: waited 45 s then succeeded; persistent 429 stopped after 3 navigations; 3600 s request refused
+
+-- 8g. HTTP 503 and timeouts: bounded retries with exponential back-off (--retries 2)
+14:17:24 INFO scraper.browser: page 1: navigation 1 started (timeout 30s)
+14:17:24 INFO scraper.browser: page 1: HTTP 503 in 0.0s at https://honestpool.ru/puzzle?id=71; main document: 503 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+14:17:24 WARNING scraper.browser: page 1: HTTP 503; retry 1/2 in 18s
+14:17:24 INFO scraper.browser: page 1: navigation 2 started (timeout 30s)
+14:17:24 INFO scraper.browser: page 1: HTTP 200 in 0.0s at https://honestpool.ru/puzzle?id=71; main document: 200 at unknown; committed: 0.0s; DOMContentLoaded: 0.0s; load: no; listing: complete (100 rows); outstanding requests: 0; failed requests: none
+  503 then success, waits: [18.4] s
+14:17:24 INFO scraper.browser: page 1: navigation 1 started (timeout 30s)
+14:17:24 WARNING scraper.browser: page 1: navigation timeout after 0.0s: Timeout 30000ms exceeded.; main document: not received; committed: no; DOMContentLoaded: no; load: no; listing: absent (no document committed); outstanding requests: 0; failed requests: none
+14:17:24 INFO scraper.browser: page 1: unfinished navigation stopped; tab reset to about:blank
+14:17:24 WARNING scraper.browser: page 1: navigation timeout after 0.0s: Timeout 30000ms exceeded.; retry 1/2 in 18s
+14:17:24 INFO scraper.browser: page 1: navigation 2 started (timeout 30s)
+14:17:24 WARNING scraper.browser: page 1: navigation timeout after 0.0s: Timeout 30000ms exceeded.; main document: not received; committed: no; DOMContentLoaded: no; load: no; listing: absent (no document committed); outstanding requests: 0; failed requests: none
+14:17:24 INFO scraper.browser: page 1: unfinished navigation stopped; tab reset to about:blank
+14:17:24 WARNING scraper.browser: page 1: navigation timeout after 0.0s: Timeout 30000ms exceeded.; retry 2/2 in 24s
+14:17:24 INFO scraper.browser: page 1: navigation 3 started (timeout 30s)
+14:17:24 WARNING scraper.browser: page 1: navigation timeout after 0.0s: Timeout 30000ms exceeded.; main document: not received; committed: no; DOMContentLoaded: no; load: no; listing: absent (no document committed); outstanding requests: 0; failed requests: none
+14:17:24 INFO scraper.browser: page 1: unfinished navigation stopped; tab reset to about:blank
+  TransientFetchError: navigation timeout after 0.0s: Timeout 30000ms exceeded. (gave up after 2 retries); back-off waits [18.4, 24.2] s
+  >>> [PASS] HTTP 5xx and timeouts with bounded retries: 503 retried once then succeeded; timeouts gave up after 1 + 2 retries
+
+-- 8h. Automatic CAPTCHA solving
+  >>> [NOT IMPLEMENTED] Automatic CAPTCHA solving: by design the scraper only waits for a person and never answers the CAPTCHA
+
+====================================================================================================
+REAL DATA PROTECTION
+====================================================================================================
+  data/honestpool.db: unchanged
+  data/verified_records.csv: unchanged
+  data/verified_records.xlsx: unchanged
+  delivery/honestpool-scraper-demo-20261013.zip: unchanged
+  >>> [PASS] Real database and delivery package untouched: checksums identical before and after
+
+====================================================================================================
+SUMMARY
+====================================================================================================
+  Temporary database                                PASS
+  Range selection (planning only)                   PASS
+  Progress saved after each page                    PASS
+  Interruption is safe                              PASS
+  Resume skips completed pages                      PASS
+  No duplicates or lost records                     PASS
+  Only pages inside 1000-1005 processed             PASS
+  New range processed                               PASS
+  Earlier data intact                               PASS
+  Invalid listing marked failed                     PASS
+  Failed page retried on resume                     PASS
+  Progress reporting                                PASS
+  Four required columns                             PASS
+  Hex values complete                               PASS
+  XLSX stores hex as text                           PASS
+  CAPTCHA detection                                 PASS
+  Incorrect CAPTCHA answers keep waiting            PASS
+  Valid listing detected after manual verification  PASS
+  Second CAPTCHA causes a safe stop                 PASS
+  HTTP 403 stops safely                             PASS
+  No proxy rotation or relaunch on denial           PASS
+  HTTP 401 stops safely                             PASS
+  HTTP 429 and Retry-After                          PASS
+  HTTP 5xx and timeouts with bounded retries        PASS
+  Automatic CAPTCHA solving                         NOT IMPLEMENTED
+  Real database and delivery package untouched      PASS
+
+  26 checks, 0 failed. Temporary files: /tmp/honestpool-demo-f7svww0n

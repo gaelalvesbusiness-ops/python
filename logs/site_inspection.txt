@@ -1,0 +1,1598 @@
+HonestPool site inspection report
+Started: 2026-10-13T09:23:29
+Finished: 2026-10-13T09:24:34
+
+==============================================================================
+LISTING: original  (https://honestpool.ru/puzzle?id=71)
+==============================================================================
+Document HTTP status: 200
+Document headers: {
+  "cache-control": "no-store, no-cache, must-revalidate",
+  "content-type": "text/html; charset=UTF-8",
+  "server": "nginx"
+}
+Accessible (table rows rendered): True
+Challenge / no-table state observed on first load:
+  title: HONEST BITCOIN PUZZLE POOL | CAPTCHA
+  url: https://honestpool.ru/captcha?url=puzzle?id=71
+  indicators: []
+  keyword hits: ['captcha', 'капч']
+  body snippet: 'Ты не бот? Так пройди же капчу!'
+  screenshot: /home/admini/Documents/projects/Projects/leandro-python/honestpool-scraper/logs/captcha_original.png
+Final URL: https://honestpool.ru/puzzle?id=71
+Final title: HONEST BITCOIN PUZZLE POOL | 71
+
+Tables found: 3
+-- table[0] selector: body > div.container.mt-2:nth-of-type(1) > div:nth-of-type(1) > table.table.table-bordered
+   id='' class='table table-bordered'
+   headers: ['Адрес', '1PWo3JeB9jrGwfHDNpdGK54CRas7fsVzXU']
+   tbody rows: 6 (all tr: 6)
+   status column index: -1
+   status variants: []
+   first rows (innerText): [
+  [
+    "Адрес",
+    "1PWo3JeB9jrGwfHDNpdGK54CRas7fsVzXU"
+  ],
+  [
+    "Область",
+    "400000000000000000:7fffffffffffffffff (270:271)"
+  ],
+  [
+    "Частей",
+    "67,108,864"
+  ]
+]
+   sample row cell detail: [
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > div:nth-of-type(1) > table.table.table-bordered > tbody > tr:nth-of-type(1)",
+    "attrs": {},
+    "cells": [
+      {
+        "tag": "th",
+        "attrs": {},
+        "innerText": "Адрес",
+        "textContent": "Адрес",
+        "html": "Адрес"
+      },
+      {
+        "tag": "td",
+        "attrs": {},
+        "innerText": "1PWo3JeB9jrGwfHDNpdGK54CRas7fsVzXU",
+        "textContent": "1PWo3JeB9jrGwfHDNpdGK54CRas7fsVzXU",
+        "html": "1PWo3JeB9jrGwfHDNpdGK54CRas7fsVzXU"
+      }
+    ]
+  }
+]
+-- table[1] selector: body > div.container.mt-2:nth-of-type(1) > div:nth-of-type(2) > table.table.table-bordered.statustic-table
+   id='' class='table table-bordered statustic-table'
+   headers: ['Статистика', 'Час', 'День', 'Неделя', 'Месяц', 'Все время']
+   tbody rows: 3 (all tr: 3)
+   status column index: -1
+   status variants: []
+   first rows (innerText): [
+  [
+    "Статистика",
+    "Час",
+    "День",
+    "Неделя",
+    "Месяц",
+    "Все время"
+  ],
+  [
+    "Проверено",
+    "4",
+    "65",
+    "490",
+    "1583",
+    "23398"
+  ],
+  [
+    "Средняя скорость",
+    "19.55 Gkeys/s",
+    "13.23 Gkeys/s",
+    "14.25 Gkeys/s",
+    "10.74 Gkeys/s",
+    "14.35 Gkeys/s"
+  ]
+]
+   sample row cell detail: [
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > div:nth-of-type(2) > table.table.table-bordered.statustic-table > tbody > tr:nth-of-type(1)",
+    "attrs": {},
+    "cells": [
+      {
+        "tag": "th",
+        "attrs": {},
+        "innerText": "Статистика",
+        "textContent": "Статистика",
+        "html": "<div class=\"d-flex justify-content-center\"><h4><div class=\"badge bg-success\">Статистика</div></h4></div>"
+      },
+      {
+        "tag": "th",
+        "attrs": {},
+        "innerText": "Час",
+        "textContent": "Час",
+        "html": "Час"
+      },
+      {
+        "tag": "th",
+        "attrs": {},
+        "innerText": "День",
+        "textContent": "День",
+        "html": "День"
+      },
+      {
+        "tag": "th",
+        "attrs": {},
+        "innerText": "Неделя",
+        "textContent": "Неделя",
+        "html": "Неделя"
+      },
+      {
+        "tag": "th",
+        "attrs": {},
+        "innerText": "Месяц",
+        "textContent": "Месяц",
+        "html": "Месяц"
+      },
+      {
+        "tag": "th",
+        "attrs": {},
+        "innerText": "Все время",
+        "textContent": "Все время",
+        "html": "Все время"
+      }
+    ]
+  }
+]
+-- table[2] selector: body > div.container.mt-2:nth-of-type(1) > div:nth-of-type(5) > table.table
+   id='' class='table'
+   headers: ['Number', 'Start hex', 'End hex', 'Comment', 'Status', '']
+   tbody rows: 100 (all tr: 101)
+   status column index: 4
+   status variants: [
+  {
+    "text": "Проверено",
+    "count": 9,
+    "leafTag": "span",
+    "leafClass": "badge bg-success",
+    "leafSelector": "tr#tag_search_1 > td:nth-of-type(4) > span.badge.bg-success",
+    "leafStyle": {
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(25, 135, 84)"
+    },
+    "cellStyle": {
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(255, 255, 255)"
+    },
+    "cellHTML": "<span class=\"badge bg-success\">Проверено</span>"
+  },
+  {
+    "text": "Не проверено",
+    "count": 91,
+    "leafTag": "span",
+    "leafClass": "badge bg-secondary",
+    "leafSelector": "tr#tag_search_10 > td.status:nth-of-type(4) > span.badge.bg-secondary",
+    "leafStyle": {
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(108, 117, 125)"
+    },
+    "cellStyle": {
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(255, 255, 255)"
+    },
+    "cellHTML": "<span class=\"badge bg-secondary\">Не проверено</span>"
+  }
+]
+   first rows (innerText): [
+  [
+    "1",
+    "400000000000000000",
+    "400000100000000000",
+    "Kingon",
+    "Проверено",
+    "30.11.2025 в 22:49"
+  ],
+  [
+    "2",
+    "400000100000000000",
+    "400000200000000000",
+    "Good luck to everyone! Donation address: 1HooooooooooLprshiHCKDfH5vCDPdp8FQ",
+    "Проверено",
+    "09.12.2025 в 23:49"
+  ],
+  [
+    "3",
+    "400000200000000000",
+    "400000300000000000",
+    "Do not follow the &quot;How to withdraw?&quot; tutorial as written. It is misleading. Make sure to untick &quot;Replace-by-Fee (RBF)&quot; and avoid using slipstream.mara to broadcast the transaction. Use the latest Electrum or build it yourself or just install it in your mobile from Google Play Store Broadcast both BTC and BCH simultaneously. Good luck to everyone! Donation address: 1HooooooooooLprshiHCKDfH5vCDPdp8FQ",
+    "Проверено",
+    "10.12.2025 в 01:27"
+  ]
+]
+   sample row cell detail: [
+  {
+    "selector": "tr#tag_search_1",
+    "attrs": {
+      "class": "tr_1",
+      "id": "tag_search_1"
+    },
+    "cells": [
+      {
+        "tag": "th",
+        "attrs": {},
+        "innerText": "1",
+        "textContent": "1",
+        "html": "1"
+      },
+      {
+        "tag": "td",
+        "attrs": {},
+        "innerText": "400000000000000000",
+        "textContent": "400000000000000000",
+        "html": "400000000000000000"
+      },
+      {
+        "tag": "td",
+        "attrs": {},
+        "innerText": "400000100000000000",
+        "textContent": "400000100000000000",
+        "html": "400000100000000000"
+      },
+      {
+        "tag": "td",
+        "attrs": {
+          "class": "comment"
+        },
+        "innerText": "Kingon",
+        "textContent": "Kingon",
+        "html": "Kingon"
+      },
+      {
+        "tag": "td",
+        "attrs": {},
+        "innerText": "Проверено",
+        "textContent": "Проверено",
+        "html": "<span class=\"badge bg-success\">Проверено</span>"
+      },
+      {
+        "tag": "td",
+        "attrs": {},
+        "innerText": "30.11.2025 в 22:49",
+        "textContent": "30.11.2025 в 22:49",
+        "html": "30.11.2025 в 22:49"
+      }
+    ]
+  }
+]
+
+Elements whose own text is exactly 'Проверено': 12
+Examples: [
+  {
+    "tag": "th",
+    "className": "",
+    "selector": "body > div.container.mt-2:nth-of-type(1) > div:nth-of-type(2) > table.table.table-bordered.statustic-table > tbody > tr:nth-of-type(2) > th:nth-of-type(1)",
+    "attrs": {},
+    "style": {
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(255, 255, 255)"
+    },
+    "outerHTML": "<th>Проверено</th>",
+    "parentHTML": "<tr>\n\t\t\t\t\t<th>Проверено</th>\n\t\t\t\t\t<th>4</th>\n\t\t\t\t\t<th>65</th>\n\t\t\t\t\t<th>490</th>\n\t\t\t\t\t<th>1583</th>\n\t\t\t\t\t<th>23398</th>\n\t\t\t\t</tr>"
+  },
+  {
+    "tag": "span",
+    "className": "badge bg-success",
+    "selector": "body > div.container.mt-2:nth-of-type(1) > p:nth-of-type(2) > span.badge.bg-success",
+    "attrs": {
+      "class": "badge bg-success"
+    },
+    "style": {
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(25, 135, 84)"
+    },
+    "outerHTML": "<span class=\"badge bg-success\">Проверено</span>",
+    "parentHTML": "<p>Можно выбрать любую область (часть) от 1 до 67,108,864 и проверить ее при помощи <a href=\"https://github.com/FixedPaul/VanitySearch-Bitcrack\">https://github.com/FixedPaul/VanitySearch-Bitcrack</a>, и пометить ее как \"<span class=\"badge bg-success\">Проверено</span>\".</p>"
+  }
+]
+
+Hex column analysis:
+[
+  {
+    "table": 0,
+    "columns": []
+  },
+  {
+    "table": 1,
+    "columns": []
+  },
+  {
+    "table": 2,
+    "columns": [
+      {
+        "column": 1,
+        "header": "Start hex",
+        "values": 100,
+        "hexLike": 100,
+        "masked": 0,
+        "hexLengths": [
+          18
+        ],
+        "innerTextDiffersFromTextContent": 0,
+        "hexValuesFoundInRawResponses": 100,
+        "samples": [
+          "400000000000000000",
+          "400000100000000000",
+          "400000200000000000"
+        ],
+        "samplesTextContent": [
+          "400000000000000000",
+          "400000100000000000",
+          "400000200000000000"
+        ],
+        "longerHexInRawForMasked": []
+      },
+      {
+        "column": 2,
+        "header": "End hex",
+        "values": 100,
+        "hexLike": 100,
+        "masked": 0,
+        "hexLengths": [
+          18
+        ],
+        "innerTextDiffersFromTextContent": 0,
+        "hexValuesFoundInRawResponses": 100,
+        "samples": [
+          "400000100000000000",
+          "400000200000000000",
+          "400000300000000000"
+        ],
+        "samplesTextContent": [
+          "400000100000000000",
+          "400000200000000000",
+          "400000300000000000"
+        ],
+        "longerHexInRawForMasked": []
+      },
+      {
+        "column": 3,
+        "header": "Comment",
+        "values": 100,
+        "hexLike": 0,
+        "masked": 1,
+        "hexLengths": [],
+        "innerTextDiffersFromTextContent": 5,
+        "hexValuesFoundInRawResponses": 0,
+        "samples": [
+          "Kingon",
+          "Good luck to everyone! Donation address: 1HooooooooooLprshiHCKDfH5vCDPdp8FQ",
+          "Do not follow the &quot;How to withdraw?&quot; tutorial as written. It is misleading. Make sure to untick &quot;Replace-by-Fee (RBF)&quot; and avoid using slipstream.mara to broadcast the transaction. Use the latest Electrum or build it yourself or just install it in your mobile from Google Play Store Broadcast both BTC and BCH simultaneously. Good luck to everyone! Donation address: 1HooooooooooLprshiHCKDfH5vCDPdp8FQ"
+        ],
+        "samplesTextContent": [
+          "Kingon",
+          "Good luck to everyone! \nDonation address: 1HooooooooooLprshiHCKDfH5vCDPdp8FQ",
+          "Do not follow the &quot;How to withdraw?&quot; tutorial as written. It is misleading.\nMake sure to untick &quot;Replace-by-Fee (RBF)&quot; and avoid using slipstream.mara to broadcast the transaction.\nUse the latest Electrum or build it yourself or just install it in your mobile from Google Play Store\nBroadcast both BTC and BCH simultaneously.\nGood luck to everyone! \nDonation address: 1HooooooooooLprshiHCKDfH5vCDPdp8FQ"
+        ],
+        "longerHexInRawForMasked": []
+      }
+    ]
+  }
+]
+
+Pagination-like links (22):
+[
+  {
+    "text": "1",
+    "rawHref": "https://honestpool.ru/puzzle?id=71",
+    "className": "page-link",
+    "parentClass": "page-item  active"
+  },
+  {
+    "text": "2",
+    "rawHref": "https://honestpool.ru/puzzle?id=71&page=2",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "3",
+    "rawHref": "https://honestpool.ru/puzzle?id=71&page=3",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "4",
+    "rawHref": "https://honestpool.ru/puzzle?id=71&page=4",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "5",
+    "rawHref": "https://honestpool.ru/puzzle?id=71&page=5",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "6",
+    "rawHref": "https://honestpool.ru/puzzle?id=71&page=6",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "7",
+    "rawHref": "https://honestpool.ru/puzzle?id=71&page=7",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "?",
+    "rawHref": "https://honestpool.ru/puzzle?id=71&page=174964",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "671088",
+    "rawHref": "https://honestpool.ru/puzzle?id=71&page=671088",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "671089",
+    "rawHref": "https://honestpool.ru/puzzle?id=71&page=671089",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "»",
+    "rawHref": "https://honestpool.ru/puzzle?id=71&page=2",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "1",
+    "rawHref": "https://honestpool.ru/puzzle?id=71",
+    "className": "page-link",
+    "parentClass": "page-item  active"
+  },
+  {
+    "text": "2",
+    "rawHref": "https://honestpool.ru/puzzle?id=71&page=2",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "3",
+    "rawHref": "https://honestpool.ru/puzzle?id=71&page=3",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "4",
+    "rawHref": "https://honestpool.ru/puzzle?id=71&page=4",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "5",
+    "rawHref": "https://honestpool.ru/puzzle?id=71&page=5",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "6",
+    "rawHref": "https://honestpool.ru/puzzle?id=71&page=6",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "7",
+    "rawHref": "https://honestpool.ru/puzzle?id=71&page=7",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "?",
+    "rawHref": "https://honestpool.ru/puzzle?id=71&page=174964",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "671088",
+    "rawHref": "https://honestpool.ru/puzzle?id=71&page=671088",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "671089",
+    "rawHref": "https://honestpool.ru/puzzle?id=71&page=671089",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "»",
+    "rawHref": "https://honestpool.ru/puzzle?id=71&page=2",
+    "className": "page-link",
+    "parentClass": "page-item"
+  }
+]
+Query parameters seen in pagination links: {
+  "id": [
+    "71"
+  ],
+  "page": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "174964",
+    "671088",
+    "671089"
+  ]
+}
+Pagination containers: [
+  {
+    "selector": "body > nav.navbar.navbar-expand-lg",
+    "className": "navbar navbar-expand-lg"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1)",
+    "className": "pagination-row"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center",
+    "className": "pagination justify-content-center"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item.prev.disabled:nth-of-type(1)",
+    "className": "page-item prev disabled"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item.prev.disabled:nth-of-type(1) > span.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item.active:nth-of-type(2)",
+    "className": "page-item  active"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item.active:nth-of-type(2) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(3)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(3) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(4)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(4) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(5)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(5) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(6)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(6) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(7)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(7) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(8)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(8) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(9)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(9) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(10)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(10) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(11)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(11) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(12)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(12) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2)",
+    "className": "pagination-row"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center",
+    "className": "pagination justify-content-center"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item.prev.disabled:nth-of-type(1)",
+    "className": "page-item prev disabled"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item.prev.disabled:nth-of-type(1) > span.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item.active:nth-of-type(2)",
+    "className": "page-item  active"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item.active:nth-of-type(2) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(3)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(3) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(4)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(4) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(5)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(5) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(6)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(6) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(7)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(7) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(8)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(8) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(9)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(9) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(10)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(10) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(11)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(11) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(12)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(12) > a.page-link",
+    "className": "page-link"
+  }
+]
+First pagination container HTML: <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="https://honestpool.ru">
+      <img src="assets/images/main_honestpool_logo.png" width="30" height="30" class="d-inline-block align-top me-1 ms-1" alt="">
+      HonestPool
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="index">Главная</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="tools">Инструменты</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="puzzle_1000">Puzzle</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="withdraw">Как вывести?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/homlol/honestpool?tab=readme-ov-file#api">API</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/homlol/honestpool">GIT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://status.honestpool.ru">Status(GPU)</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="about">О проекте</a>
+        </li>
+      </ul>
+      <button class="btn btn-link p-0 border-0 bg-transparent me-3" id="themeToggle" aria-label="Переключить тему" title="Переключить тему" tabindex="0" style="cursor: pointer;">
+        <i class="fa fa-moon-o" id="themeIcon" title="Переключить на тёмную тему"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+Forms: [
+  {
+    "action": "https://honestpool.ru/puzzle?id=71",
+    "method": "post",
+    "selector": "body > div.container.mt-2:nth-of-type(1) > form",
+    "html": "<form action=\"\" method=\"post\">\n\t\t\t<div class=\"d-flex mb-2\">\n\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"hex_or_number\" placeholder=\"Поиск части (номер или hex)\" value=\"\">\n\t\t\t\t<button type=\"submit\" name=\"search\" class=\"btn btn-primary ml-2\">Найти</button>\n\t\t\t\t\t\t\t</div>\n\t\t</form>"
+  }
+]
+Inputs/selects: [
+  {
+    "tag": "input",
+    "selector": "body > div.container.mt-2:nth-of-type(1) > form > div.d-flex.mb-2 > input.form-control",
+    "attrs": {
+      "type": "text",
+      "class": "form-control",
+      "name": "hex_or_number",
+      "placeholder": "Поиск части (номер или hex)",
+      "value": ""
+    }
+  }
+]
+
+XHR/fetch during initial load: []
+
+Next-page control clicked: {
+  "text": "2",
+  "href": "https://honestpool.ru/puzzle?id=71&page=2",
+  "tag": "a"
+}
+Next-page result: {
+  "urlBefore": "https://honestpool.ru/puzzle?id=71",
+  "urlAfter": "https://honestpool.ru/puzzle?id=71&page=2",
+  "probe": {
+    "url": "https://honestpool.ru/puzzle?id=71&page=2",
+    "title": "HONEST BITCOIN PUZZLE POOL | 71",
+    "readyState": "complete",
+    "bodySnippet": "HonestPool\nГлавная\nИнструменты\nPuzzle\nКак вывести?\nAPI\nGIT\nStatus(GPU)\nО проекте\n\n\nДобро пожаловать в честный pool BITCOIN PUZZLE от HOMLOL\nАдрес\t1PWo3JeB9jrGwfHDNpdGK54CRas7fsVzXU\nОбласть\t400000000000000000:7fffffffffffffffff (270:271)\nЧастей\t67,108,864\nКлючей\t1,180,591,620,717,411,303,424\nКлючей(1)\t17,592,186,044,416\nЧасть с адресом\t?\nСтатистика\n\tЧас\tДень\tНеделя\tМесяц\tВсе время\nПроверено\t4\t65\t490\t1583\t23398\nСредняя скорость\t19.55 Gkeys/s\n\t13.23 Gkeys/s\n\t14.25 Gkeys/s\n\t10.74 Gkeys/s\n\t14.35 Gkeys/s\n\nКак построен pool?\n\nМожно выбрать любую область (часть) от 1 до 67,108,864 и проверить ее при помощи https://github.com/FixedPaul/VanitySearch-Bitcrack, и пометить ее как \"Проверено\".\n\nЗащита от жульничества! Для того, чтобы пометить часть, как \"Проверено\", нужно указать 5 закрытых ключей для каждого из проверочных адресов (флаги), диапазона, который вы проверяете.\n\nПроверено частей: 23398 из 67,108,864 | Список\nПроверено ключей: 411,621,969,067,245,568 из 1,180,591,620,717,411,303,424\nПрогресс:\n0.034865736961364746%\nНайти\n«\n1\n2\n3\n4\n5\n6\n7\n?\n671088\n671089\n»\nNumber\tStart hex\tEnd hex\tComment\tStatus\t\n101\t400006400000000000\t400006500000000000\tbc1pnv5xygge4s4qysausxa93cf04yhzvmrrlndd6ganq8etlq80huas7ve0zn\tПроверено\t15.09.2026 в 18:20\n102\t400006500000000000\t400006600000000000\tКлик по проверке: 19.08.2026 в 14:26\tНе проверено\tПроверить\n103\t400006600000000000\t400006700000000000\tКлик по проверке: 19.08.2026 в 14:26\tНе проверено\tПроверить\n104\t400006700000000000\t400006800000000000\tКлик по про",
+    "indicators": [],
+    "keywordHits": [],
+    "tableRowCount": 109,
+    "hasStatusText": true
+  },
+  "firstRows": [
+    [
+      "Адрес",
+      "1PWo3JeB9jrGwfHDNpdGK54CRas7fsVzXU"
+    ],
+    [
+      "Область",
+      "400000000000000000:7fffffffffffffffff (270:271)"
+    ],
+    [
+      "Частей",
+      "67,108,864"
+    ]
+  ],
+  "requests": [
+    {
+      "phase": "original:next",
+      "method": "GET",
+      "url": "https://honestpool.ru/puzzle?id=71&page=2",
+      "status": 200,
+      "resourceType": "document",
+      "contentType": "text/html; charset=UTF-8",
+      "server": "nginx",
+      "postData": "",
+      "bodyLength": 154280
+    }
+  ]
+}
+
+==============================================================================
+LISTING: checked  (https://honestpool.ru/puzzlePoolChecked?id=71)
+==============================================================================
+Document HTTP status: 200
+Document headers: {
+  "content-type": "text/html; charset=UTF-8",
+  "server": "nginx"
+}
+Accessible (table rows rendered): True
+No CAPTCHA indicators and table rendered on first load.
+Final URL: https://honestpool.ru/puzzlePoolChecked?id=71
+Final title: HONEST BITCOIN PUZZLE POOL | 71
+
+Tables found: 3
+-- table[0] selector: body > div.container.mt-2:nth-of-type(1) > div:nth-of-type(1) > table.table.table-bordered
+   id='' class='table table-bordered'
+   headers: ['Адрес', '1PWo3JeB9jrGwfHDNpdGK54CRas7fsVzXU']
+   tbody rows: 6 (all tr: 6)
+   status column index: -1
+   status variants: []
+   first rows (innerText): [
+  [
+    "Адрес",
+    "1PWo3JeB9jrGwfHDNpdGK54CRas7fsVzXU"
+  ],
+  [
+    "Область",
+    "400000000000000000:7fffffffffffffffff (270:271)"
+  ],
+  [
+    "Частей",
+    "67,108,864"
+  ]
+]
+   sample row cell detail: [
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > div:nth-of-type(1) > table.table.table-bordered > tbody > tr:nth-of-type(1)",
+    "attrs": {},
+    "cells": [
+      {
+        "tag": "th",
+        "attrs": {},
+        "innerText": "Адрес",
+        "textContent": "Адрес",
+        "html": "Адрес"
+      },
+      {
+        "tag": "td",
+        "attrs": {},
+        "innerText": "1PWo3JeB9jrGwfHDNpdGK54CRas7fsVzXU",
+        "textContent": "1PWo3JeB9jrGwfHDNpdGK54CRas7fsVzXU",
+        "html": "1PWo3JeB9jrGwfHDNpdGK54CRas7fsVzXU"
+      }
+    ]
+  }
+]
+-- table[1] selector: body > div.container.mt-2:nth-of-type(1) > div:nth-of-type(2) > table.table.table-bordered.statustic-table
+   id='' class='table table-bordered statustic-table'
+   headers: ['Статистика', 'Час', 'День', 'Неделя', 'Месяц', 'Все время']
+   tbody rows: 3 (all tr: 3)
+   status column index: -1
+   status variants: []
+   first rows (innerText): [
+  [
+    "Статистика",
+    "Час",
+    "День",
+    "Неделя",
+    "Месяц",
+    "Все время"
+  ],
+  [
+    "Проверено",
+    "4",
+    "65",
+    "490",
+    "1583",
+    "23398"
+  ],
+  [
+    "Средняя скорость",
+    "19.55 Gkeys/s",
+    "13.23 Gkeys/s",
+    "14.25 Gkeys/s",
+    "10.74 Gkeys/s",
+    "14.35 Gkeys/s"
+  ]
+]
+   sample row cell detail: [
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > div:nth-of-type(2) > table.table.table-bordered.statustic-table > tbody > tr:nth-of-type(1)",
+    "attrs": {},
+    "cells": [
+      {
+        "tag": "th",
+        "attrs": {},
+        "innerText": "Статистика",
+        "textContent": "Статистика",
+        "html": "<div class=\"d-flex justify-content-center\"><h4><div class=\"badge bg-success\">Статистика</div></h4></div>"
+      },
+      {
+        "tag": "th",
+        "attrs": {},
+        "innerText": "Час",
+        "textContent": "Час",
+        "html": "Час"
+      },
+      {
+        "tag": "th",
+        "attrs": {},
+        "innerText": "День",
+        "textContent": "День",
+        "html": "День"
+      },
+      {
+        "tag": "th",
+        "attrs": {},
+        "innerText": "Неделя",
+        "textContent": "Неделя",
+        "html": "Неделя"
+      },
+      {
+        "tag": "th",
+        "attrs": {},
+        "innerText": "Месяц",
+        "textContent": "Месяц",
+        "html": "Месяц"
+      },
+      {
+        "tag": "th",
+        "attrs": {},
+        "innerText": "Все время",
+        "textContent": "Все время",
+        "html": "Все время"
+      }
+    ]
+  }
+]
+-- table[2] selector: body > div.container.mt-2:nth-of-type(1) > div:nth-of-type(5) > table.table
+   id='' class='table'
+   headers: ['Start hex', 'End hex', 'Comment', 'Status', '']
+   tbody rows: 100 (all tr: 101)
+   status column index: 3
+   status variants: [
+  {
+    "text": "Проверено",
+    "count": 100,
+    "leafTag": "span",
+    "leafClass": "badge bg-success",
+    "leafSelector": "body > div.container.mt-2:nth-of-type(1) > div:nth-of-type(5) > table.table > tbody > tr:nth-of-type(1) > td:nth-of-type(4) > span.badge.bg-success",
+    "leafStyle": {
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(25, 135, 84)"
+    },
+    "cellStyle": {
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(255, 255, 255)"
+    },
+    "cellHTML": "<span class=\"badge bg-success\">Проверено</span>"
+  }
+]
+   first rows (innerText): [
+  [
+    "4d\n*\n*\n*\nbb00000000000",
+    "4d\n*\n*\n*\nbc00000000000",
+    "BITCOIN PUZZLE ROMAS",
+    "Проверено",
+    "13.10.2026 в 18:59"
+  ],
+  [
+    "7d\n*\n*\n*\n4600000000000",
+    "7d\n*\n*\n*\n4700000000000",
+    "NakamotoShop.net Брутфорс сид-фраз, восстановление кошельков BTC/ETH и базы с балансом. Софт для поиска уязвимостей и чекеры. Free seed phrase, bitcoin seed phrase, mnemonic phrase, BIP39 wordlist, bitcoin private key, wallet private key, public key bitcoin, WIF private key, bitcoin brute force, seed phrase bruteforce, vanity address generator, blockchain forensics",
+    "Проверено",
+    "13.10.2026 в 18:34"
+  ],
+  [
+    "4c\n*\n*\n*\n8100000000000",
+    "4c\n*\n*\n*\n8200000000000",
+    "BITCOIN PUZZLE HoMLoL POOL bc1qdn2wng73y80phr7kul5aa24n850f5c82zwq27h",
+    "Проверено",
+    "13.10.2026 в 18:27"
+  ]
+]
+   sample row cell detail: [
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > div:nth-of-type(5) > table.table > tbody > tr:nth-of-type(1)",
+    "attrs": {},
+    "cells": [
+      {
+        "tag": "td",
+        "attrs": {},
+        "innerText": "4d\n*\n*\n*\nbb00000000000",
+        "textContent": "4d***bb00000000000",
+        "html": "<div class=\"range_hex_hidden\">4d<div>*</div><div>*</div><div>*</div>bb00000000000</div>"
+      },
+      {
+        "tag": "td",
+        "attrs": {},
+        "innerText": "4d\n*\n*\n*\nbc00000000000",
+        "textContent": "4d***bc00000000000",
+        "html": "<div class=\"range_hex_hidden\">4d<div>*</div><div>*</div><div>*</div>bc00000000000</div>"
+      },
+      {
+        "tag": "td",
+        "attrs": {
+          "class": "comment"
+        },
+        "innerText": "BITCOIN PUZZLE ROMAS",
+        "textContent": "BITCOIN PUZZLE ROMAS",
+        "html": "BITCOIN PUZZLE ROMAS"
+      },
+      {
+        "tag": "td",
+        "attrs": {},
+        "innerText": "Проверено",
+        "textContent": "Проверено",
+        "html": "<span class=\"badge bg-success\">Проверено</span>"
+      },
+      {
+        "tag": "td",
+        "attrs": {},
+        "innerText": "13.10.2026 в 18:59",
+        "textContent": "13.10.2026 в 18:59",
+        "html": "13.10.2026 в 18:59"
+      }
+    ]
+  }
+]
+
+Elements whose own text is exactly 'Проверено': 103
+Examples: [
+  {
+    "tag": "th",
+    "className": "",
+    "selector": "body > div.container.mt-2:nth-of-type(1) > div:nth-of-type(2) > table.table.table-bordered.statustic-table > tbody > tr:nth-of-type(2) > th:nth-of-type(1)",
+    "attrs": {},
+    "style": {
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(255, 255, 255)"
+    },
+    "outerHTML": "<th>Проверено</th>",
+    "parentHTML": "<tr>\n\t\t\t\t\t<th>Проверено</th>\n\t\t\t\t\t<th>4</th>\n\t\t\t\t\t<th>65</th>\n\t\t\t\t\t<th>490</th>\n\t\t\t\t\t<th>1583</th>\n\t\t\t\t\t<th>23398</th>\n\t\t\t\t</tr>"
+  },
+  {
+    "tag": "span",
+    "className": "badge bg-success",
+    "selector": "body > div.container.mt-2:nth-of-type(1) > p:nth-of-type(2) > span.badge.bg-success",
+    "attrs": {
+      "class": "badge bg-success"
+    },
+    "style": {
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(25, 135, 84)"
+    },
+    "outerHTML": "<span class=\"badge bg-success\">Проверено</span>",
+    "parentHTML": "<p>Можно выбрать любую область (часть) от 1 до 67,108,864 и проверить ее при помощи <a href=\"https://github.com/FixedPaul/VanitySearch-Bitcrack\">https://github.com/FixedPaul/VanitySearch-Bitcrack</a>, и пометить ее как \"<span class=\"badge bg-success\">Проверено</span>\".</p>"
+  }
+]
+
+Hex column analysis:
+[
+  {
+    "table": 0,
+    "columns": []
+  },
+  {
+    "table": 1,
+    "columns": []
+  },
+  {
+    "table": 2,
+    "columns": []
+  }
+]
+
+Pagination-like links (20):
+[
+  {
+    "text": "1",
+    "rawHref": "https://honestpool.ru/puzzlePoolChecked?id=71",
+    "className": "page-link",
+    "parentClass": "page-item  active"
+  },
+  {
+    "text": "2",
+    "rawHref": "https://honestpool.ru/puzzlePoolChecked?id=71&page=2",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "3",
+    "rawHref": "https://honestpool.ru/puzzlePoolChecked?id=71&page=3",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "4",
+    "rawHref": "https://honestpool.ru/puzzlePoolChecked?id=71&page=4",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "5",
+    "rawHref": "https://honestpool.ru/puzzlePoolChecked?id=71&page=5",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "6",
+    "rawHref": "https://honestpool.ru/puzzlePoolChecked?id=71&page=6",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "7",
+    "rawHref": "https://honestpool.ru/puzzlePoolChecked?id=71&page=7",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "233",
+    "rawHref": "https://honestpool.ru/puzzlePoolChecked?id=71&page=233",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "234",
+    "rawHref": "https://honestpool.ru/puzzlePoolChecked?id=71&page=234",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "»",
+    "rawHref": "https://honestpool.ru/puzzlePoolChecked?id=71&page=2",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "1",
+    "rawHref": "https://honestpool.ru/puzzlePoolChecked?id=71",
+    "className": "page-link",
+    "parentClass": "page-item  active"
+  },
+  {
+    "text": "2",
+    "rawHref": "https://honestpool.ru/puzzlePoolChecked?id=71&page=2",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "3",
+    "rawHref": "https://honestpool.ru/puzzlePoolChecked?id=71&page=3",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "4",
+    "rawHref": "https://honestpool.ru/puzzlePoolChecked?id=71&page=4",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "5",
+    "rawHref": "https://honestpool.ru/puzzlePoolChecked?id=71&page=5",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "6",
+    "rawHref": "https://honestpool.ru/puzzlePoolChecked?id=71&page=6",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "7",
+    "rawHref": "https://honestpool.ru/puzzlePoolChecked?id=71&page=7",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "233",
+    "rawHref": "https://honestpool.ru/puzzlePoolChecked?id=71&page=233",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "234",
+    "rawHref": "https://honestpool.ru/puzzlePoolChecked?id=71&page=234",
+    "className": "page-link",
+    "parentClass": "page-item"
+  },
+  {
+    "text": "»",
+    "rawHref": "https://honestpool.ru/puzzlePoolChecked?id=71&page=2",
+    "className": "page-link",
+    "parentClass": "page-item"
+  }
+]
+Query parameters seen in pagination links: {
+  "id": [
+    "71"
+  ],
+  "page": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "233",
+    "234"
+  ]
+}
+Pagination containers: [
+  {
+    "selector": "body > nav.navbar.navbar-expand-lg",
+    "className": "navbar navbar-expand-lg"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1)",
+    "className": "pagination-row"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center",
+    "className": "pagination justify-content-center"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item.prev.disabled:nth-of-type(1)",
+    "className": "page-item prev disabled"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item.prev.disabled:nth-of-type(1) > span.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item.active:nth-of-type(2)",
+    "className": "page-item  active"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item.active:nth-of-type(2) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(3)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(3) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(4)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(4) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(5)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(5) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(6)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(6) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(7)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(7) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(8)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(8) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item.separator:nth-of-type(9)",
+    "className": "page-item separator"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item.separator:nth-of-type(9) > span.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(10)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(10) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(11)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(11) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(12)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(1) > ul.pagination.justify-content-center > li.page-item:nth-of-type(12) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2)",
+    "className": "pagination-row"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center",
+    "className": "pagination justify-content-center"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item.prev.disabled:nth-of-type(1)",
+    "className": "page-item prev disabled"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item.prev.disabled:nth-of-type(1) > span.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item.active:nth-of-type(2)",
+    "className": "page-item  active"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item.active:nth-of-type(2) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(3)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(3) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(4)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(4) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(5)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(5) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(6)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(6) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(7)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(7) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(8)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(8) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item.separator:nth-of-type(9)",
+    "className": "page-item separator"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item.separator:nth-of-type(9) > span.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(10)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(10) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(11)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(11) > a.page-link",
+    "className": "page-link"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(12)",
+    "className": "page-item"
+  },
+  {
+    "selector": "body > div.container.mt-2:nth-of-type(1) > nav.pagination-row:nth-of-type(2) > ul.pagination.justify-content-center > li.page-item:nth-of-type(12) > a.page-link",
+    "className": "page-link"
+  }
+]
+First pagination container HTML: <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="https://honestpool.ru">
+      <img src="assets/images/main_honestpool_logo.png" width="30" height="30" class="d-inline-block align-top me-1 ms-1" alt="">
+      HonestPool
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="index">Главная</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="tools">Инструменты</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="puzzle_1000">Puzzle</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="withdraw">Как вывести?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/homlol/honestpool?tab=readme-ov-file#api">API</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/homlol/honestpool">GIT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://status.honestpool.ru">Status(GPU)</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="about">О проекте</a>
+        </li>
+      </ul>
+      <button class="btn btn-link p-0 border-0 bg-transparent me-3" id="themeToggle" aria-label="Переключить тему" title="Переключить тему" tabindex="0" style="cursor: pointer;">
+        <i class="fa fa-moon-o" id="themeIcon" title="Переключить на тёмную тему"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+Forms: [
+  {
+    "action": "https://honestpool.ru/puzzle?id=71",
+    "method": "post",
+    "selector": "body > div.container.mt-2:nth-of-type(1) > form",
+    "html": "<form action=\"puzzle?id=71\" method=\"post\">\n\t\t\t<div class=\"d-flex mb-2\">\n\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"hex_or_number\" placeholder=\"Поиск части (номер или hex)\" value=\"\">\n\t\t\t\t<button type=\"submit\" name=\"search\" class=\"btn btn-primary ml-2\">Найти</button>\n\t\t\t\t\t\t\t</div>\n\t\t</form>"
+  }
+]
+Inputs/selects: [
+  {
+    "tag": "input",
+    "selector": "body > div.container.mt-2:nth-of-type(1) > form > div.d-flex.mb-2 > input.form-control",
+    "attrs": {
+      "type": "text",
+      "class": "form-control",
+      "name": "hex_or_number",
+      "placeholder": "Поиск части (номер или hex)",
+      "value": ""
+    }
+  }
+]
+
+XHR/fetch during initial load: []
+
+Next-page control clicked: null
+Next-page result: null
+
+==============================================================================
+ALL NETWORK RESPONSES (excluding images/fonts/stylesheets)
+==============================================================================
+[original:load] GET 302 document  text/html; charset=UTF-8                 https://honestpool.ru/puzzle?id=71  server=nginx
+[original:load] GET 200 document  text/html; charset=UTF-8                 https://honestpool.ru/captcha?url=puzzle?id=71  server=nginx
+[original:load] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/jquery/jquery-3.7.1.min.js  server=nginx
+[original:load] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/plugin/bignumber.min.js  server=nginx
+[original:load] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/plugin/notify/notify.js  server=nginx
+[original:load] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/bootstrap/js/bootstrap.bundle.min.js  server=nginx
+[original:load] GET 200 document  text/html; charset=UTF-8                 https://honestpool.ru/captcha?url=puzzle?id=71  server=nginx
+[original:load] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/jquery/jquery-3.7.1.min.js  server=nginx
+[original:load] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/bootstrap/js/bootstrap.bundle.min.js  server=nginx
+[original:load] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/plugin/bignumber.min.js  server=nginx
+[original:load] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/plugin/notify/notify.js  server=nginx
+[original:load] POST 302 document  text/html; charset=UTF-8                 https://honestpool.ru/captcha?url=puzzle?id=71  server=nginx  post='csrf=REDACTED&captcha=REDACTED&btn_check_captcha=REDACTED'
+[original:load] GET 200 document  text/html; charset=UTF-8                 https://honestpool.ru/puzzle?id=71  server=nginx
+[original:load] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/jquery/jquery-3.7.1.min.js  server=nginx
+[original:load] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/bootstrap/js/bootstrap.bundle.min.js  server=nginx
+[original:load] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/plugin/bignumber.min.js  server=nginx
+[original:load] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/plugin/notify/notify.js  server=nginx
+[original:load] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/plugin/bootstrap-datepicker-1.9.0-dist/js/bootstrap-datepicker.min.js  server=nginx
+[original:load] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/plugin/chartjs/chart.js  server=nginx
+[original:load] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/plugin/sweetalert/sweetalert.min.js  server=nginx
+[original:next] GET 200 document  text/html; charset=UTF-8                 https://honestpool.ru/puzzle?id=71&page=2  server=nginx
+[original:next] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/jquery/jquery-3.7.1.min.js  server=nginx
+[original:next] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/bootstrap/js/bootstrap.bundle.min.js  server=nginx
+[original:next] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/plugin/bignumber.min.js  server=nginx
+[original:next] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/plugin/chartjs/chart.js  server=nginx
+[original:next] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/plugin/bootstrap-datepicker-1.9.0-dist/js/bootstrap-datepicker.min.js  server=nginx
+[original:next] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/plugin/notify/notify.js  server=nginx
+[original:next] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/plugin/sweetalert/sweetalert.min.js  server=nginx
+[checked:load] GET 200 document  text/html; charset=UTF-8                 https://honestpool.ru/puzzlePoolChecked?id=71  server=nginx
+[checked:load] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/jquery/jquery-3.7.1.min.js  server=nginx
+[checked:load] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/bootstrap/js/bootstrap.bundle.min.js  server=nginx
+[checked:load] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/plugin/bignumber.min.js  server=nginx
+[checked:load] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/plugin/chartjs/chart.js  server=nginx
+[checked:load] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/plugin/bootstrap-datepicker-1.9.0-dist/js/bootstrap-datepicker.min.js  server=nginx
+[checked:load] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/plugin/notify/notify.js  server=nginx
+[checked:load] GET 200 script    application/javascript; charset=utf-8    https://honestpool.ru/assets/plugin/sweetalert/sweetalert.min.js  server=nginx

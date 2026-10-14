@@ -1,0 +1,64 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Local tool binaries (e.g. portable uv)
+.tools/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Project data & logs (runtime artifacts)
+data/*.db
+data/*.db-wal
+data/*.db-shm
+data/*.db.lock
+data/*.sqlite
+data/*.sqlite3
+data/*.csv
+data/*.xlsx
+logs/*.log
+
+# Keep directory placeholders
+!data/.gitkeep
+!logs/.gitkeep
+
+# Playwright
+playwright/.cache/
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Chrome NetLog captures (contain browsing metadata)
+honestpool-network.json
+*netlog*.json
+chrome-net-export-log*.json
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Windows launcher: encrypted 2Captcha settings (never commit, package or send)
+config/
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Client delivery package (build output)
+delivery/

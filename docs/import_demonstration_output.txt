@@ -1,0 +1,118 @@
+Temporary database: /tmp/honestpool-import-demo-8jgkql08/demo.db
+Simulated website page 1 with verified numbers [1, 2] (in memory, no network); pages 2-3 planned and pending
+
+== PART B: offline import through main.py ==
+
+$ python main.py --db /tmp/honestpool-import-demo-8jgkql08/demo.db --import-verified /tmp/honestpool-import-demo-8jgkql08/synthetic_verified_numbers.txt --source 'synthetic demonstration data'    # TXT import
+    Import file: synthetic_verified_numbers.txt (txt, SHA-256 f76630a8ae7401f27058a3e2fbf9b1368ac95efc7edd7543388c2b4398b70e3f)
+    Segment numbers: 6 valid, 1 duplicate(s) removed, 5 unique
+    Imported 5 new verified record(s) from 'synthetic demonstration data' (import batch 1); skipped 0 already stored from the website and 0 already imported
+    Website page progress was not changed; imported records are stored separately from scraped records and are included in --export.
+    Verified records stored: 2 from the website, 5 imported
+    (exit code 0)
+  [PASS] TXT import accepted
+  [PASS] TXT duplicates removed before storing
+
+$ python main.py --db /tmp/honestpool-import-demo-8jgkql08/demo.db --import-verified /tmp/honestpool-import-demo-8jgkql08/synthetic_verified_numbers.csv --source 'synthetic demonstration data'    # CSV import
+    Import file: synthetic_verified_numbers.csv (csv, SHA-256 ef1df7d3c0180e7d78bcc13be3dc77d0b4d963eb2775cb6679aff0b6cd00516d)
+    Segment numbers: 5 valid, 1 duplicate(s) removed, 4 unique
+    Imported 2 new verified record(s) from 'synthetic demonstration data' (import batch 2); skipped 1 already stored from the website and 1 already imported
+    Website page progress was not changed; imported records are stored separately from scraped records and are included in --export.
+    Verified records stored: 2 from the website, 7 imported
+    (exit code 0)
+  [PASS] CSV import accepted
+  [PASS] CSV: number already stored from the website is skipped, overlap with the TXT is not imported twice
+  [PASS] imported numbers stored once each - [1001, 1002, 25000, 350001, 500000, 12345678, 67108864]
+  [PASS] hex values equal 0x400000000000000000 + (N - 1) * 2**44 and start + 2**44 - e.g. 1001: 40003e800000000000..40003e900000000000; 67108864: 7ffffff00000000000..800000000000000000
+  [PASS] status is Проверено
+
+$ python main.py --db /tmp/honestpool-import-demo-8jgkql08/demo.db --import-verified /tmp/honestpool-import-demo-8jgkql08/synthetic_verified_numbers.txt --source 'synthetic demonstration data'    # same TXT again
+    Import file: synthetic_verified_numbers.txt (txt, SHA-256 f76630a8ae7401f27058a3e2fbf9b1368ac95efc7edd7543388c2b4398b70e3f)
+    Segment numbers: 6 valid, 1 duplicate(s) removed, 5 unique
+    Imported 0 new verified record(s) from 'synthetic demonstration data' (import batch 3); skipped 0 already stored from the website and 5 already imported
+    Website page progress was not changed; imported records are stored separately from scraped records and are included in --export.
+    Verified records stored: 2 from the website, 7 imported
+    (exit code 0)
+  [PASS] re-import adds nothing
+
+$ python main.py --db /tmp/honestpool-import-demo-8jgkql08/demo.db --import-verified /tmp/honestpool-import-demo-8jgkql08/invalid_numbers.txt --source 'synthetic demonstration data'    # TXT with invalid numbers
+    error: import refused, nothing was written: invalid_numbers.txt: line 3: '12a' is not a whole decimal number; line 4: 67108865 is outside 1..67,108,864
+    (exit code 4)
+  [PASS] invalid numbers reject the whole file (exit code 4, line numbers reported)
+
+$ python main.py --db /tmp/honestpool-import-demo-8jgkql08/demo.db --import-verified /tmp/honestpool-import-demo-8jgkql08/unverified.csv --source 'synthetic demonstration data'    # CSV with an unverified row
+    error: import refused, nothing was written: unverified.csv: line 3: Status 'Не проверено' is not 'Проверено'; only verified numbers can be imported
+    (exit code 4)
+  [PASS] a row that is not 'Проверено' rejects the whole file
+
+$ python main.py --db /tmp/honestpool-import-demo-8jgkql08/demo.db --import-verified /tmp/honestpool-import-demo-8jgkql08/synthetic_verified_numbers.txt    # no source, non-interactive
+    Import file: synthetic_verified_numbers.txt (txt, SHA-256 f76630a8ae7401f27058a3e2fbf9b1368ac95efc7edd7543388c2b4398b70e3f)
+    Segment numbers: 6 valid, 1 duplicate(s) removed, 5 unique
+    Only import files from a trusted, authorized source: imported numbers are stored as verified.
+    error: import refused, nothing was written: no source stated; use --source "..." to name the authorized source
+    (exit code 4)
+  [PASS] import without a stated authorized source is refused
+  [PASS] rejected imports wrote nothing (valid 3001/3002 in the rejected files were not stored)
+
+  import_batches:
+    batch 1: source='synthetic demonstration data' file=synthetic_verified_numbers.txt format=txt sha256=f76630a8ae7401f2... unique=5 duplicates=1 inserted=5 already_scraped=0 already_imported=0
+    batch 2: source='synthetic demonstration data' file=synthetic_verified_numbers.csv format=csv sha256=ef1df7d3c0180e7d... unique=4 duplicates=1 inserted=2 already_scraped=1 already_imported=1
+    batch 3: source='synthetic demonstration data' file=synthetic_verified_numbers.txt format=txt sha256=f76630a8ae7401f2... unique=5 duplicates=1 inserted=0 already_scraped=0 already_imported=5
+  [PASS] provenance: source recorded for every batch
+  [PASS] provenance: file name and SHA-256 match the imported files
+  [PASS] provenance: each imported record points to the batch that added it
+  [PASS] website records unchanged and kept apart from imports
+  [PASS] website page progress unchanged (no page marked completed by the import) - [(1, 'completed'), (2, 'pending'), (3, 'pending')]
+  [PASS] saved run range unchanged
+
+== PART C: export validation ==
+
+$ python main.py --db /tmp/honestpool-import-demo-8jgkql08/demo.db --export csv --export-source imported --output /tmp/honestpool-import-demo-8jgkql08/export_imported.csv    # imported CSV
+    Exported 7 verified records to /tmp/honestpool-import-demo-8jgkql08/export_imported.csv
+    (exit code 0)
+  [PASS] imported CSV: exported
+  [PASS] imported CSV: the four required columns - ['Number', 'Start hex', 'End hex', 'Status']
+  [PASS] imported CSV: no duplicated segment numbers - 7 rows
+  [PASS] imported CSV: expected records - [1001, 1002, 25000, 350001, 500000, 12345678, 67108864]
+  [PASS] imported CSV: complete 18-digit hex matching the formula, Status Проверено - 7 rows
+
+$ python main.py --db /tmp/honestpool-import-demo-8jgkql08/demo.db --export xlsx --export-source imported --output /tmp/honestpool-import-demo-8jgkql08/export_imported.xlsx    # imported XLSX
+    Exported 7 verified records to /tmp/honestpool-import-demo-8jgkql08/export_imported.xlsx
+    (exit code 0)
+  [PASS] imported XLSX: exported
+  [PASS] imported XLSX: the four required columns - ['Number', 'Start hex', 'End hex', 'Status']
+  [PASS] imported XLSX: no duplicated segment numbers - 7 rows
+  [PASS] imported XLSX: expected records - [1001, 1002, 25000, 350001, 500000, 12345678, 67108864]
+  [PASS] imported XLSX: complete 18-digit hex matching the formula, Status Проверено - 7 rows
+  [PASS] imported XLSX: hex cells stored as text (type 's', format '@') - 14 cells
+
+$ python main.py --db /tmp/honestpool-import-demo-8jgkql08/demo.db --export csv --export-source all --output /tmp/honestpool-import-demo-8jgkql08/export_all.csv    # all CSV
+    Exported 9 verified records to /tmp/honestpool-import-demo-8jgkql08/export_all.csv
+    (exit code 0)
+  [PASS] all CSV: exported
+  [PASS] all CSV: the four required columns - ['Number', 'Start hex', 'End hex', 'Status']
+  [PASS] all CSV: no duplicated segment numbers - 9 rows
+  [PASS] all CSV: expected records - [1, 2, 1001, 1002, 25000, 350001, 500000, 12345678, 67108864]
+  [PASS] all CSV: complete 18-digit hex matching the formula, Status Проверено - 9 rows
+
+$ python main.py --db /tmp/honestpool-import-demo-8jgkql08/demo.db --export xlsx --export-source all --output /tmp/honestpool-import-demo-8jgkql08/export_all.xlsx    # all XLSX
+    Exported 9 verified records to /tmp/honestpool-import-demo-8jgkql08/export_all.xlsx
+    (exit code 0)
+  [PASS] all XLSX: exported
+  [PASS] all XLSX: the four required columns - ['Number', 'Start hex', 'End hex', 'Status']
+  [PASS] all XLSX: no duplicated segment numbers - 9 rows
+  [PASS] all XLSX: expected records - [1, 2, 1001, 1002, 25000, 350001, 500000, 12345678, 67108864]
+  [PASS] all XLSX: complete 18-digit hex matching the formula, Status Проверено - 9 rows
+  [PASS] all XLSX: hex cells stored as text (type 's', format '@') - 18 cells
+
+$ python main.py --db /tmp/honestpool-import-demo-8jgkql08/demo.db --export csv --export-source website --output /tmp/honestpool-import-demo-8jgkql08/export_website.csv    # website CSV
+    Exported 2 verified records to /tmp/honestpool-import-demo-8jgkql08/export_website.csv
+    (exit code 0)
+  [PASS] website CSV: exported
+  [PASS] website CSV: the four required columns - ['Number', 'Start hex', 'End hex', 'Status']
+  [PASS] website CSV: no duplicated segment numbers - 2 rows
+  [PASS] website CSV: expected records - [1, 2]
+  [PASS] website CSV: complete 18-digit hex matching the formula, Status Проверено - 2 rows
+  [PASS] real database and exports untouched
+
+Result: all checks passed
